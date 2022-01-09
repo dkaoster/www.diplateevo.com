@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+
+    <link rel="preload" as="style" href="/reset.css" />
+    <link rel='stylesheet' href='/reset.css' media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel='stylesheet' href='/reset.css'>
+    </noscript>
+
+    <!-- The Fastest Google Fonts https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+    <!-- [1] -->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin />
+
+    <!-- [2] -->
+    <link rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Noto+Sans+TC&display=swap" />
+
+    <!-- [3] -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Noto+Sans+TC&display=swap"
+          media="print" onload="this.media='all'" />
+
+    <!-- [4] -->
+    <noscript>
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Noto+Sans+TC&display=swap" />
+    </noscript>
+
+    <!-- This contains the contents of the <svelte:head> component -->
+    %svelte.head%
+
+  </head>
+  <body>
+    <!-- The application will be rendered inside this element -->
+    %svelte.body%
+  </body>
+</html>

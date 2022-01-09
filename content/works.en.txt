@@ -1,0 +1,20 @@
+title: Things I've made
+isPage: true
+
+[+content]
+A few selected works and write-ups of projects worth sharing. My portfolio largely consists of javascript-based web projects, but occasionally will incorporate various other cartography, video, or 3D modeling projects.
+
+gridBreak: break
+
+{.portfolioItem}
+title: Building a Realtime Election Tracker
+featureImage: /images/2020/08/Artboard-1@768w.jpg
+slug: building-a-realtime-election-tracker-for-taiwans-2020-election/
+{}
+
+{.portfolioItem}
+title: Building a Realtime Election Tracker
+featureImage: /images/2020/08/Artboard-1@768w.jpg
+slug: building-a-realtime-election-tracker-for-taiwans-2020-election/
+{}
+[]

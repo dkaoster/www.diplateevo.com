@@ -1,0 +1,96 @@
+// ////////////////////////////////////////////////////////
+// General Variables
+$primary-color: #546de5;
+
+// ////////////////////////////////////////////////////////
+// Responsive Design related variables
+$device-small: 768px;
+$device-medium: 1024px;
+
+@mixin content-offset-cols {
+  grid-column: 3 / 9;
+  @media screen and (max-width: $device-medium) { grid-column: 2 / 12; }
+  @media screen and (max-width: $device-small) { grid-column: 1 / 13; }
+}
+
+@mixin full-offset-cols {
+  grid-column: 2 / 11;
+  @media screen and (max-width: $device-medium) { grid-column: 2 / 12; }
+  @media screen and (max-width: $device-small) { grid-column: 1 / 13; }
+}
+
+@mixin cover-offset-cols {
+  grid-column: 1 / 11;
+  @media screen and (max-width: $device-medium) { grid-column: 1 / 13; }
+}
+
+// ////////////////////////////////////////////////////////
+// Dark mode related variables
+@mixin dark-mode-variables {
+  --background-color: #111;
+  --color: #EEEEEE;
+  --img-opacity: 0.95;
+  --dark-mode: 1;
+}
+
+@mixin light-mode-variables {
+  --background-color: white;
+  --color: black;
+  --img-opacity: 1;
+  --dark-mode: 0;
+}
+
+@mixin dark-mode($isDark: false) {
+  @if $isDark { @include dark-mode-variables }
+  @else { @include light-mode-variables }
+}
+
+// Initial dark / light mode based off prefers-color-scheme
+@media (prefers-color-scheme: dark) {
+  :global(html) { @include dark-mode-variables }
+}
+
+// ////////////////////////////////////////////////////////
+// Fonts
+
+:global(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Roboto Mono', 'Noto Sans TC', monospace;
+  font-weight: bold;
+}
+
+:global(h1) {
+  font-size: 2em;
+  @media screen and (max-width: $device-medium) { font-size: 1.8em }
+}
+
+:global(h2) {
+  font-size: 1.8em;
+  @media screen and (max-width: $device-medium) { font-size: 1.6em }
+}
+
+:global(p, code, aside, blockquote, li) {
+  font-family: Georgia, 'Noto Sans TC', serif;
+
+  font-size: 1.3em;
+  line-height: 1.5em;
+
+  @media screen and (max-width: $device-medium) {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
+
+// ////////////////////////////////////////////////////////
+// Reset
+
+:global(a) {
+  text-decoration: underline;
+  color: $primary-color;
+  transition: 0.2s all;
+
+  &:hover {
+    color: lighten($primary-color, 10);
+  }
+}
+
+:global(html), :global(body) { margin: 0; padding: 0 }

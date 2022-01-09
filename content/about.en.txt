@@ -1,0 +1,18 @@
+title: About Me
+publishDate:
+lastUpdated:
+isPage: true
+
+[+content]
+{.image}
+src: /images/2020/08/prof.jpg
+width: 300
+disableSrcSet: true
+{}
+
+I spend my days visualizing news stories for the web and mobile devices, currently for Commonwealth Magazine. Previously, I worked for the New York Times by rebuilding the homepage, running machine learning algorithms for news recommendations, and contributing to digital security projects.
+
+I'm motivated by the belief that when used properly, digital mediums can help readers better understand the complex problems facing societies today. In addition, I believe that newsrooms are among the most conducive environments to experimentation, development, and creativity.
+
+More broadly, I’m interested in the interplay of technology, politics, journalism, international relations, democracy, and education. My spare time is spent eating noodles, surfing, reading, and traveling.
+[]
