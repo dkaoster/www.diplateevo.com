@@ -1,0 +1,14 @@
+title: Taiwan Elections 2018, Visualized
+publishDate: 2018/11/30
+author: Daniel Kao
+description: On November 24th, Taiwan elections saw a resurgence of KMT (Kuomingtang, 國民黨) backed candidates, after a few years of nearly total control by the DPP (Democratic Progressive Party, 民進黨).
+featureImage: /images/2020/10/taiwan.jpg
+redirect: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
+
+[+content]
+On November 24th, Taiwan elections saw a resurgence of KMT (Kuomintang, 國民黨) backed candidates, after a few years of nearly total control by the DPP (Democratic Progressive Party, 民進黨). The results came as a surprise to many people, even those who already expected this election to be a rebuke to president Tsai Ing-Wen's (蔡英文) two years in power. On the ballot were the mayors for all cities in Taiwan, thousands of councillors, local representatives, and ten referendum questions.
+
+The shift in power back toward the KMT was not the only thing that indicated a mobilization of more conservative voters. Every single referendum question that progressives rallied behind was voted down, including questions supporting marriage equality and a participation in the Olympics as Taiwan instead of Chinese Taipei.
+
+Now that the election has happened, let's dive into the data to get a better picture of what actually happened and what this means for Taiwan and the world.
+[]

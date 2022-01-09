@@ -33,4 +33,6 @@
   <meta name="twitter:description" content={description}>
 
   <script async defer data-domain="diplateevo.com" src="https://plausible.io/js/plausible.js"></script>
+
+  <slot />
 </svelte:head>

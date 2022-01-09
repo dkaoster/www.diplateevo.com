@@ -1,7 +1,7 @@
 title: Building a Realtime Election Tracker
 author: Daniel Kao
 description: On January 11th, 2020, Taiwan went to the polls to elect their next President and Legislature. For us at the News Lens, we formed a small team of designers, engineers, and editors to build this year’s election tracker.
-publishDate: 2020/01/01
+publishDate: 2020/01/29
 featureImage: /images/2020/08/Artboard-1.png
 
 [+content]
@@ -32,7 +32,7 @@ Given that the main interaction users make with the election tracker is through 
 
 The topmost layer is the whole country, including the outer islands that are part of Taiwan’s jurisdiction, followed by 22 counties (縣市). Each of the 22 counties can be further divided into towns (鄉鎮區), and the smallest unit of locality which we did not display is the village (里).
 
-All of this map data is obtained from Taiwan’s government website in the form of a 114MB shapefile. Obviously, if we were to directly convert the shapefile to topojson (a format for browsers to draw maps, more on this later), we’d still be looking at a file that is ~90MB in size; far too big to have every user download to their device.
+All of this map data is obtained from <a href="https://data.gov.tw/dataset/7438" target="_blank" rel="noopener noreferrer">Taiwan’s government website</a> in the form of a 114MB shapefile. Obviously, if we were to directly convert the shapefile to topojson (a format for browsers to draw maps, more on this later), we’d still be looking at a file that is ~90MB in size; far too big to have every user download to their device.
 
 Moreover, the map needs to be processed for special areas (areas that are part of Taiwan’s jurisdiction but may not be part of an official locality, such as 釣魚台) and relocation of the outer islands so that Kinmen and Lienchiang don’t make the map look too big. At first, I processed a few topojson files using QGIS and the shapefile obtained from the government, but after many failed attempts, (ie incorrect island relocation, missing districts, resulting file too large, too many details removed from the map during compression, etc) I decided to create an API endpoint that would process the map that I want on the fly.
 
@@ -64,11 +64,11 @@ alt: custom map making
 
 ### SVG vs Canvas
 
-After constructing a reliable way to generate our topojson, the next question was figuring out how to display it in our browser. The naive approach is to simply render the topojson to a SVG. However, the problem with this is that SVGs use the DOM, which means that changes or user interactions with a complex SVG is slow and resource intensive. Add locale labels and mouse interactions and suddenly your SVG implementation slows to a crawl.
+After constructing a reliable way to generate our topojson, the next question was figuring out how to display it in our browser. The naive approach is to <a href="https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c" target="_blank" rel="noopener noreferrer">simply render the topojson to a SVG</a>. However, the problem with this is that SVGs use the DOM, which means that changes or user interactions with a complex SVG is slow and resource intensive. Add locale labels and mouse interactions and suddenly your SVG implementation slows to a crawl.
 
-The alternative is to use a canvas for display and an invisible SVG for interaction. This allows us to avoid expensive DOM operations of maintaining and manipulating the color of each locale on the map and instead use the canvas API to paint our map, while maintaining a SVG just to keep track of when users interact. In my very unscientific benchmarking on my own machine, I found that SVGs needed to be about twice a simplified compared to canvas in order to achieve similar performance. More about this method here.
+The alternative is to use a canvas for display and an invisible SVG for interaction. This allows us to avoid expensive DOM operations of maintaining and manipulating the color of each locale on the map and instead use the canvas API to paint our map, while maintaining a SVG just to keep track of when users interact. In my very unscientific benchmarking on my own machine, I found that SVGs needed to be about twice a simplified compared to canvas in order to achieve similar performance. More about <a href="https://observablehq.com/@rdmurphy/combining-html-canvas-svg-flatbush-for-super-efficient-hov" target="_blank" rel="noopener noreferrer">this method here</a>.
 
-The optimizations that I could have done on the map are endless. If we were to further optimize the map, I would recommend using some kind of WebGL implementation, potentially MapboxGL to make map rendering performance even better, but a canvas approach was good enough for this use case.
+The optimizations that I could have done on the map are endless. If we were to further optimize the map, I would recommend using some kind of WebGL implementation, potentially <a href="https://docs.mapbox.com/mapbox-gl-js/api/" target="_blank" rel="noopener noreferrer">MapboxGL</a> to make map rendering performance even better, but a canvas approach was good enough for this use case.
 
 ## Data Pipeline
 
@@ -104,43 +104,77 @@ alt: towns vs legislative districts
 
 This logic poses a few challenges. First of all, the topmost level we can display for district legislators is the district itself, because we can’t calculate the color for a county that has multiple districts with different races.
 
+{.image}
+src: /images/2020/08/Artboard-5.png
+alt: legislative district colors
+{}
+
 Second, because indigenous legislature races elect the top three candidates for each plains and highlands indigenous groups, simply coloring a district with the party of the first-place candidate does not reflect the true breakdown of the vote. Thus, we decided to take the top three candidates and add up the votes based on their political parties, then take the color of the party with the most votes.
+
+{.image}
+src: /images/2020/08/Artboard-4.png
+alt: party vote order
+{}
 
 Third, because of the gender rule for party votes, legislators of a party that get elected through this method do not necessarily correspond with the order that they are placed in the party list. As a result, we have to build an algorithm to determine skip over the next male legislator in the list if there are already too many men.
 
 ## Post-Election Graphics
 
 Another large element of our election coverage was the graphics that we post to social media such as Facebook and Instagram. Because we wanted to be able to generate social media optimized graphics as fast as possible, we needed a method faster than designers plugging in election results into graphic. To achieve this, we built an internal website that would dynamically generate SVGs with the latest data from the Central Election Committee.
-Dynamic Graphic Generation
+
+{.image}
+src: /images/2020/08/Artboard-7.png
+className: full
+alt: Dynamic Graphic Generation
+{}
 
 To achieve this, designers would first come up with the design of the graphics in the form of an adobe illustrator document. Then we took those graphics and exported each one into a separate SVG. Because SVG files are a XML-based specification, we can port these into our web application in order to make content within the SVG dynamic.
 
 The great thing about using SVGs in this way is that it is language and tool agnostic, which means you can use whatever existing templating language / framework you use to generate these graphics. In our case, we fitted it into an internal website that the social media team can directly access to download the generated SVG or a PNG format to be posted on social media platforms like Facebook and Instagram.
-Monitoring
+
+## Monitoring
 
 Another critical piece of election-preparedness was making sure that we knew everything that was happening with our web application at all times. To monitor the health of the application and make sure that everything scaled properly, we set up a grafana dashboard that kept track of server errors, response latency, upstream API connections, cache hit ratios, as well as the standard CPU, memory, and database metrics.
-Grafana Monitoring
+
+{.image}
+src: /images/2020/08/DSC04709.jpg
+className: full
+alt: Grafana Monitoring
+{}
 
 By having the web application directly report metrics to prometheus, it was much easier to get the fine grained metrics specific to elections that we cared about. Because we had taken the time to integrate key metrics into prometheus, when errors began to show up during the election, we were able to immediately know what was causing the error.
-Svelte
+
+## Svelte
 
 Although React has been possibly the most popular front-end framework to use these days, one of the questions I find interesting to ask during interviews is “Under what circumstances is React not a good framework to use? When would you recommend not using React?” This is a question that stumps many less-experienced engineers and people without a good grasp of what React really does in the browser under the hood. In fact, I believe that there are many situations under which React is not a good choice, and building interactives in a news environment is one of them.
 
-News organizations have a very different development and deployment cycle than tech companies do, requiring tighter deadlines, faster feedback loops, and more bespoke flexibility. Thus, I decided to use Svelte, giving us the following main advantages among many:
+{.image}
+src: /images/2020/08/svelte.png
+alt: svelte logo
+{}
 
-    Development speed: Given the amount of work to be done within a short amount of time, I decided that Svelte would be much faster to write than React, giving faster development and feedback times. Using Sapper with Svelte would also allow me to write the server-side data APIs quickly and easily.
-    Bundled JS Size: Because Svelte runs as a compiler, it’s able to build and include only the code that your applications needs, making the compiled bundle much smaller than a React application.
+News organizations have a very different development and deployment cycle than tech companies do, requiring tighter deadlines, faster feedback loops, and more bespoke flexibility. Thus, I decided to use <a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer">Svelte</a>, giving us the following main advantages among many:
 
-If you’re interested in learning more about Svelte, there are many tutorials to help you get started.
-Lessons Learned
-Load Test
+{.list}
+[.list]
+* Development speed: Given the amount of work to be done within a short amount of time, I decided that Svelte would be much faster to write than React, giving faster development and feedback times. Using Sapper with Svelte would also allow me to write the server-side data APIs quickly and easily.
+* Bundled JS Size: Because Svelte runs as a compiler, it’s able to build and include only the code that your applications needs, making the compiled bundle much smaller than a React application.
+[]
+{}
+
+If you’re interested in learning more about Svelte, there are many <a href="https://svelte.dev/tutorial/basics" target="_blank" rel="noopener noreferrer">tutorials to help you get started</a>.
+
+## Lessons Learned
+
+### Load Test
 
 The biggest problem we saw on election night was that the site was down for ~1 hour due to high traffic. Specifically, it wasn’t the servers on our end that could not take the traffic, it was our usage of Google Sheets that caused Google to lock our google spreadsheet when the flow of traffic became too large. After Google locked out requests to the spreadsheet, our system started responding to downstream users with 500 errors, causing the entire site to be inoperable.
 
 The solution was to first disconnect the spreadsheet from our services, which brought both our service and the google spreadsheet back online. Then, we implemented a quick function that would prevent the service from requesting data from the google spreadsheet so often. This brought everything back online.
 
 The lesson here is that, unless you fully load test your entire system before the election, you never know what problems will be caused when traffic increases by a few orders of magnitude. Often, third-party services such as Google Docs will have their own unwritten throughput and bandwidth limits.
-Have a Clear Incident Response Plan
+
+### Have a Clear Incident Response Plan
 
 No matter how much planning you do in preparation of the big day, incidents are always likely to happen and things will never go exactly according to plan. That said, after you’ve made all the preparation you can possibly make, the next important thing to plan for is how to respond when things do not go as plan. In our case, by dividing up responsibilities we had a basic level of responsibilities when things went awry, but it would have been more advantageous to rehearse a few scenarios.
 

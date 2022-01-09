@@ -101,7 +101,7 @@
 <HomeDivider />
 
 <div class="image-wrap">
-  <a href={slug} rel=prefetch>
+  <a href="/{slug}" rel=prefetch>
     <img
       class="image"
       src={featureImage || '/cover-default.jpg'}

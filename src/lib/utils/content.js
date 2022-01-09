@@ -1,6 +1,7 @@
 import fs from 'fs';
 import archieml from 'archieml';
 import * as d3 from 'd3';
+import Content from '$lib/components/Content.svelte';
 
 // The base content directory that are ArchieML files are hosted in
 export const contentDir = 'content';
@@ -34,59 +35,72 @@ const listIncludeFields = ['title', 'publishDate', 'isPage', 'description', 'fea
  *
  * @returns {*}
  */
-export const allContentList = () => fs.readdirSync(contentDir)
-  // filter out files that start with underscores
-  .filter((d) => d.indexOf('__') !== 0)
+export const allContentList = (props) => {
+  // Process the prop options
+  const { includeAllContent = false, renderContentToHTML = false } = props || {};
 
-  // Map the filename to actual objects
-  .map((fileName) => {
-    // Read the ArchieML file into a UTF-8 string
-    const aml = fs.readFileSync(`${contentDir}/${fileName}`, 'utf8');
+  return fs.readdirSync(contentDir)
+    // filter out files that start with underscores
+    .filter((d) => d.indexOf('__') !== 0)
 
-    // Parse the ArchieML file
-    const amlObj = archieml.load(aml);
+    // Map the filename to actual objects
+    .map((fileName) => {
+      // Read the ArchieML file into a UTF-8 string
+      const aml = fs.readFileSync(`${contentDir}/${fileName}`, 'utf8');
 
-    // Return an object representing this entry
-    return {
-      // Only include the fields specified in listIncludeFields so that
-      // our payload doesn't explode.
-      ...(listIncludeFields.reduce(
-        (acc, field) => ({ ...acc, [field]: amlObj[field] }), {},
-      )),
-      // slug and locale
-      ...parseFileName(fileName),
-    };
-  })
+      // Parse the ArchieML file
+      const amlObj = archieml.load(aml);
 
-  // convert from [{slug: slug, locale: en, ...}, {slug: slug, locale: en, ...}] to
-  // [{slug: slug, en:..., zh:...}]
-  .reduce(
-    (list, entry) => {
-      // Copy list to manipulate
-      let retList = list;
+      // Return an object representing this entry
+      return {
+        // if the includeAllContent argument is provided, return the amlObj.
+        // Otherwise, only include the fields specified in listIncludeFields
+        // so that our payload doesn't explode
+        ...(includeAllContent ? amlObj : listIncludeFields.reduce(
+          (acc, field) => ({ ...acc, [field]: amlObj[field] }), {},
+        )),
+        // If we want to render content to HTML instead of using a JSON object
+        ...(renderContentToHTML
+          ? {
+            content: Content.render({ content: amlObj.content, baseURL: 'https://diplateevo.com' })
+              .html.replace(/<!--[\s\S]*?-->/g, '').replace(/[\n\r]/g, ''),
+          }
+          : {}),
+        // slug and locale
+        ...parseFileName(fileName),
+      };
+    })
 
-      // See if this slug already exists
-      const existingIndex = list.findIndex((f) => f.slug === entry.slug);
+    // convert from [{slug: slug, locale: en, ...}, {slug: slug, locale: en, ...}] to
+    // [{slug: slug, en:..., zh:...}]
+    .reduce(
+      (list, entry) => {
+        // Copy list to manipulate
+        let retList = list;
 
-      // If it already exists, we add to the existing one
-      if (existingIndex >= 0) retList[existingIndex][entry.locale] = entry;
-      // If it does not exist, we add a new entry
-      else {
-        retList = [...retList, {
-          slug: entry.slug,
-          isPage: !!entry.isPage,
-          publishDate: entry.publishDate,
-          [entry.locale]: entry,
-        }];
-      }
+        // See if this slug already exists
+        const existingIndex = list.findIndex((f) => f.slug === entry.slug);
 
-      return retList;
-    },
-    [],
-  )
+        // If it already exists, we add to the existing one
+        if (existingIndex >= 0) retList[existingIndex][entry.locale] = entry;
+        // If it does not exist, we add a new entry
+        else {
+          retList = [...retList, {
+            slug: entry.slug,
+            isPage: !!entry.isPage,
+            publishDate: entry.publishDate,
+            [entry.locale]: entry,
+          }];
+        }
 
-  // Sort by publishDate
-  .sort((a, b) => {
-    const dateParse = d3.timeParse('%Y/%m/%d');
-    return dateParse(b.publishDate) - dateParse(a.publishDate);
-  });
+        return retList;
+      },
+      [],
+    )
+
+    // Sort by publishDate
+    .sort((a, b) => {
+      const dateParse = d3.timeParse('%Y/%m/%d');
+      return dateParse(b.publishDate) - dateParse(a.publishDate);
+    });
+};

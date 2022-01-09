@@ -7,19 +7,25 @@ featureImage: /images/2020/12/IMG_20151029_113755.jpg
 [+content]
 Although it was very different from internships I was used to, one common point was spending most of my days thinking about how technology is used.
 
-I had hardly finished my last internship at Ooyala before I found myself on a plane to Washington DC. Still fresh on the habitual stand ups that comprised the agile development cycle, starting work immediately after my internship in Santa Clara was a culture shock. Thanks to my friend Erik, I would have the chance to work in the Department of Education Office of Educational Technology under the leadership of Richard Culatta.
+I had hardly finished my last internship at Ooyala before I found myself on a plane to Washington DC. Still fresh on the habitual stand ups that comprised the agile development cycle, starting work immediately after my internship in Santa Clara was a culture shock. Thanks to my friend <a href="https://twitter.com/eriklaes" target="_blank" rel="noopener noreferrer">Erik</a>, I would have the chance to work in the Department of Education <a href="http://tech.ed.gov/" target="_blank" rel="noopener noreferrer">Office of Educational Technology</a> under the leadership of Richard Culatta.
 
 Washington DC is not for the faint of heart. Standing on the left side of an escalator is a behavior that will result in many anxious people trying to squeeze by you. It makes you wonder what the person next to you on the metro does on a daily basis, even though they are too absorbed in their own worlds to exchange any words.
 
 Over the summer, as a part of my birthday celebrations in New York, I found my way down to DC to scope out what things would be like. So in this aspect, I was not a newcomer to DC.
-lyndon-baines-johnson-department-of-education-building-photo-thanks-to
+
+{.image}
+src: /images/2020/12/lyndon-baines-johnson-department-of-education-building-photo-thanks-to.jpg
+className: full
+alt: Photo of the Department of Education
+{}
 
 But as I approached the department of education on my first day, I noticed details that I hadn’t on my first visit a month earlier. The Lyndon Baines Johnson Department of Education sits in a plaza that is spacious in the front with trees planted in little squares left intentionally unpaved. The building itself looks modern and unimpressive when compared to the architecture of the US Capitol or the Library of Congress. It is long, uniform, and has large vertical windows spanning the face of the building.
 
 Once inside the building, it is drab, sterile, and feels like not much has changed since the building was originally erected – until you walk into the Office of Educational Technology. The Office of Educational Technology (OET for short), led by Richard Culatta and Joseph South, has a modern feel to it. In many ways, it would be hard for someone to tell the difference between the OET office and an average tech company.
 
 But that’s about where similarities between Silicon Valley and Washington DC end.
-Entering a New Bubble
+
+## Entering a New Bubble
 
 Every major city that provides a unique contribution to the world is a bubble to some degree. Whether this be San Francisco, New York, Washington DC, or anywhere else, living anywhere in the world means that you exist inside of some sort of bubble. Therefore, the best way to see outside a bubble is to experience as many of them as you possibly can.
 
@@ -28,7 +34,8 @@ At one point in my time in DC, while attempting eating at a Chinese restaurant t
 But initially, all of the speculations that warranted so much buzz and conversation in DC felt exactly the same as the way people talked about their favorite sports team: energetic but unproductive. Over time, I would start to find myself engaged in more of these conversations.
 
 I’ve come to realize that many of these commonplace conversations to governmental systems in DC fulfill a role that the private sector does not, sometimes with side effects that I will discuss later in this piece. As much as bubbles can be a real blind spot, they often also center around a valuable lesson for other places to learn from.
-Finding My Feet
+
+## Finding My Feet
 
 Much like my first week at Ooyala, I found my first week working in Washington DC a very challenging one. It just so happened that I joined on a week where both the director of my office and the deputy were both out for the whole week, leaving me trying my best to keep myself occupied for the first week on my own by learning about all the different things that the office was working on.
 
@@ -37,7 +44,8 @@ One of the biggest surprises of the first week was the management structure of t
 And because government revolves around doing things for citizens and policies that deal with human behavior, the level of soft skills required to do well in government is higher than that of engineering. In other words, I had to learn how to manage professional relationships in a way that was different from how I previously did, even as a startup founder. Within all the projects that my office was working on, all of them depended on the relationships and buy-in of the districts, companies, and other organizations that we had relationships with.
 
 Pretty quickly, I found out about the projects that I would spend most of my time at OET focusing on. Specifically, I would get to work on open education and the Learning Registry, a web version of the NETP, and a White House computer science tech jam for CS Education Week.
-Open Education
+
+## Open Education
 
 Today, over $8 billion is spent on paper textbooks annually in the United States. This is a large amount of money that is wasted every year to keep textbooks up to date. But with today’s mobile devices and internet connectivity, it is time we challenge the notion of paying an annual price to keep textbooks up to date.
 
@@ -47,42 +55,53 @@ The Learning Registry, a repository of open educational resources developed by O
 
 The concept of the Learning Registry seemed simple enough, but as i quickly began to realize, the devil is in the details. For instance, in order for resources from multiple publishers to be easily used between each other, they must use a similar metadata structure in order for the resources to be useful. In the early days of the Learning Registry, there were many metadata schemas that were used to define a Learning Resource. However, realizing the trouble of using many different kinds of metadata, LRMI has become the widely accepted format for the Learning Registry.
 
-I won’t bore you with the details of the Learning Registry, but feel free to check out the website to learn more.
+I won’t bore you with the details of the Learning Registry, but feel free to <a href="https://learningregistry.org/" target="_blank" rel="noopener noreferrer">check out the website to learn more</a>.
 
-Additionally, as a part of the push for more openly-licensed materials to benefit schools, OET released a proposed rule for funds granted by the Department of Education to create content. Specifically, if the rule were implemented, grant recipients would be required to openly license anything funded by the Department of Education. Check out the NPRM here.
-National Education Technology Plan
+Additionally, as a part of the push for more openly-licensed materials to benefit schools, OET released a proposed rule for funds granted by the Department of Education to create content. Specifically, if the rule were implemented, grant recipients would be required to openly license anything funded by the Department of Education.
 
-Every five years, the Department of Education releases a National Education Technology Plan. The plan is “the flagship educational technology policy document for the United States.” To me, the NETP represents the future of what technology can do for students, teachers, administrators, and education as a whole. The 2016 NETP focuses on aspects of equity, leadership, teaching, infrastructure and more to set the vision for how technology can catalyze transformational learning experiences.
-DigitalDivide_Infographic
+## National Education Technology Plan
+
+Every five years, the Department of Education releases a <a href="https://tech.ed.gov/netp/" target="_blank" rel="noopener noreferrer">National Education Technology Plan</a>. The plan is “the flagship educational technology policy document for the United States.” To me, the NETP represents the future of what technology can do for students, teachers, administrators, and education as a whole. The 2016 NETP focuses on aspects of equity, leadership, teaching, infrastructure and more to set the vision for how technology can catalyze transformational learning experiences.
 
 Personally, I got to be involved in the creation and distribution of the NETP, learning a lot about the processes that the government has to go through in order to conduct research and release such a document to the public. My role in the NETP was coming up with a way to display the content online. This is the first NETP to have a web version, and will hopefully be built upon in future versions as technology continues to advance.
-White House Computer Science Tech Jam
+
+## White House Computer Science Tech Jam
 
 The White House Computer Science Tech Jam, an event that I had the opportunity of organizing, brought together P-6 educators, developers, and students for 10 hours, to generate ideas for how to create new tools, apps, and games for computer science education. It highlighted the need for greater collaboration between educators and developers to improve computer science education, with particular a focus on P-6 education to address early STEM biases and inequities that deter girls and minorities from pursuing STEM studies.
 
 Although we were inspired by the model of a college hackathon, what resulted was unlike any hackathon I had ever been to. With the focus on teachers, the Tech Jam was a place where teachers came to share their experiences in a classroom for tech companies to work with. Too often, tech creates solutions for education that they think will make a difference without working with the teachers and students who actually use the things they build. Thus, unlike the energy of competition at a hackathon, the Tech Jam was a highly collaborative day of ideation and prototyping.
-DCIM100GOPRO
 
-Teams came up with ideas ranging from a instagram for code to professional development networks between teachers and developers. Read more about CS Education Week and the Tech Jam on the White House blog.
-Notable Moments
+{.image}
+src: /images/2020/12/GOPR0025-1.jpg
+className: full
+alt: Photo from the White House Tech Jam
+{}
 
-Beyond the work that I spent my time on in Washington, it was a very eventful three months in the capitol of the United States. I had the opportunity through the UCDC program to take a class on Congress from John Lawrence (Nancy Pelosi’s former chief of staff), which gave me significant context to the things that happened.
-Arne Duncan Stepping Down
+Teams came up with ideas ranging from a instagram for code to professional development networks between teachers and developers. Read more about <a href="https://obamawhitehouse.archives.gov/blog/2015/12/08/administration-kicks-participation-computer-science-education-week" target="_blank" rel="noopener noreferrer">CS Education Week and the Tech Jam on the White House blog</a>.
+
+## Notable Moments
+
+Beyond the work that I spent my time on in Washington, it was a very eventful three months in the capitol of the United States. I had the opportunity through the UCDC program to take a class on Congress from <a href="https://johnalawrence.wordpress.com/" target="_blank" rel="noopener noreferrer">John Lawrence</a> (Nancy Pelosi’s former chief of staff), which gave me significant context to the things that happened.
+
+### Arne Duncan Stepping Down
 
 One day, the team was called into our meeting room to learn that Arne Duncan would be stepping down at the end of the year. And as a part of the farewell celebrations, stories were told of how much impact Arne’s work has had on public education in his seven years as the Secretary of Education. Even in my short time at the Department, Arne’s vision for education was palpable in the things that my team has worked and will continue to work on.
 
 And with John King succeeding Arne as the next Secretary of Education, King will be able to pick up on the work in the Department to finish the last year of the administration strong.
-Next-Gen High Schools Summit
 
-The Next-Gen High Schools Summit brought together superintendents, foundations, philanthropists, and students to talk about how to rethink the way that we teach our students. Besides announcing that $375 million in public and private funds would be available for the development of “next-gen” high schools, the summit talked about things from personalized learning, making in the classroom, and more. Check out the fact sheet for more.
-Every Student Succeeds Act
+### Next-Gen High Schools Summit
+
+The Next-Gen High Schools Summit brought together superintendents, foundations, philanthropists, and students to talk about how to rethink the way that we teach our students. Besides announcing that $375 million in public and private funds would be available for the development of “next-gen” high schools, the summit talked about things from personalized learning, making in the classroom, and more.
+
+### Every Student Succeeds Act
 
 The Every Student Succeeds Act was passed by Congress and signed into law December 10th. This act marks the end of No Child Left Behind, which was an act that mandated standardized testing for student achievement and accountability at a federal level.
 
 Every Student Succeeds (ESSA) reverts the power back to the states to keep schools accountable, putting the power back into the hands of states, which may end up with mixed results from state to state. However, assessments have become more flexible under ESSA, allowing states to use other forms of assessment beyond standardized testing and allowing for more innovative ways to assess how much students have learned.
 
-Those are only a few of the changes that will take place as a result of ESSA. Check out the full text for the whole lowdown of bedtime edu-nerd reading.
-Lessons Learned and Perspectives Gained
+Those are only a few of the changes that will take place as a result of ESSA. <a href="https://www.congress.gov/bill/114th-congress/senate-bill/1177/text" target="_blank" rel="noopener noreferrer">Check out the full text for the whole lowdown of bedtime edu-nerd reading</a>.
+
+## Lessons Learned and Perspectives Gained
 
 For most of my life prior to this experience, being civically minded was not a way that I would describe myself. I was part of the high percentage of millennials who didn’t vote in elections because I didn’t pay enough attention to know what to think. In fact, I was unsure about how much of an impact the government could have on things in my daily life.
 
@@ -95,7 +114,11 @@ This was very evident in my specific experience in education. When it comes to e
 But within the Department of Education, the focus is primarily a systems approach. The question that the Department of Education asks is “how do we use policy to change the way that districts and schools are run?” This puts more of an emphasis on the public school system, that although has it’s fair share of problems, is the best way to implement something at scale and is accessible to all people.
 
 The equity piece is the biggest differentiator between the two approaches. The public school system has to think about educating students from the bottom up, creating systems that work for everyone while the innovations coming out of Silicon Valley tend to start with small audiences of very select students. Thus, when working in government, your work receives a large amount of visibility by default, which also makes the nature of the work much more big picture.
-IMG_20151212_145017
+
+{.image}
+src: /images/2020/12/IMG_20151212_145017.jpg
+alt: Photo with Arne Duncan
+{}
 
 It was hard to leave on my last day, maybe because something about the nature of an unpaid internship makes you more attached to your work, but I left with a proud sense of knowing that there are incredible people doing incredible work to improve the system within. So to everyone who made my internship awesome, thank you.
 []

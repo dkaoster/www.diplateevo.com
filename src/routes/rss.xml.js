@@ -1,20 +1,22 @@
 import { Feed } from 'feed';
 import * as d3 from 'd3';
-import { get as getData } from './content/posts-[page].json.js';
+import { allContentList } from '$lib/utils/content';
+import { defaultLocale } from '$lib/stores/locale';
 
 /**
  * RSS route for diplateevo.
  *
  * @returns {Promise<{headers: {"Content-Type": string}, body: string}>}
  */
-export async function get() {
-  const allContent = await getData();
-
-  const posts = allContent.body.filter((d) => !d.isPage);
+export function get() {
+  const posts = allContentList({ includeAllContent: true, renderContentToHTML: true })
+    .filter((entry) => !entry.isPage)
+    .map((d) => d[defaultLocale])
+    .slice(0, 5);
 
   const feed = new Feed({
-    title: 'siteData.response.title',
-    description: 'siteData.response.description',
+    title: 'Diplateevo',
+    description: 'A blog, by Daniel Kao',
     id: 'https://www.diplateevo.com/',
     link: 'https://www.diplateevo.com/',
     image: 'https://www.diplateevo.com/cover-default.jpg',
@@ -26,15 +28,15 @@ export async function get() {
   posts.forEach((post) => {
     feed.addItem({
       title: post.title,
-      id: (post.url),
-      link: (post.url),
-      description: post.excerpt,
-      content: (post.html),
+      id: post.slug,
+      link: post.redirect || `https://www.diplateevo.com/${post.slug}`,
+      description: post.description,
+      content: post.content,
       date: d3.timeParse('%Y/%m/%d')(post.publishDate),
-      image: (post.feature_image),
+      image: `https://www.diplateevo.com${post.featureImage}`,
     });
   });
 
   // Set headers and return
-  return { body: feed.rss2(), headers: { 'Content-Type': 'application/rss+xml; charset=UTF-8' } }
+  return { body: feed.rss2(), headers: { 'Content-Type': 'application/rss+xml; charset=UTF-8' } };
 }

@@ -8,8 +8,6 @@
   export let pages = [];
 
   const theme = getContext('theme');
-
-  let height;
 </script>
 
 <style lang="scss">
@@ -34,12 +32,12 @@
 
   .fill {
     background-color: var(--background-color);
-    opacity: 0.85;
+    opacity: 0.95;
     position: absolute;
     left: 0;
     right: 0;
-    backdrop-filter: blur(5px);
     transition: all 0.5s;
+    height: 72px;
   }
 
   .logo-link {
@@ -103,6 +101,10 @@
   }
 
   @media screen and (max-width: $device-small) {
+    .fill {
+      height: 48px;
+    }
+
     .logo {
       width: 48px;
       height: 48px;
@@ -120,8 +122,8 @@
 </style>
 
 <nav class="wrapper">
-  <div class="fill" style="height: {height}px;" />
-  <div class="header" bind:clientHeight={height}>
+  <div class="fill" />
+  <div class="header">
     <a class="logo-link" href="/" rel=prefetch>
       <div class="logo">高</div>
     </a>

@@ -1,7 +1,8 @@
 title: Looking to 2022
 publishDate: 2021/02/01
 author: Daniel Kao
-description: This is a test
+description: Why I'm reviving this blog in 2022.
+featureImage: /images/2022/01/cover-2022.jpg
 
 [+content]
 When I started this blog back in high school, a classmate of mine kindly gave me access to his web host and a Wordpress sandbox that I could do whatever I wanted with. I started hacking my way around HTML, CSS, PHP, and MySQL, finding a way to break this website almost weekly and trying out as many Wordpress plugins and themes as I possibly could. I flouted my parents' computer use curfew by waking up at six in the morning in order to play with my website (or computer games), and even the name "diplateevo" came out of an experimental mindset of rearranging random letters until I got something unique.

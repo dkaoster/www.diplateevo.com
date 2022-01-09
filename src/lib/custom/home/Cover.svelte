@@ -118,19 +118,22 @@
         class="link"
         class:active={currentHover === 'gj'}
         on:mouseover={() => { currentHover = 'gj'; }}
-        on:click={(evt) => { currentHover = 'gj'; evt.stopPropagation(); }}
+        on:click|stopPropagation={() => { currentHover = 'gj'; }}
+        on:focus|stopPropagation={() => { currentHover = 'gj'; }}
       >graphics journalist</span> at commonwealth magazine,
       <span
         class="link"
         class:active={currentHover === 'tc'}
         on:mouseover={() => { currentHover = 'tc'; }}
-        on:click={(evt) => { currentHover = 'tc'; evt.stopPropagation(); }}
+        on:click|stopPropagation={() => { currentHover = 'tc'; }}
+        on:focus|stopPropagation={() => { currentHover = 'tc'; }}
       >taiwanese-californian</span>, currently living in
       <span
         class="link"
         class:active={currentHover === 'tw'}
         on:mouseover={() => { currentHover = 'tw'; }}
-        on:click={(evt) => { currentHover = 'tw'; evt.stopPropagation(); }}
+        on:click|stopPropagation={() => { currentHover = 'tw'; }}
+        on:focus|stopPropagation={() => { currentHover = 'tw'; }}
       >taipei, taiwan</span>.
     </div>
   </div>

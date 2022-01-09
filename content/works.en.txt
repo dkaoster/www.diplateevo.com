@@ -9,12 +9,18 @@ gridBreak: break
 {.portfolioItem}
 title: Building a Realtime Election Tracker
 featureImage: /images/2020/08/Artboard-1@768w.jpg
-slug: building-a-realtime-election-tracker-for-taiwans-2020-election/
+url: /building-a-realtime-election-tracker-for-taiwans-2020-election
 {}
 
 {.portfolioItem}
-title: Building a Realtime Election Tracker
-featureImage: /images/2020/08/Artboard-1@768w.jpg
-slug: building-a-realtime-election-tracker-for-taiwans-2020-election/
+title: Taiwan Elections 2018, Visualized
+featureImage: /images/2020/10/taiwan@768w.jpg
+url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
+{}
+
+{.portfolioItem}
+title: Intro to HCI Notes
+featureImage: /images/2020/10/2015-01-31-03.32.46-1@768w.jpg
+url: /intro-to-hci-lecture-1-needfinding
 {}
 []

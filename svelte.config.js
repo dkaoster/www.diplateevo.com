@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import genImageSizes from 'rollup-generate-image-sizes';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -25,7 +26,6 @@ export default {
           size: [1920, 1400, 1024, 768, 480],
           outputFormat: ['jpg', 'webp'],
           forceUpscale: true,
-          skipExisting: dev,
         }),
       ],
     }),

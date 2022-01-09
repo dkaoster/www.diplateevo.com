@@ -1,7 +1,6 @@
 <script context="module">
   export async function load({ fetch }) {
-    // TODO sitemap and RSS
-    // fetch('sitemap.xml');
+    fetch('/rss.xml');
     const { posts = [], pagination = {} } = await fetch('/content/posts-1.json').then((res) => res.json());
     return { props: { posts, pagination } };
   }

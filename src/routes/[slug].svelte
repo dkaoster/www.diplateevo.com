@@ -37,6 +37,7 @@
   $: featureImage = currLocaleData.featureImage;
   $: slug = currLocaleData.slug;
   $: content = currLocaleData.content;
+  $: redirect = currLocaleData.redirect;
 
   $: helmet = {
     title: metaTitle || title,
@@ -167,7 +168,11 @@
   }
 </style>
 
-<Helmet {...helmet} />
+<Helmet {...helmet}>
+  {#if redirect}
+    <meta http-equiv="Refresh" content="0; url='{redirect}'" />
+  {/if}
+</Helmet>
 
 <article class="grid-wrap" lang={currLocale} class:hide-text={!browser && isMultiLanguage}>
   <div class="grid">

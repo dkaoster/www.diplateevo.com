@@ -1,14 +1,17 @@
 <script>
+  import { getContext } from 'svelte';
+
   export let src;
   export let caption;
   export let className = '';
-  export let width = '';
+  export let width = '100%';
   export let disableSrcSet = false;
   export let alt = 'photograph';
 
+  const baseURL = getContext('baseURL') || '';
   const imageSizes = [480, 768, 1024, 1400, 1920];
 
-  $: isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0;
+  $: isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0 && !baseURL;
 
   const sizeGen = (srcString, size, format = 'jpg') => {
     const imagePathSplit = srcString.split('.');
@@ -57,14 +60,14 @@
               media="(max-width: {size}px) {
                 size < 512 ? ' and (max-resolution: 1dppx)' : ''
               }"
-              srcset={sizeGen(src, size, format)}
+              srcset={sizeGen(`${baseURL}${src}`, size, format)}
               type="image/{{ jpg: 'jpeg', webp: 'webp' }[format]}"
             >
           {/each}
         {/each}
       {/if}
 
-      <img loading="lazy" {alt} {src} {width} />
+      <img loading="lazy" {alt} src="{baseURL}{src}" {width} />
     </picture>
   {/if}
 

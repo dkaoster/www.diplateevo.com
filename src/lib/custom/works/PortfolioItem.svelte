@@ -1,7 +1,7 @@
 <script>
   export let title;
   export let featureImage;
-  export let slug;
+  export let url;
 </script>
 
 <style lang="scss">
@@ -68,7 +68,7 @@
 </style>
 
 <div class="work">
-  <a class="content" href="/{slug}" rel=prefetch>
+  <a class="content" href={url} rel=prefetch>
     <h2>{title}</h2>
   </a>
 

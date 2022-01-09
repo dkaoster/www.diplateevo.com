@@ -1,17 +1,16 @@
 <script>
+  import { getContext } from 'svelte';
+
   export let width;
   export let height;
 
   const graphicWidth = 580;
   const graphicHeight = 550;
 
+  const theme = getContext('theme');
+
   // root element
   let el;
-
-  // Light or dark mode
-  $: color = (el
-    && parseInt(getComputedStyle(el).getPropertyValue('--dark-mode'), 10)
-    && 'white') || 'black';
 
   // Point Radius
   $: pointRadius = prioritizeWidth ? ((1 / width) * 800) + 1 : 2;
@@ -53,7 +52,7 @@
   <img
     class="taipei-map"
     class:prioritizeWidth
-    src="covers/taipei_streets_{color}.svg"
+    src="covers/taipei_streets_{($theme === 'dark') ? 'white' : 'black'}.svg"
     alt="Taipei Map"
   >
 </div>
