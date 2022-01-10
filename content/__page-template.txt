@@ -1,0 +1,10 @@
+title: Page Title
+publishDate: YYYY/MM/DD
+author: Daniel Kao
+description:
+featureImage:
+isPage: true
+
+[+content]
+This is a page template.
+[]
