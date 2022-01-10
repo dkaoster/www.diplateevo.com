@@ -9,7 +9,8 @@
   export let alt = 'photograph';
 
   const baseURL = getContext('baseURL') || '';
-  const imageSizes = [480, 768, 1024, 1400, 1920];
+  const imageSizes = [768, 1920];
+  const imageFormats = ['webp', 'jpg'];
 
   $: isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0 && !baseURL;
 
@@ -54,12 +55,10 @@
   {#if typeof src === 'string'}
     <picture>
       {#if isOwnImage && !disableSrcSet}
-        {#each ['webp', 'jpg'] as format}
+        {#each imageFormats as format}
           {#each imageSizes as size}
             <source
-              media="(max-width: {size}px) {
-                size < 512 ? ' and (max-resolution: 1dppx)' : ''
-              }"
+              media="(max-width: {size}px)"
               srcset={sizeGen(`${baseURL}${src}`, size, format)}
               type="image/{{ jpg: 'jpeg', webp: 'webp' }[format]}"
             >

@@ -23,7 +23,7 @@ export default {
           hook: 'buildStart',
           dir: './static/images',
           inputFormat: ['jpg', 'jpeg', 'png', 'gif'],
-          size: [1920, 1400, 1024, 768, 480],
+          size: [1920, 768],
           outputFormat: ['jpg', 'webp'],
           forceUpscale: true,
         }),
