@@ -13,7 +13,7 @@ export default {
       pages: 'build',
       assets: 'build',
     }),
-    trailingSlash: 'always',
+    trailingSlash: 'never',
 
     vite: () => ({
       plugins: [

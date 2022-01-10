@@ -72,7 +72,7 @@ The White House Computer Science Tech Jam, an event that I had the opportunity o
 Although we were inspired by the model of a college hackathon, what resulted was unlike any hackathon I had ever been to. With the focus on teachers, the Tech Jam was a place where teachers came to share their experiences in a classroom for tech companies to work with. Too often, tech creates solutions for education that they think will make a difference without working with the teachers and students who actually use the things they build. Thus, unlike the energy of competition at a hackathon, the Tech Jam was a highly collaborative day of ideation and prototyping.
 
 {.image}
-src: /images/2020/12/GOPR0025-1.jpg
+src: /images/2020/12/GOPR0025.jpg
 className: full
 alt: Photo from the White House Tech Jam
 {}
