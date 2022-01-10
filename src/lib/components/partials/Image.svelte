@@ -9,8 +9,8 @@
   export let alt = 'photograph';
 
   const baseURL = getContext('baseURL') || '';
-  const imageSizes = [768, 1920];
-  const imageFormats = ['webp', 'jpg'];
+  const imageSizes = [768, 1280];
+  const imageFormats = ['jpg'];
 
   $: isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0 && !baseURL;
 
