@@ -1,5 +1,6 @@
 <script>
   import { getContext } from 'svelte';
+  import { sizeGen } from '$lib/utils/image';
 
   export let src;
   export let caption;
@@ -13,12 +14,6 @@
   const imageFormats = ['jpg'];
 
   $: isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0 && !baseURL;
-
-  const sizeGen = (srcString, size, format = 'jpg') => {
-    const imagePathSplit = srcString.split('.');
-    const imagePathPre = imagePathSplit.slice(0, -1).join('.');
-    return `${imagePathPre}@${size}w.${format}`;
-  };
 </script>
 
 <style lang="scss">

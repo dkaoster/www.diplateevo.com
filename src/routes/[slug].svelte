@@ -4,7 +4,7 @@
     const data = await fetch(`/content/${slug}.json`).then((res) => res.json());
 
     // Return the data for this slug
-    return (data) ? { props: { data } } : { status: 404 };
+    return (Object.keys(data).length) ? { props: { data } } : { status: 404 };
   }
 </script>
 

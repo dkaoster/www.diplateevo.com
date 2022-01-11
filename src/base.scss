@@ -68,6 +68,11 @@ $device-medium: 1024px;
   @media screen and (max-width: $device-medium) { font-size: 1.6em }
 }
 
+:global(h3) {
+  font-size: 1.4em;
+  @media screen and (max-width: $device-medium) { font-size: 1.2em }
+}
+
 :global(p, code, aside, blockquote, li) {
   font-family: Georgia, 'Noto Sans TC', serif;
 

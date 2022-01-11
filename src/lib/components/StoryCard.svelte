@@ -1,5 +1,6 @@
 <script>
   import * as d3 from 'd3';
+  import { sizeGen } from '$lib/utils/image';
 
   import HomeDivider from './HomeDivider.svelte';
 
@@ -104,7 +105,7 @@
   <a href="/{slug}" rel=prefetch>
     <img
       class="image"
-      src={featureImage || '/cover-default.jpg'}
+      src={(featureImage && sizeGen(featureImage, 768)) || '/cover-default.jpg'}
       alt="Cover"
     >
   </a>

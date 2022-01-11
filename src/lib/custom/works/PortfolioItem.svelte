@@ -1,4 +1,6 @@
 <script>
+  import { sizeGen } from '$lib/utils/image';
+
   export let title;
   export let featureImage;
   export let url;
@@ -20,7 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
-    min-height: 100%;
+    height: 100%;
     transition: 0.2s;
     pointer-events: none;
   }
@@ -74,7 +76,7 @@
 
   <img
     class="image"
-    src={featureImage || '/cover-default.jpg'}
+    src={(featureImage && sizeGen(featureImage, 768)) || '/cover-default.jpg'}
     alt="Cover"
   >
 </div>
