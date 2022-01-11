@@ -1,5 +1,6 @@
 <script>
   import * as d3 from 'd3';
+  import { browser } from '$app/env';
   import { sizeGen } from '$lib/utils/image';
 
   import HomeDivider from './HomeDivider.svelte';
@@ -9,6 +10,8 @@
   export let description;
   export let publishDate;
   export let slug;
+
+  $: imageUrl = (browser && featureImage) ? sizeGen(featureImage, 768) : '/cover-default.jpg';
 </script>
 
 <style lang="scss">
@@ -103,11 +106,7 @@
 
 <div class="image-wrap">
   <a href="/{slug}" rel=prefetch>
-    <img
-      class="image"
-      src={(featureImage && sizeGen(featureImage, 768)) || '/cover-default.jpg'}
-      alt="Cover"
-    >
+    <img class="image" src={imageUrl} alt="Cover" loading="lazy">
   </a>
 </div>
 

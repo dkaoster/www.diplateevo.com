@@ -1,9 +1,12 @@
 <script>
   import { sizeGen } from '$lib/utils/image';
+  import { browser } from '$app/env';
 
   export let title;
   export let featureImage;
   export let url;
+
+  $: imageUrl = (browser && featureImage) ? sizeGen(featureImage, 768) : '/cover-default.jpg';
 </script>
 
 <style lang="scss">
@@ -74,9 +77,5 @@
     <h2>{title}</h2>
   </a>
 
-  <img
-    class="image"
-    src={(featureImage && sizeGen(featureImage, 768)) || '/cover-default.jpg'}
-    alt="Cover"
-  >
+  <img class="image" src={imageUrl} alt="Cover" loading="lazy">
 </div>
