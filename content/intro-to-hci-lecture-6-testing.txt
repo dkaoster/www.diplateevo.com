@@ -178,7 +178,7 @@ To accurately determine whether we can reject the null hypothesis, or the defaul
 Therefore, if 20 flips of a coin resulted in 13 heads and we have a p-value less than 0.05, we have:
 
 {.image}
-src: /images/2021/01/latex--1-.jpg
+src: /images/2021/01/latex--1-.png
 alt: \frac{(13 - 10)^{2}}{10} + \frac{(7 - 10)^{2}}{10} = 1.8
 width: 300
 {}
@@ -192,7 +192,7 @@ However, if we flipped the coin 60 times and resulted in 39 heads, the same rati
 Chi-Squared testing is valuable because it doesn’t just apply to coins, but also applies to click through rates on websites. Let’s say that a website has a button labeled “sign up”, and 10% of visitors click the button. To try to improve traffic, designers change the button to “learn more”, and start gathering data. Over a week, there were 1000 visitors to the site, 118 of which clicked the “learn more” button. Running this data through the formula gives us the follow chi-squared value:
 
 {.image}
-src: /images/2021/01/latex--2-.jpg
+src: /images/2021/01/latex--2-.png
 alt: \frac{(118 - 100)^{2}}{100} + \frac{(882 - 900)^{2}}{900} = 4.01
 width: 300
 {}
