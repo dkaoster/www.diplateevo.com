@@ -6,6 +6,7 @@
   export let featureImage;
   export let url;
 
+  $: isOwnUrl = (typeof url === 'string') && url.indexOf('https://') !== 0;
   $: imageUrl = (browser && featureImage) ? sizeGen(featureImage, 768) : '/cover-default.jpg';
 </script>
 
@@ -64,7 +65,7 @@
     .content {
       padding: 10px;
 
-      h2 {
+      h3 {
         margin: 0;
         font-size: 1.3em;
       }
@@ -73,8 +74,13 @@
 </style>
 
 <div class="work">
-  <a class="content" href={url} rel=prefetch>
-    <h2>{title}</h2>
+  <a
+    class="content"
+    href={url}
+    target={isOwnUrl ? '_self' : '_blank'}
+    rel={isOwnUrl ? '' : 'noopener noreferrer'}
+  >
+    <h3>{title}</h3>
   </a>
 
   <img class="image" src={imageUrl} alt="Cover" loading="lazy">

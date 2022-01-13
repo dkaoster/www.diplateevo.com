@@ -1,18 +1,18 @@
-title: My Projects
+title: 我的作品集
 author: Daniel Kao
 description: A few selected works and write-ups of projects worth sharing.
 isPage: true
 
 [+content]
-A few selected works and write-ups of projects worth sharing. My portfolio largely consists of javascript-based web projects, but occasionally will showcase other things that happen when I type on a keyboard.
+在此頁，我收集了一些我比較有趣的作品。作品主要是 javascript 為主的專案，其他的就是我打鍵盤產出的東西。
 
-## Data, Graphics, and Engineering
+## 資料、圖表和軟體
 gridBreak: break
 
 {.portfolioItem}
-title: Why the Chinese Military Has Increased Activity Near Taiwan
+title: 最危險的海峽：共機為何轉向台灣西南角？
 featureImage: /images/2022/01/taiwan-strait.jpg
-url: https://web.cw.com.tw/taiwan-strait-2021-en/
+url: https://web.cw.com.tw/taiwan-strait-2021/
 {}
 
 {.portfolioItem}
@@ -28,25 +28,25 @@ url: https://observablehq.com/@dkaoster/taiwan-map
 {}
 
 {.portfolioItem}
-title: Taiwan’s COVID-19 Outbreak
+title: 最新台灣疫情關鍵數字
 featureImage: /images/2022/01/covid-meta.jpg
-url: https://www.cw.com.tw/graphics/covid-live-updates-2021-en/
+url: https://www.cw.com.tw/graphics/covid-live-updates-2021/
 {}
 
 {.portfolioItem}
-title: The 46 Lives Lost in Taroko 0402
+title: 不能遺忘的 49 條生命——重建0402太魯閣號事故
 featureImage: /images/2022/01/taroko.jpg
 url: https://web.cw.com.tw/tra-train-crash/
 {}
 
 {.portfolioItem}
-title: Building a Realtime Election Tracker
+title: 製作台灣 2020 總統大選的筆記
 featureImage: /images/2020/08/Artboard-1.png
 url: /building-a-realtime-election-tracker-for-taiwans-2020-election
 {}
 
 {.portfolioItem}
-title: Taiwan Elections 2018, Visualized
+title: 2018 九合一選舉的視覺化
 featureImage: /images/2020/10/taiwan.jpg
 url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
 {}
@@ -54,7 +54,7 @@ url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
 gridBreak: break
 gridBreak: break
 
-## Writing and Notes
+## 其他寫作
 gridBreak: break
 
 {.portfolioItem}
