@@ -23,12 +23,15 @@ export function get() {
     favicon: 'https://www.diplateevo.com/favicon.ico',
     copyright: `Copyright ${(new Date()).getFullYear()}, Daniel Kao`,
     generator: 'SvelteKit',
+    feedLinks: {
+      atom: 'https://diplateevo.com/rss.xml',
+    },
   });
 
   posts.forEach((post) => {
     feed.addItem({
       title: post.title,
-      id: post.slug,
+      id: `https://www.diplateevo.com/${post.slug}`,
       link: post.redirect || `https://www.diplateevo.com/${post.slug}`,
       description: post.description,
       content: post.content,
