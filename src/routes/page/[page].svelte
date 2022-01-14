@@ -30,6 +30,7 @@
   $: currentLocalePosts = posts.map((d) => d[$locale.locale] || d[defaultLocale]);
   $: helmet = {
     title: (i18n[$locale.locale].page || i18n[defaultLocale].page).replace('<>', page),
+    url: `https://www.diplateevo.com/page/${page}`,
   };
 </script>
 

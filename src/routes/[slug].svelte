@@ -44,7 +44,7 @@
     image: featureImage,
     description,
     type: 'article',
-    url: `https://www.diplateevo.com/${slug}/`,
+    url: `https://www.diplateevo.com/${slug}`,
   };
 </script>
 

@@ -18,7 +18,10 @@
 
   $: locale = getContext('locale');
   $: currentLocalePosts = posts.map((d) => d[$locale.locale] || d[defaultLocale]);
-  $: helmet = { title: i18n[$locale.locale].home || i18n[defaultLocale].home };
+  $: helmet = {
+    title: i18n[$locale.locale].home || i18n[defaultLocale].home,
+    url: 'https://www.diplateevo.com',
+  };
 </script>
 
 <Helmet {...helmet} />
