@@ -4,7 +4,7 @@
         <title>Diplateevo</title>
         <link>https://www.diplateevo.com/</link>
         <description>A blog, by Daniel Kao</description>
-        <lastBuildDate>Fri, 14 Jan 2022 14:48:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Jan 2022 14:55:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>SvelteKit</generator>
         <image>
@@ -13,7 +13,7 @@
             <link>https://www.diplateevo.com/</link>
         </image>
         <copyright>Copyright 2022, Daniel Kao</copyright>
-        <atom:link href="https://diplateevo.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://www.diplateevo.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[I'm Reviving this Blog in 2022]]></title>
             <link>https://www.diplateevo.com/looking-to-2022</link>
