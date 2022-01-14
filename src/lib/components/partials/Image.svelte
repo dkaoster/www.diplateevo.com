@@ -1,6 +1,7 @@
 <script>
   import { getContext } from 'svelte';
   import { sizeGen } from '$lib/utils/image';
+  import { browser } from '$app/env';
 
   export let src;
   export let caption;
@@ -49,7 +50,7 @@
 <div class="image-wrap {className}">
   {#if typeof src === 'string'}
     <picture>
-      {#if isOwnImage && !disableSrcSet}
+      {#if browser && isOwnImage && !disableSrcSet}
         {#each imageFormats as format}
           {#each imageSizes as size}
             <source
