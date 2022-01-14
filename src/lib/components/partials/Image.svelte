@@ -1,7 +1,7 @@
 <script>
   import { getContext } from 'svelte';
   import { sizeGen } from '$lib/utils/image';
-  import { browser } from '$app/env';
+  import { mode } from '$app/env';
 
   export let src;
   export let caption;
@@ -10,6 +10,7 @@
   export let disableSrcSet = false;
   export let alt = 'photograph';
 
+  const websiteURL = 'https://www.diplateevo.com';
   const baseURL = getContext('baseURL') || '';
   const imageSizes = [768, 1280];
   const imageFormats = ['jpg'];
@@ -50,13 +51,13 @@
 <div class="image-wrap {className}">
   {#if typeof src === 'string'}
     <picture>
-      {#if browser && isOwnImage && !disableSrcSet}
+      {#if isOwnImage && !disableSrcSet}
         {#each imageFormats as format}
           {#each imageSizes as size}
             <source
               media="(max-width: {size}px)"
-              srcset={sizeGen(`${baseURL}${src}`, size, format)}
-              type="image/{{ jpg: 'jpeg', webp: 'webp' }[format]}"
+              srcset={`${(mode === 'production') ? websiteURL : ''}${sizeGen(`${baseURL}${src}`, size, format)}`}
+              type="image/jpeg"
             >
           {/each}
         {/each}

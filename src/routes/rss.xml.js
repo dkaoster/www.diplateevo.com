@@ -17,15 +17,13 @@ export function get() {
   const feed = new Feed({
     title: 'Diplateevo',
     description: 'A blog, by Daniel Kao',
+    feed: 'https://diplateevo.com/rss.xml',
     id: 'https://www.diplateevo.com/',
     link: 'https://www.diplateevo.com/',
     image: 'https://www.diplateevo.com/cover-default.jpg',
     favicon: 'https://www.diplateevo.com/favicon.ico',
     copyright: `Copyright ${(new Date()).getFullYear()}, Daniel Kao`,
     generator: 'SvelteKit',
-    feedLinks: {
-      atom: 'https://diplateevo.com/rss.xml',
-    },
   });
 
   posts.forEach((post) => {
