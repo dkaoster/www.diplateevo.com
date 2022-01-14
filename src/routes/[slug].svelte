@@ -43,6 +43,7 @@
     title: metaTitle || title,
     image: featureImage,
     description,
+    type: 'article',
     url: `https://www.diplateevo.com/${slug}/`,
   };
 </script>
