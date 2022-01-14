@@ -17,7 +17,7 @@ export function get() {
   const feed = new Feed({
     title: 'Diplateevo',
     description: 'A blog, by Daniel Kao',
-    feed: 'https://diplateevo.com/rss.xml',
+    feed: 'https://www.diplateevo.com/rss.xml',
     id: 'https://www.diplateevo.com/',
     link: 'https://www.diplateevo.com/',
     image: 'https://www.diplateevo.com/cover-default.jpg',
