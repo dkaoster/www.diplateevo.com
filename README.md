@@ -1,5 +1,5 @@
-# www.diplateevo.com
+# Diplateevo V3
 
-A simple static blog generator for [www.diplateevo.com](https://www.diplateevo.com) powered by svelte, sveltekit, and ArchieML.
+A simple static blog generator for [diplateevo.com](https://www.diplateevo.com) powered by Svelte, SvelteKit, and ArchieML.
 
 

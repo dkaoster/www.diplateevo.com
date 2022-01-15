@@ -2,39 +2,40 @@ import { Feed } from 'feed';
 import * as d3 from 'd3';
 import { allContentList } from '$lib/utils/content';
 import { defaultLocale } from '$lib/stores/locale';
+import siteConfig from '../site-config.js';
 
 /**
  * RSS route for diplateevo.
  *
  * @returns {Promise<{headers: {"Content-Type": string}, body: string}>}
  */
-export function get() {
+export async function get() {
   const posts = allContentList({ includeAllContent: true, renderContentToHTML: true })
     .filter((entry) => !entry.isPage)
     .map((d) => d[defaultLocale])
     .slice(0, 5);
 
   const feed = new Feed({
-    title: 'Diplateevo',
-    description: 'A blog, by Daniel Kao',
-    feed: 'https://www.diplateevo.com/rss.xml',
-    id: 'https://www.diplateevo.com/',
-    link: 'https://www.diplateevo.com/',
-    image: 'https://www.diplateevo.com/cover-default.jpg',
-    favicon: 'https://www.diplateevo.com/favicon.ico',
-    copyright: `Copyright ${(new Date()).getFullYear()}, Daniel Kao`,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    feed: `${siteConfig.baseURL}/rss.xml`,
+    id: siteConfig.baseURL,
+    link: siteConfig.baseURL,
+    image: `${siteConfig.baseURL}/cover-default.jpg`,
+    favicon: `${siteConfig.baseURL}/favicon.ico`,
+    copyright: `Copyright ${(new Date()).getFullYear()}, ${siteConfig.title}`,
     generator: 'SvelteKit',
   });
 
   posts.forEach((post) => {
     feed.addItem({
       title: post.title,
-      id: `https://www.diplateevo.com/${post.slug}`,
-      link: post.redirect || `https://www.diplateevo.com/${post.slug}`,
+      id: `${siteConfig.baseURL}/${post.slug}`,
+      link: post.redirect || `${siteConfig.baseURL}/${post.slug}`,
       description: post.description,
       content: post.content,
       date: d3.timeParse('%Y/%m/%d')(post.publishDate),
-      image: `https://www.diplateevo.com${post.featureImage}`,
+      image: `${siteConfig.baseURL}${post.featureImage}`,
     });
   });
 

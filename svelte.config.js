@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import genImageSizes from 'rollup-generate-image-sizes';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
+import siteConfig from './src/site-config.js';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';

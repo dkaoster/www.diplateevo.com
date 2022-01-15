@@ -8,10 +8,11 @@
 
 <script>
   import { setContext } from 'svelte';
-  import { browser } from '$app/env';
+  import { browser, mode } from '$app/env';
   import { locale } from '$lib/stores/locale';
   import { theme } from '$lib/stores/theme';
   import Header from '$lib/components/Header.svelte';
+  import siteConfig from '../site-config.js';
 
   // The pages and the current path of the website to pass to the Header component
   export let pages;
@@ -28,6 +29,7 @@
   // Sets the locale context
   setContext('locale', locale);
   setContext('theme', theme);
+  setContext('siteConfig', { ...siteConfig, baseURL: (mode === 'development') ? '' : siteConfig.baseURL });
 </script>
 
 <style lang="scss">

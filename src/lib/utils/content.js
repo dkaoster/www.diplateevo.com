@@ -2,6 +2,7 @@ import fs from 'fs';
 import archieml from 'archieml';
 import * as d3 from 'd3';
 import Content from '$lib/components/Content.svelte';
+import siteConfig from '../../site-config.js';
 
 // The base content directory that are ArchieML files are hosted in
 export const contentDir = 'content';
@@ -62,7 +63,10 @@ export const allContentList = (props) => {
         // If we want to render content to HTML instead of using a JSON object
         ...(renderContentToHTML
           ? {
-            content: Content.render({ content: amlObj.content, baseURL: 'https://diplateevo.com' })
+            content: Content.render(
+              { content: amlObj.content },
+              { context: new Map([['siteConfig', siteConfig]]) },
+            )
               .html.replace(/<!--[\s\S]*?-->/g, '').replace(/[\n\r]/g, ''),
           }
           : {}),

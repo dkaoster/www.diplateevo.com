@@ -1,17 +1,11 @@
 <script>
-  import { onMount, setContext } from 'svelte';
+  import { onMount } from 'svelte';
   import { marked } from 'marked';
   import Image from './partials/Image.svelte';
   import List from './partials/List.svelte';
   import CustomContentTypes from '../custom/CustomContentTypes.svelte';
 
   export let content;
-
-  // Only used when generating RSS feeds, which cannot use relative URLs
-  export let baseURL = '';
-
-  // Sets the baseURL into a context
-  setContext('baseURL', baseURL);
 
   // Needed for first mount of content on browser, otherwise the
   // initial language locale might be wrong

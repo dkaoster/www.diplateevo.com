@@ -24,13 +24,14 @@
   export let page;
   export let posts;
   export let pagination;
-  export let locale;
 
-  $: locale = getContext('locale');
+  const locale = getContext('locale');
+  const siteConfig = getContext('siteConfig');
+
   $: currentLocalePosts = posts.map((d) => d[$locale.locale] || d[defaultLocale]);
   $: helmet = {
     title: (i18n[$locale.locale].page || i18n[defaultLocale].page).replace('<>', page),
-    url: `https://www.diplateevo.com/page/${page}`,
+    url: `${siteConfig.baseURL}/page/${page}/`,
   };
 </script>
 

@@ -21,6 +21,7 @@
   export let data;
 
   const locale = getContext('locale');
+  const siteConfig = getContext('siteConfig');
 
   // Process the locale
   $: supportedLocales = Object.keys(data);
@@ -44,7 +45,7 @@
     image: featureImage,
     description,
     type: 'article',
-    url: `https://www.diplateevo.com/${slug}`,
+    url: `${siteConfig.baseURL}/${slug}/`,
   };
 </script>
 
