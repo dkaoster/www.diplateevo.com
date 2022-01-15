@@ -8,6 +8,7 @@
   export let width = '100%';
   export let disableSrcSet = false;
   export let alt = 'photograph';
+  export let loading = 'lazy';
 
   const siteConfig = getContext('siteConfig');
   const imageSizes = [768, 1280];
@@ -61,7 +62,7 @@
         {/each}
       {/if}
 
-      <img loading="lazy" {alt} src="{siteConfig.baseURL}{src}" {width} />
+      <img {loading} {alt} src="{siteConfig.baseURL}{src}" {width} />
     </picture>
   {/if}
 

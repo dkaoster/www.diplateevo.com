@@ -189,7 +189,7 @@
         </p>
       {/if}
       <div class="cover-image">
-        <Image src={featureImage} className="cover" />
+        <Image src={featureImage} className="cover" loading="eager" />
       </div>
     {/if}
 
