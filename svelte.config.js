@@ -14,7 +14,7 @@ export default {
       pages: 'build',
       assets: 'build',
     }),
-    trailingSlash: 'never',
+    trailingSlash: 'always',
 
     vite: () => ({
       plugins: [
