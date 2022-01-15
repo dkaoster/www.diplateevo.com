@@ -53,8 +53,9 @@ $device-medium: 1024px;
 // ////////////////////////////////////////////////////////
 // Fonts
 
-:global(h1, h2, h3, h4, h5, h6) {
-  font-family: 'Roboto Mono', 'Noto Sans TC', monospace;
+:global(h1), :global(h2), :global(h3), :global(h4), :global(h5), :global(h6) {
+  font-family: 'Roboto Mono', monospace;
+  *:lang(zh) & { font-family: 'Noto Sans TC', sans-serif; }
   font-weight: bold;
 }
 
@@ -73,8 +74,9 @@ $device-medium: 1024px;
   @media screen and (max-width: $device-medium) { font-size: 1.2em }
 }
 
-:global(p, code, aside, blockquote, li) {
-  font-family: Georgia, 'Noto Sans TC', serif;
+:global(p), :global(blockquote), :global(li) {
+  font-family: Georgia, serif;
+  *:lang(zh) & { font-family: 'Noto Sans TC', sans-serif; }
 
   font-size: 1.3em;
   line-height: 1.5em;

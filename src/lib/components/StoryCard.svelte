@@ -2,7 +2,7 @@
   import * as d3 from 'd3';
   import { browser } from '$app/env';
   import { sizeGen } from '$lib/utils/image';
-
+  import { defaultLocale } from '$lib/stores/locale';
   import HomeDivider from './HomeDivider.svelte';
 
   export let title;
@@ -10,6 +10,7 @@
   export let description;
   export let publishDate;
   export let slug;
+  export let locale = defaultLocale;
 
   $: imageUrl = (browser && featureImage) ? sizeGen(featureImage, 768) : '/cover-default.jpg';
 </script>
@@ -110,7 +111,7 @@
   </a>
 </div>
 
-<div class="content">
+<div class="content" lang={locale}>
   <a href="/{slug}" rel=prefetch>
     <h2>{title}</h2>
     {#if description}<p>{description}</p>{/if}
