@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-05d7cce2.js",
+    "file": "start-a0250e23.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -16,7 +16,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-41310625.js",
+    "file": "pages/__layout.svelte-4b7203b2.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -25,7 +25,7 @@
       "_i18n-0cf6cd71.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-f922f87c.css"
+      "assets/pages/__layout.svelte-396ce920.css"
     ]
   },
   "src/routes/__error.svelte": {
@@ -41,29 +41,29 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-6b48dda4.js",
+    "file": "pages/index.svelte-f566f6ec.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-20a8f020.js",
       "_i18n-0cf6cd71.js",
-      "_StoryCardList-07fa9dc6.js",
+      "_StoryCardList-66c1b1e0.js",
       "_Helmet-b945ac86.js"
     ],
     "css": [
-      "assets/pages/index.svelte-d115e9e2.css"
+      "assets/pages/index.svelte-65fd8ca7.css"
     ]
   },
   "src/routes/page/[page].svelte": {
-    "file": "pages/page/_page_.svelte-da9d3eda.js",
+    "file": "pages/page/_page_.svelte-8c33617e.js",
     "src": "src/routes/page/[page].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-20a8f020.js",
       "_i18n-0cf6cd71.js",
-      "_StoryCardList-07fa9dc6.js",
+      "_StoryCardList-66c1b1e0.js",
       "_Helmet-b945ac86.js"
     ],
     "css": [
@@ -81,7 +81,7 @@
     ]
   },
   "src/routes/[slug].svelte": {
-    "file": "pages/_slug_.svelte-0d6573ea.js",
+    "file": "pages/_slug_.svelte-13eb63ff.js",
     "src": "src/routes/[slug].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -91,7 +91,7 @@
       "_Helmet-b945ac86.js"
     ],
     "css": [
-      "assets/pages/_slug_.svelte-e6fc5515.css"
+      "assets/pages/_slug_.svelte-385d36b9.css"
     ]
   },
   "_vendor-20a8f020.js": {
@@ -103,14 +103,15 @@
       "_vendor-20a8f020.js"
     ]
   },
-  "_StoryCardList-07fa9dc6.js": {
-    "file": "chunks/StoryCardList-07fa9dc6.js",
+  "_StoryCardList-66c1b1e0.js": {
+    "file": "chunks/StoryCardList-66c1b1e0.js",
     "imports": [
       "_vendor-20a8f020.js",
-      "_Helmet-b945ac86.js"
+      "_Helmet-b945ac86.js",
+      "_i18n-0cf6cd71.js"
     ],
     "css": [
-      "assets/StoryCardList-f6b19393.css"
+      "assets/StoryCardList-a5a9666e.css"
     ]
   },
   "_Helmet-b945ac86.js": {
