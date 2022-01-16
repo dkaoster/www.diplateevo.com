@@ -32,7 +32,7 @@
     "node-sass": "^7.0.1",
     "postcss": "^8.2.10",
     "rollup": "^2.18.1",
-    "rollup-generate-image-sizes": "0.0.14",
+    "rollup-plugin-generate-image-sizes": "0.0.16",
     "svelte": "^3.44.3",
     "svelte-preprocess": "^4.10.1",
     "svelte-sitemap": "^2.2.0"
