@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "svelte-kit dev",
+    "prebuild": "node genImageSizes.js",
     "build": "svelte-kit build",
     "postbuild": "mv build/404/index.html build/404.html && npx svelte-sitemap --domain https://diplateevo.com --ignore 404.html",
     "preview": "svelte-kit preview",

@@ -1,13 +1,12 @@
 <script>
   import { sizeGen } from '$lib/utils/image';
-  import { browser } from '$app/env';
 
   export let title;
   export let featureImage;
   export let url;
 
   $: isOwnUrl = (typeof url === 'string') && url.indexOf('https://') !== 0;
-  $: imageUrl = (browser && featureImage) ? sizeGen(featureImage, 768) : '/cover-default.jpg';
+  $: imageUrl = featureImage ? sizeGen(featureImage, 768) : '/cover-default.jpg';
 </script>
 
 <style lang="scss">

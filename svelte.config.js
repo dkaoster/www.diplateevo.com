@@ -6,6 +6,18 @@ import autoprefixer from 'autoprefixer';
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 
+// Export this result as a constant to be used below as a dev
+// plugin but also in genImageSizes.js
+export const genImageSizePlugin = genImageSizes({
+  hook: 'buildStart',
+  dir: './static/images',
+  inputFormat: ['jpg', 'jpeg', 'png', 'gif'],
+  size: [1280, 768],
+  outputFormat: ['jpg'],
+  forceUpscale: true,
+  maxParallel: 8,
+});
+
 export default {
   kit: {
     adapter: adapter({
@@ -17,17 +29,9 @@ export default {
 
     vite: () => ({
       plugins: [
-        // Generates image sizes
-        genImageSizes({
-          hook: 'buildStart',
-          dir: './static/images',
-          inputFormat: ['jpg', 'jpeg', 'png', 'gif'],
-          size: [1280, 768],
-          outputFormat: ['jpg'],
-          forceUpscale: true,
-          skipExisting: dev,
-          maxParallel: 8,
-        }),
+        // Generates image sizes, but only on dev. production mode
+        // simply uses a prebuild script to handle this.
+        dev && { ...genImageSizePlugin, load: genImageSizePlugin.buildStart },
       ],
     }),
   },

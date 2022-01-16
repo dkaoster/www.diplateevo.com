@@ -1,6 +1,5 @@
 <script>
   import * as d3 from 'd3';
-  import { browser } from '$app/env';
   import { sizeGen } from '$lib/utils/image';
   import { defaultLocale } from '$lib/stores/locale';
   import HomeDivider from './HomeDivider.svelte';
@@ -12,7 +11,7 @@
   export let slug;
   export let locale = defaultLocale;
 
-  $: imageUrl = (browser && featureImage) ? sizeGen(featureImage, 768) : '/cover-default.jpg';
+  $: imageUrl = featureImage ? sizeGen(featureImage, 768) : '/cover-default.jpg';
 </script>
 
 <style lang="scss">
