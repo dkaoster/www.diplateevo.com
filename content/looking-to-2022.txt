@@ -1,5 +1,5 @@
 title: I'm Reviving this Blog in 2022
-publishDate: 2021/01/14
+publishDate: 2022/01/14
 author: Daniel Kao
 description: Forget web3, I'm going back to web 1.0.
 featureImage: /images/2022/01/cover-2022.jpg
