@@ -49,7 +49,7 @@
   {#if typeof src === 'string'}
     {#if !disableSrcSet && crops && !baseAbsoluteURL}
       <picture>
-        {#each crops as {image, width, format}}
+        {#each crops.sort((a, b) => a.width - b.width) as {image, width, format}}
           <source
             media="(max-width: {width}px)"
             srcset={sizeGen(image, width, format)}

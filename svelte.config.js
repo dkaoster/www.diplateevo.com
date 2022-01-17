@@ -19,9 +19,6 @@ export const genImageSizePlugin = generateImageSizes({
   outputManifest: './content/images-manifest.json',
 });
 
-// Don't run generateImageSizes too often
-let lastImageGenTime = (new Date()).getTime();
-
 export default {
   kit: {
     adapter: adapter({
@@ -35,16 +32,7 @@ export default {
       plugins: [
         // Generates image sizes, but only on dev. production mode
         // simply uses a prebuild script to handle this.
-        dev && {
-          ...genImageSizePlugin,
-          load: () => {
-            // Run at most once every 15 seconds, totally a hack lol
-            if ((new Date()).getTime() > (new Date(lastImageGenTime + 15000))) {
-              genImageSizePlugin.buildStart();
-              lastImageGenTime = (new Date()).getTime();
-            }
-          },
-        },
+        dev && genImageSizePlugin,
       ],
     }),
   },
