@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import genImageSizes from 'rollup-plugin-generate-image-sizes';
+import { generateImageSizes } from 'rollup-plugin-generate-image-sizes';
 import sveltePreprocess from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 
@@ -8,15 +8,19 @@ const dev = mode === 'development';
 
 // Export this result as a constant to be used below as a dev
 // plugin but also in genImageSizes.js
-export const genImageSizePlugin = genImageSizes({
+export const genImageSizePlugin = generateImageSizes({
   hook: 'buildStart',
   dir: './static/images',
   inputFormat: ['jpg', 'jpeg', 'png', 'gif'],
-  size: [1280, 768],
-  outputFormat: ['jpg'],
-  forceUpscale: true,
+  size: [1920, 1280, 768],
+  outputFormat: 'match',
+  forceUpscale: false,
   maxParallel: 8,
+  outputManifest: './content/images-manifest.json',
 });
+
+// Don't run generateImageSizes too often
+let lastImageGenTime = (new Date()).getTime();
 
 export default {
   kit: {
@@ -31,7 +35,16 @@ export default {
       plugins: [
         // Generates image sizes, but only on dev. production mode
         // simply uses a prebuild script to handle this.
-        dev && { ...genImageSizePlugin, load: genImageSizePlugin.buildStart },
+        dev && {
+          ...genImageSizePlugin,
+          load: () => {
+            // Run at most once every 15 seconds, totally a hack lol
+            if ((new Date()).getTime() > (new Date(lastImageGenTime + 15000))) {
+              genImageSizePlugin.buildStart();
+              lastImageGenTime = (new Date()).getTime();
+            }
+          },
+        },
       ],
     }),
   },

@@ -1,6 +1,6 @@
 import { Feed } from 'feed';
 import * as d3 from 'd3';
-import { allContentList } from '$lib/utils/content';
+import { allContent } from '$lib/utils/content';
 import { defaultLocale } from '$lib/stores/locale';
 import siteConfig from '../site-config.js';
 
@@ -10,7 +10,7 @@ import siteConfig from '../site-config.js';
  * @returns {Promise<{headers: {"Content-Type": string}, body: string}>}
  */
 export async function get() {
-  const posts = allContentList({ includeAllContent: true, renderContentToHTML: true })
+  const posts = allContent({ includeAllContent: true, renderContentToHTML: true })
     .filter((entry) => !entry.isPage)
     .map((d) => d[defaultLocale])
     .slice(0, 5);

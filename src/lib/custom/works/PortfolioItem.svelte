@@ -3,10 +3,14 @@
 
   export let title;
   export let featureImage;
+  export let featureImageCrops;
   export let url;
 
   $: isOwnUrl = (typeof url === 'string') && url.indexOf('https://') !== 0;
-  $: imageUrl = featureImage ? sizeGen(featureImage, 768) : '/cover-default.jpg';
+
+  $: smallCrop = featureImageCrops && featureImageCrops.sort((a, b) => a.width - b.width)[0];
+  $: featureImageSrc = smallCrop ? sizeGen(smallCrop.image, smallCrop.width) : featureImage;
+  $: src = featureImageSrc || '/cover-default.jpg';
 </script>
 
 <style lang="scss">
@@ -82,5 +86,5 @@
     <h3>{title}</h3>
   </a>
 
-  <img class="image" src={imageUrl} alt="Cover" loading="lazy">
+  <img class="image" {src} alt="Cover" loading="lazy">
 </div>

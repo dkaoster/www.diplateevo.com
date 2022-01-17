@@ -3,6 +3,7 @@
   import { sizeGen } from '$lib/utils/image';
 
   export let src;
+  export let crops = [];
   export let caption;
   export let className = '';
   export let width = '100%';
@@ -10,11 +11,8 @@
   export let alt = 'photograph';
   export let loading = 'lazy';
 
-  const siteConfig = getContext('siteConfig');
-  const imageSizes = [768, 1280];
-  const imageFormats = ['jpg'];
-
-  $: isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0;
+  const baseAbsoluteURL = getContext('baseAbsoluteURL') || '';
+  const isOwnImage = (typeof src === 'string') && src.indexOf('https://') !== 0;
 </script>
 
 <style lang="scss">
@@ -49,26 +47,22 @@
 
 <div class="image-wrap {className}">
   {#if typeof src === 'string'}
-    <picture>
-      {#if isOwnImage && !disableSrcSet}
-        {#each imageFormats as format}
-          {#each imageSizes as size}
-            <source
-              media="(max-width: {size}px)"
-              srcset={`${siteConfig.baseURL}${sizeGen(src, size, format)}`}
-              type="image/jpeg"
-            >
-          {/each}
+    {#if !disableSrcSet && crops && !baseAbsoluteURL}
+      <picture>
+        {#each crops as {image, width, format}}
+          <source
+            media="(max-width: {width}px)"
+            srcset={sizeGen(image, width, format)}
+            type="image/{{ jpg: 'jpeg' }[format] || format}"
+          >
         {/each}
-      {/if}
 
-      <img {loading} {alt} src="{siteConfig.baseURL}{src}" {width} />
-    </picture>
+        <img {loading} {alt} {src} {width} />
+      </picture>
+    {:else}
+      <img {loading} {alt} src="{isOwnImage ? baseAbsoluteURL : ''}{src}" {width} />
+    {/if}
   {/if}
 
-  {#if caption}
-    <div class="caption">
-      {@html caption}
-    </div>
-  {/if}
+  {#if caption}<div class="caption">{@html caption}</div>{/if}
 </div>

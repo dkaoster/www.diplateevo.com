@@ -1,4 +1,4 @@
-import { allContentList } from '$lib/utils/content';
+import { allContent } from '$lib/utils/content';
 
 const postsPerPage = 5;
 
@@ -10,7 +10,7 @@ const postsPerPage = 5;
  */
 export async function get({ params }) {
   // First get all content and filter down to only posts
-  const posts = allContentList().filter((entry) => !entry.isPage);
+  const posts = allContent().filter((entry) => !entry.isPage);
 
   // Then do pagination
   const numPages = Math.ceil(posts.length / postsPerPage);

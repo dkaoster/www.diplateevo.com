@@ -8,7 +8,7 @@
 
 <script>
   import { setContext } from 'svelte';
-  import { browser, mode } from '$app/env';
+  import { browser } from '$app/env';
   import { locale } from '$lib/stores/locale';
   import { theme } from '$lib/stores/theme';
   import Header from '$lib/components/Header.svelte';
@@ -29,7 +29,7 @@
   // Sets the locale context
   setContext('locale', locale);
   setContext('theme', theme);
-  setContext('siteConfig', { ...siteConfig, baseURL: (mode === 'development') ? '' : siteConfig.baseURL });
+  setContext('siteConfig', siteConfig);
 </script>
 
 <style lang="scss">

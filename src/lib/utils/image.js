@@ -7,8 +7,9 @@
  * @param format
  * @returns {`${*}@${string}w.jpg`}
  */
-export const sizeGen = (srcString, size, format = 'jpg') => {
+export const sizeGen = (srcString, size, format) => {
   const imagePathSplit = srcString.split('.');
   const imagePathPre = imagePathSplit.slice(0, -1).join('.');
-  return `${imagePathPre}@${size}w.${format}`;
+  const defaultFormat = imagePathSplit[imagePathSplit.length - 1];
+  return `${imagePathPre}@${size}w.${format || defaultFormat}`;
 };

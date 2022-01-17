@@ -7,7 +7,6 @@ isPage: true
 {.image}
 src: /images/2020/08/prof.jpg
 width: 300
-disableSrcSet: true
 {}
 
 I spend my days crunching data and visualizing news stories for the web and mobile devices, currently for Commonwealth Magazine. Previously, I was a frontend engineer for the New York Times and The News Lens.

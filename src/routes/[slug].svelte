@@ -36,6 +36,7 @@
   $: publishDate = currLocaleData.publishDate;
   $: description = currLocaleData.description;
   $: featureImage = currLocaleData.featureImage;
+  $: featureImageCrops = currLocaleData.featureImageCrops;
   $: slug = currLocaleData.slug;
   $: content = currLocaleData.content;
   $: redirect = currLocaleData.redirect;
@@ -189,7 +190,7 @@
         </p>
       {/if}
       <div class="cover-image">
-        <Image src={featureImage} className="cover" loading="eager" />
+        <Image src={featureImage} crops={featureImageCrops} className="cover" loading="eager" />
       </div>
     {/if}
 

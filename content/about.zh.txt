@@ -7,7 +7,6 @@ isPage: true
 {.image}
 src: /images/2020/08/prof.jpg
 width: 300
-disableSrcSet: true
 {}
 
 當前，我是天下雜誌的前端工程師，專門發想以及製作新聞的視覺化。曾任在紐約時報和關鍵評論網當前端工程師。
