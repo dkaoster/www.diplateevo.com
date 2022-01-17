@@ -46,6 +46,7 @@ $device-medium: 1024px;
 }
 
 // Initial dark / light mode based off prefers-color-scheme
+:global(html) { @include light-mode-variables }
 @media (prefers-color-scheme: dark) {
   :global(html) { @include dark-mode-variables }
 }
