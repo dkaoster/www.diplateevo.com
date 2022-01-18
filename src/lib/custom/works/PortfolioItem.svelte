@@ -9,7 +9,9 @@
   $: isOwnUrl = (typeof url === 'string') && url.indexOf('https://') !== 0;
 
   $: smallCrop = featureImageCrops && featureImageCrops.sort((a, b) => a.width - b.width)[0];
-  $: featureImageSrc = smallCrop ? sizeGen(smallCrop.image, smallCrop.width) : featureImage;
+  $: featureImageSrc = smallCrop
+    ? sizeGen(smallCrop.image, smallCrop.width, smallCrop.format)
+    : featureImage;
   $: src = featureImageSrc || '/cover-default.jpg';
 </script>
 
