@@ -34,6 +34,7 @@
 
   picture, img {
     max-width: 100%;
+    color: transparent;
   }
 
   .caption {
