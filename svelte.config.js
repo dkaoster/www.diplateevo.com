@@ -15,6 +15,7 @@ export const genImageSizePlugin = generateImageSizes({
   size: [1920, 1280, 768, 640],
   outputFormat: 'jpg',
   forceUpscale: false,
+  quality: 75,
   maxParallel: 8,
   outputManifest: './content/images-manifest.json',
 });
