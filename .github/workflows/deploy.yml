@@ -28,6 +28,7 @@ jobs:
         run: |
           npm install
           npm run build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
@@ -38,3 +39,9 @@ jobs:
           FOLDER: build
           # Automatically remove deleted files from the deploy branch
           CLEAN: true
+
+      - name: Purge Cache ✅
+        uses: jakejarvis/cloudflare-purge-action@master
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
