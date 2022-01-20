@@ -15,5 +15,7 @@ I'm motivated by the idea that digital mediums can help readers better understan
 
 More broadly, I’m interested in the interplay of technology, politics, journalism, international relations, democracy, and education. My spare time is spent eating noodles, surfing, reading, and traveling.
 
+Contact me: dkao@diplateevo.com
+
 <a href="https://www.diplateevo.com/rss.xml" target="_blank">RSS</a> | <a href="https://twitter.com/Diplateevo" target="_blank" rel="noopener noreferrer">Twitter</a> | <a href="" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://observablehq.com/@dkaoster" target="_blank" rel="noopener noreferrer">Observable</a>
 []
