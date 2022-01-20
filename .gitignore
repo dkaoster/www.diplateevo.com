@@ -6,3 +6,4 @@ node_modules
 .env
 .env.*
 /static/**/*@*
+/content/images-manifest.json

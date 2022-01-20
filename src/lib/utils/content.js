@@ -54,7 +54,7 @@ export const getCrops = (path) => imagesManifest
  * @returns {string[]}
  */
 const getContentFiles = () => fs.readdirSync(contentDir)
-  .filter((d) => d.indexOf('__') !== 0);
+  .filter((d) => d.indexOf('__') !== 0 && d.indexOf('.txt') === (d.length - 4));
 
 /**
  * Given a filename, parses this file with archieML, adding any parse-time
