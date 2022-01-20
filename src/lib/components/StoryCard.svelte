@@ -70,6 +70,7 @@
     height: 100%;
     width: auto;
     transition: 0.2s;
+    color: transparent;
   }
 
   @media screen and (max-width: $device-medium) {

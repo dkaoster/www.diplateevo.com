@@ -34,6 +34,7 @@
     height: 100%;
     transition: 0.2s;
     pointer-events: none;
+    color: transparent;
   }
 
   .content {
