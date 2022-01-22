@@ -4,13 +4,20 @@ import * as d3 from 'd3';
 import Content from '$lib/components/Content.svelte';
 import siteConfig from '../../site-config.js';
 
+/**
+ * content.js
+ *
+ * This file is included and only run at build time, never exposed to the client.
+ */
+
 // The base content directory that are ArchieML files are hosted in
 const contentDir = 'content';
 
 // The fields we want to include from the ArchieML document into
 // the root listing of pages
 const listIncludeFields = [
-  'title', 'publishDate', 'isPage', 'description', 'featureImage', 'featureImageCrops',
+  'title', 'publishDate', 'isPage', 'description', 'featureImage',
+  'featureImageCrops', 'hideRSS',
 ];
 
 // Gets the image-manifest file
@@ -113,10 +120,16 @@ const parseContent = (fileName, options = {}) => {
  * Takes a content object and renders the content to HTML
  *
  * @param content
+ * @param isRSS
  * @returns {*}
  */
-const contentHTML = (content) => Content
-  .render({ content }, { context: new Map([['baseAbsoluteURL', siteConfig.baseURL]]) })
+const contentHTML = (content, isRSS = false) => Content
+  .render({ content }, {
+    context: new Map([
+      ['baseAbsoluteURL', siteConfig.baseURL],
+      ['issRSS', isRSS],
+    ]),
+  })
   // Remove all the comments that somehow show up
   .html.replace(/<!--[\s\S]*?-->/g, '').replace(/[\n\r]/g, '');
 
@@ -126,12 +139,14 @@ const contentHTML = (content) => Content
  * @param options
  * @returns {*}
  */
-export const allContent = (options = {}) => {
+const allContent = (options = {}) => {
   const {
     // Whether to include all the content from archieML into the response
     includeAllContent = false,
     // Whether to render the content to HTML before returning (used in RSS)
     renderContentToHTML = false,
+    // Whether we are rendering for RSS
+    isRSS = false,
   } = options;
 
   return getContentFiles()
@@ -151,7 +166,7 @@ export const allContent = (options = {}) => {
           (acc, field) => ({ ...acc, [field]: amlObj[field] }), {},
         )),
         // If we want to render content to HTML instead of using a JSON object
-        ...(renderContentToHTML ? { content: contentHTML(amlObj.content) } : {}),
+        ...(renderContentToHTML ? { content: contentHTML(amlObj.content, isRSS) } : {}),
         // slug and locale
         ...parseFileName(fileName),
       };
@@ -174,6 +189,7 @@ export const allContent = (options = {}) => {
           retList = [...retList, {
             slug: entry.slug,
             isPage: !!entry.isPage,
+            hideRSS: !!entry.hideRSS,
             publishDate: entry.publishDate,
             [entry.locale]: entry,
           }];
@@ -196,7 +212,39 @@ export const allContent = (options = {}) => {
  *
  * @returns {*}
  */
-export const getPages = () => allContent({}).filter((entry) => entry.isPage);
+export const getPages = () => allContent().filter((entry) => entry.isPage);
+
+/**
+ * Gets a list of the posts, paginated with a 1-based index.
+ *
+ * @param options
+ * @returns {{posts: *}}
+ */
+export const getPosts = (options = {}) => {
+  const { page = 1, postsPerPage = 5, isRSS = false } = options;
+
+  // Get the posts
+  const posts = allContent({
+    ...options,
+    // Add options for RSS feeds
+    ...(isRSS ? { includeAllContent: true, renderContentToHTML: true } : {}),
+  }).filter((entry) => !entry.isPage && (!isRSS || !entry.hideRSS));
+
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  // Get the posts on this page
+  const paginatedPosts = posts.slice((page - 1) * postsPerPage, page * postsPerPage);
+
+  return {
+    posts: paginatedPosts,
+    pagination: {
+      // Return the number for the next page if it exists
+      next: ((page + 1) <= numPages) ? page + 1 : null,
+      // Return the number for the previous page if it exists
+      prev: ((page - 1) > 0) ? page - 1 : null,
+    },
+  };
+};
 
 /**
  *
