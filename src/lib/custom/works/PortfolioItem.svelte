@@ -83,8 +83,7 @@
   <a
     class="content"
     href={url}
-    target={isOwnUrl ? '_self' : '_blank'}
-    rel={isOwnUrl ? '' : 'noopener noreferrer'}
+    {...(isOwnUrl ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
   >
     <h3>{title}</h3>
   </a>
