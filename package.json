@@ -32,6 +32,8 @@
     "marked": "^4.0.9",
     "node-sass": "^7.0.1",
     "postcss": "^8.2.10",
+    "regl": "^2.1.0",
+    "regl-camera": "^2.1.1",
     "rollup": "^2.18.1",
     "rollup-plugin-generate-image-sizes": "0.0.18",
     "svelte": "^3.44.3",

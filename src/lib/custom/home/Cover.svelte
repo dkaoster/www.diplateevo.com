@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, getContext } from 'svelte';
 
   import GraphicsJournalist from './GraphicsJournalist.svelte';
   import TaipeiTaiwan from './TaipeiTaiwan.svelte';
@@ -15,6 +15,9 @@
   let width;
   let height;
   let loaded = false;
+
+  const theme = getContext('theme');
+  $: { if ($theme) currentHover = null; }
 
   onMount(() => {
     loaded = true;

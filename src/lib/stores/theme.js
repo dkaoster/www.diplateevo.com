@@ -14,13 +14,13 @@ export const theme = writable(
     // Listen for prefers-color-scheme changes
     if (typeof window === 'object') {
       // The change listener
-      const listener = (e) => set(e.matches ? 'dark' : 'light')
+      const listener = (e) => set(e.matches ? 'dark' : 'light');
 
       // Adds the change listener
       matchMedia.addEventListener('change', listener);
 
       // Remove when we get unmounted
-      return () => matchMedia.removeEventListener('change', listener)
+      return () => matchMedia.removeEventListener('change', listener);
     }
 
     // Return a blank function
@@ -30,5 +30,5 @@ export const theme = writable(
 
 // Anytime the store changes, update the local storage value.
 theme.subscribe((value) => {
-  if (typeof localStorage === 'object') localStorage.theme = value
+  if (typeof localStorage === 'object') localStorage.theme = value;
 });
