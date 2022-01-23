@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-2c9e43ea.js",
+    "file": "start-f932a001.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js"
+      "_vendor-2fb89ece.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -16,56 +16,56 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-e425d873.js",
+    "file": "pages/__layout.svelte-8e81a360.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js",
-      "_i18n-737718d5.js"
+      "_vendor-2fb89ece.js",
+      "_i18n-738d18c5.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-db1df8ad.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-29375be3.js",
+    "file": "pages/__error.svelte-6b1bddcc.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js"
+      "_vendor-2fb89ece.js"
     ],
     "css": [
       "assets/pages/__error.svelte-d37afe57.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-af1bfc97.js",
+    "file": "pages/index.svelte-9845b7db.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js",
-      "_i18n-737718d5.js",
-      "_StoryCardList-cd02f45c.js",
-      "_Helmet-5366abf8.js",
+      "_vendor-2fb89ece.js",
+      "_i18n-738d18c5.js",
+      "_StoryCardList-836aec1d.js",
+      "_Helmet-fa6b2b32.js",
       "_image-15d1cba6.js"
     ],
     "css": [
-      "assets/pages/index.svelte-6a8a4e7a.css"
+      "assets/pages/index.svelte-38157442.css"
     ]
   },
   "src/routes/page/[page].svelte": {
-    "file": "pages/page/_page_.svelte-43bd5af9.js",
+    "file": "pages/page/_page_.svelte-6b8cd806.js",
     "src": "src/routes/page/[page].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js",
-      "_i18n-737718d5.js",
-      "_StoryCardList-cd02f45c.js",
-      "_Helmet-5366abf8.js",
+      "_vendor-2fb89ece.js",
+      "_i18n-738d18c5.js",
+      "_StoryCardList-836aec1d.js",
+      "_Helmet-fa6b2b32.js",
       "_image-15d1cba6.js"
     ],
     "css": [
@@ -73,55 +73,55 @@
     ]
   },
   "src/routes/404.svelte": {
-    "file": "pages/404.svelte-f1606edc.js",
+    "file": "pages/404.svelte-2d7fab44.js",
     "src": "src/routes/404.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js",
-      "_Helmet-5366abf8.js",
+      "_vendor-2fb89ece.js",
+      "_Helmet-fa6b2b32.js",
       "src/routes/__error.svelte"
     ]
   },
   "src/routes/[slug].svelte": {
-    "file": "pages/_slug_.svelte-69e055d6.js",
+    "file": "pages/_slug_.svelte-dab41927.js",
     "src": "src/routes/[slug].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-cccbde1a.js",
-      "_i18n-737718d5.js",
-      "_Helmet-5366abf8.js",
+      "_vendor-2fb89ece.js",
+      "_i18n-738d18c5.js",
+      "_Helmet-fa6b2b32.js",
       "_image-15d1cba6.js"
     ],
     "css": [
       "assets/pages/_slug_.svelte-2a92a08a.css"
     ]
   },
-  "_vendor-cccbde1a.js": {
-    "file": "chunks/vendor-cccbde1a.js"
+  "_vendor-2fb89ece.js": {
+    "file": "chunks/vendor-2fb89ece.js"
   },
-  "_i18n-737718d5.js": {
-    "file": "chunks/i18n-737718d5.js",
+  "_i18n-738d18c5.js": {
+    "file": "chunks/i18n-738d18c5.js",
     "imports": [
-      "_vendor-cccbde1a.js"
+      "_vendor-2fb89ece.js"
     ]
   },
-  "_StoryCardList-cd02f45c.js": {
-    "file": "chunks/StoryCardList-cd02f45c.js",
+  "_StoryCardList-836aec1d.js": {
+    "file": "chunks/StoryCardList-836aec1d.js",
     "imports": [
-      "_vendor-cccbde1a.js",
+      "_vendor-2fb89ece.js",
       "_image-15d1cba6.js",
-      "_i18n-737718d5.js"
+      "_i18n-738d18c5.js"
     ],
     "css": [
       "assets/StoryCardList-7476ecb0.css"
     ]
   },
-  "_Helmet-5366abf8.js": {
-    "file": "chunks/Helmet-5366abf8.js",
+  "_Helmet-fa6b2b32.js": {
+    "file": "chunks/Helmet-fa6b2b32.js",
     "imports": [
-      "_vendor-cccbde1a.js"
+      "_vendor-2fb89ece.js"
     ]
   },
   "_image-15d1cba6.js": {
