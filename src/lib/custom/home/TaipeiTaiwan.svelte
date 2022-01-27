@@ -1,5 +1,6 @@
 <script>
   import { getContext } from 'svelte';
+  import { fade } from 'svelte/transition';
 
   export let width;
   export let height;
@@ -48,7 +49,7 @@
   }
 </style>
 
-<div class="wrapper" bind:this={el}>
+<div class="wrapper" bind:this={el} transition:fade>
   <img
     class="taipei-map"
     class:prioritizeWidth

@@ -43,7 +43,6 @@
 
     {:else}
       <CustomContentTypes {type} {value} />
-
     {/if}
 
   {/each}
