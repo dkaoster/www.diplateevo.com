@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import { marked } from 'marked';
   import Image from './partials/Image.svelte';
-  import List from './partials/List.svelte';
   import CustomContentTypes from '../custom/CustomContentTypes.svelte';
 
   export let content;
@@ -27,13 +26,10 @@
   {#each (content || []) as { type, value }}
 
     {#if type === 'text'}
-      {@html marked.parse(value)}
+      {@html marked.parse(value.value || value)}
 
     {:else if type.toLowerCase() === 'image'}
       <Image src={value} {...((typeof value === 'object') ? value : {})} />
-
-    {:else if type.toLowerCase() === 'list'}
-      <List {...((typeof value === 'object') ? value : {})} />
 
     {:else if type.toLowerCase() === 'embed'}
       {@html value}

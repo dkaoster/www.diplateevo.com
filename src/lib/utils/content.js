@@ -127,7 +127,7 @@ const contentHTML = (content, isRSS = false) => Content
   .render({ content }, {
     context: new Map([
       ['baseAbsoluteURL', siteConfig.baseURL],
-      ['issRSS', isRSS],
+      ['isRSS', isRSS],
     ]),
   })
   // Remove all the comments that somehow show up

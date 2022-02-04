@@ -28,6 +28,7 @@ $device-medium: 1024px;
 // Dark mode related variables
 @mixin dark-mode-variables {
   --background-color: #111;
+  --background-color-secondary: #222;
   --color: #EEEEEE;
   --img-opacity: 0.95;
   --dark-mode: 1;
@@ -35,6 +36,7 @@ $device-medium: 1024px;
 
 @mixin light-mode-variables {
   --background-color: white;
+  --background-color-secondary: #EEE;
   --color: black;
   --img-opacity: 1;
   --dark-mode: 0;

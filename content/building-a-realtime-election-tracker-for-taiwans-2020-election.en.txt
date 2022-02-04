@@ -44,14 +44,14 @@ alt: dynamic map generating code
 
 In essence, the API endpoint takes a few parameters:
 
-{.list}
-[.list]
+{.text}
+value:
 * Map Version: Due to the fact that these borders will change based on redistricting or otherwise, I wanted to future-proof this API by allowing future maps to be easily versioned by year.
 * Locality Depth: Do we want the borders of the county, town, village, or district?
 * Specific Locality: Do we want the borders of a specific county, town, village, or district?
 * Simplification Level: How simplified do we want the resulting JSON file to be? More simplification and quantization means smaller file sizes but also a loss of detail.
 * Condensation of Outer Islands: Do we want a map where Kinmen and Lienchiang are where they are geographically or do we want to see them closer to mainland Taiwan?
-[]
+:end
 {}
 
 However, because legislative districts are not exactly correlated to any one of the existing locales, we had to separately process all of the locales of each of the legislative districts. Because a whole day of searching could not turn up a shapefile for Taiwan’s legislative districts, we decided to create the map ourselves based on which counties, towns, or villages, belonged to which district.
@@ -88,13 +88,13 @@ Then, in order to indicate when a candidate has won, we connected a Google Sprea
 
 In terms of electoral rules, Taiwan follows a simple majority-wins policy for electing it’s president, which is easy to display on a map. However, legislative races follow a fairly complex system:
 
-{.list}
-[.list]
+{.text}
+value:
 * Taiwan’s legislature has a total of 113 seats.
 * 73 district legislators are elected through a majority-wins policy for each of the 73 designated districts of Taiwan.
 * 34 party legislators are elected through a party-vote system, in which voters vote on a party, and all parties that obtain over 5% of the overall vote get to assign legislators based on the proportion of votes they receive. The legislators of a party elected through this system must be >50% female, according to the order they are ranked in their party list.
 * 6 indigenous legislators are elected by two three-member constituencies, picking the top three legislators for each plains and highlands indigenous constituencies.
-[]
+:end
 {}
 
 {.image}
@@ -155,11 +155,11 @@ alt: svelte logo
 
 News organizations have a very different development and deployment cycle than tech companies do, requiring tighter deadlines, faster feedback loops, and more bespoke flexibility. Thus, I decided to use <a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer">Svelte</a>, giving us the following main advantages among many:
 
-{.list}
-[.list]
+{.text}
+value:
 * Development speed: Given the amount of work to be done within a short amount of time, I decided that Svelte would be much faster to write than React, giving faster development and feedback times. Using Sapper with Svelte would also allow me to write the server-side data APIs quickly and easily.
 * Bundled JS Size: Because Svelte runs as a compiler, it’s able to build and include only the code that your applications needs, making the compiled bundle much smaller than a React application.
-[]
+:end
 {}
 
 If you’re interested in learning more about Svelte, there are many <a href="https://svelte.dev/tutorial/basics" target="_blank" rel="noopener noreferrer">tutorials to help you get started</a>.

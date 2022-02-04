@@ -53,7 +53,7 @@
 <style lang="scss">
   .grid-wrap {
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 0 120px;
     transition: color 0.5s;
   }
 
@@ -104,6 +104,21 @@
     & + :global(blockquote) {
       margin-top: -0.6em;
     }
+  }
+
+  .grid > :global(code), .grid > :global(pre) {
+    margin: 16px 0;
+    line-height: 1.6em;
+    white-space: pre-wrap;
+    background-color: var(--background-color-secondary);
+    padding: 16px;
+    font-size: 16px;
+    transition: background 0.5s;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .grid :global(li) {
+    margin: 10px 0;
   }
 
   .title, .summary {

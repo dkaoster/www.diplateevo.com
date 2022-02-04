@@ -31,14 +31,14 @@ We all have models and beliefs about everything, ranging from our behavior, othe
 
 Thus, the best user interfaces are ones that allow the user to clearly achieve the tasks that they intend to do. In order to create user interfaces that are easy to use in accordance with a user’s mental models, there are a few points to consider.
 
-{.list}
-[.list]
+{.text}
+value:
 * Visibility is about making actions visible. If the user performs an action on an interface, the interface should provide some sort of visible feedback letting the user know that an action has been performed.
 * Feedback is about the process that a computer does, and providing clear results for the task at hand.
 * Consistency is about creating a uniform experience for the user to engage with so that they can build a new mental model around how your interface actually works.
 * Non-destructive interfaces are easy to undo in the case that a user makes a mistake.
 * Reliable interfaces accomplish the task reliably, avoiding errors as much as possible.
-[]
+:end
 {}
 
 An excellent example of the points mentioned can be seen when comparing graphical user interfaces (GUIs) with command line interfaces. For most of these categories, having a GUI is far superior to using the command line. In a GUI, moving a file from one folder to another can be achieved with a drag and drop, which allows the user to visibly and directly interact with the filesystem in a non-destructive, consistent way. The only advantage that a command line interface has over a GUI is reliability.
@@ -152,12 +152,12 @@ alt: oxo measuring cup
 
 Consider a two player game which has the following rules (try playing it with someone):
 
-{.list}
-[.list]
+{.text}
+value:
 * Each player takes turns picking numbers between 1 and 9, inclusive.
 * Once a number is picked, it cannot be picked again by either player.
 * The first player that picks a combination of 3 numbers that adds to 15 is the winner.
-[]
+:end
 {}
 
 In this game, players often have to think extremely hard to keep track of the numbers they have chosen, the numbers their opponent has chosen, and which numbers they want to choose. In fact, players often end up making mistakes and choosing numbers that have already been chosen, or numbers that they later realize they didn’t want.
@@ -180,12 +180,12 @@ These two games are the perfect example of how effective a power user interface 
 
 ## Further Resources
 
-{.list}
-[.list]
+{.text}
+value:
 * <a href="http://www.amazon.com/gp/product/0201626950/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0201626950&linkCode=as2&tag=diplateevo-20&linkId=ZBPMKU5JIVVS3UCX" target="_blank" rel="noopener noreferrer">Things that Make Us Smart – Don Norman</a>
 * <a href="http://www.amazon.com/gp/product/0262581469/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0262581469&linkCode=as2&tag=diplateevo-20&linkId=NSLLWQS73IQ3YOJ2" target="_blank" rel="noopener noreferrer">Cognition in the Wild – Ed Hutchins</a>
 * <a href="http://www.amazon.com/gp/product/0262691914/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0262691914&linkCode=as2&tag=diplateevo-20&linkId=36DJXHVQIP7ATSLA" target="_blank" rel="noopener noreferrer">Sciences of the Artificial – Herbert Simon</a>
-[]
+:end
 {}
 
 []

@@ -17,25 +17,25 @@ There is also what is known as the “please the experimenter bias”, which is 
 
 As with user interviews and getting feedback, getting beyond “do you like my interface” means asking questions to that are specific and provide specific insights. Here are a couple characteristics of good questions.
 
-{.list}
-[.list]
+{.text}
+value:
 * **Baserates** – Measuring a baserate generally involves measuring how often something happens, such as how many people click the first link on a search results page.
 * **Correlations** – Measuring correlations means discovery connections between two separate events, such as measuring the correlation between when a class is offered and how many students attend.
 * **Causes** – However, with any correlation, be aware that there can be multiple explanations. For whether or not students attend class, the correlation can be a function of when students want to go to class or when good professors want to teach.
-[]
+:end
 {}
 
 ## Research Terms to Know
 
 To fully understand the way that research is conducted, there are a couple of research terms to be aware of.
 
-{.list}
-[.list]
+{.text}
+value:
 * **Independent variables** are variables that are independent of what the user does, because they are manipulated by the experimenter or application. In the example of the experiment of classes, the independent variable is the time the class is, because that is what the experimenter has control over.
 * **Dependent variables**, on the other hand, are variables that the user has control of and that the experimenter is trying to measure. Common dependent variables include how long it takes for a user to complete a task, how many errors people make, how much a person remembers after an action, or emotional response.
 * **Internal validity** determines how reliable an experiment is. If you were to run the experiment again, would you get similar results? Or, if you were to run the experiment with a greater number of people, would the results be similar?
 * **External validity** is the generalizability of the results. Because internal validity may not apply in a real world situation, external validity determines how easily the results can be applied to other situations.
-[]
+:end
 {}
 
 One of the common questions that designers want to ask is “is my cool new approach better than the industry standard?” After all, that is the reason why we are building something new. However, the problem with this question is that it is not a fair comparison. The industry standard is likely to have years of development and improvement as well as users that have adapted to the standard, while your product is likely a brand new one without too much development and familiarity. Consequently, asking if your approach is better than the industry standard can generate a response that is attributed to fidelity, approach, or a combination of both.
@@ -205,13 +205,13 @@ Also, note that data often isn’t “normal”. Data doesn’t always lie on a 
 
 ## Further Reading and Resources
 
-{.list}
-[.list]
+{.text}
+value:
 * <a href="https://faculty.washington.edu/wobbrock/pubs/hcic-11.pdf" target="_blank" rel="noopener noreferrer">Practical Statistics for HCI – Jacob Wobbrock</a>
 * <a href="https://www.amazon.com/gp/product/0495115770?linkId=I66BIBQDKUFJCBKA" target="_blank" rel="noopener noreferrer">Doing Psychology Experiments – David W Martin</a>
 * <a href="https://www.amazon.com/gp/product/0805805281?linkId=YEHNHW7DK43YYWRL" target="_blank" rel="noopener noreferrer">Statistics as Principled Argument – Robert P. Abelson</a>
 * <a href="https://www.amazon.com/gp/product/0335216803?linkId=YGYS6V3HD5CQXE7L" target="_blank" rel="noopener noreferrer">Learning to use Statistical Tests in Psychology – Judith Greene, Manuela D’Oliveira</a>
-[]
+:end
 {}
 
 []

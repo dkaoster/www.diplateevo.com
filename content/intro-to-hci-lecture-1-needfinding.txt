@@ -95,15 +95,15 @@ What makes a good question when you’re interviewing? Take this example and dec
 
 Other kinds of questions to avoid:
 
-{.list}
-[.list]
+{.text}
+value:
 * Questions that ask what users would do, like, or want in hypothetical situations – These questions often generate replies based on a person’s ideal, hypothetical world, not necessarily what they would actually do.
 * Questions that ask how often users do things – Asking a user how often they go to the gym generates responses that reveal how often they’d like to go to the gym, not actually how often they do.
 * Questions that ask how much they like things on an absolute scale – Asking a user how much they like something is often not extremely valuable or insightful.
 * Binary questions – Questions that only have two answer choices, like questions that ask on an absolute scale do not provide any significant insights into how you should build your product.
 * Good questions are questions that are open-ended, have a specific goal, and are unbiased. For example, instead of asking how often a person goes to the gym, you should ask them to tell you about the most recent time that they went to the gym.
 * Having a specific goal with each question allows you to uncover specific things with each question. If a question leaves your interviewee stumped for a little bit, that is a good thing. A little bit of silence is golden.
-[]
+:end
 {}
 
 One common problem for people who are new to interviews is that they often say that there’s nothing to be found for the problem they’re tackling because it’s either impossible or obvious. However, it’s rarely the case that there is nothing new. Malcolm Gladwell has a wonderful explanation in the introduction to his new book of collective stories “What the Dog Saw”.
@@ -114,13 +114,13 @@ If an interviewee’s answer doesn’t quite answer what you were trying to get 
 
 Examples of good questions:
 
-{.list}
-[.list]
+{.text}
+value:
 * When was the last time you used a specific application?
 * What were the first things you did when you woke up this morning?
 * What are three words you would use to describe your experience with a specific task?
 * What did you do after a certain circumstance / situation happened?
-[]
+:end
 {}
 
 ## Other Interviewing Considerations

@@ -89,12 +89,12 @@ One of the common remarks people make about storyboards is that they are unskill
 
 Ultimately, storyboards should convey:
 
-{.list}
-[.list]
+{.text}
+value:
 * Setting – Who are the people involved, what is the environment like, and what is the task being accomplished?
 * Sequence – What steps are involved, what leads someone to use the app, and what task is being illustrated?
 * Satisfaction – What motivates people to use this system, what does it enable people to accomplish, and what need does the system fill?
-[]
+:end
 {}
 
 ## Paper Prototypes
