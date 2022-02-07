@@ -9,7 +9,8 @@
 </script>
 
 <script>
-  import { getContext } from 'svelte';
+  import { getContext, setContext } from 'svelte';
+  import { writable } from 'svelte/store';
   import * as d3 from 'd3';
   import { browser } from '$app/env';
   import { defaultLocale } from '$lib/stores/locale';
@@ -23,6 +24,9 @@
   const locale = getContext('locale');
   const siteConfig = getContext('siteConfig');
 
+  // Sets the slug into a writable store
+  const slug = writable();
+
   // Process the locale
   $: supportedLocales = Object.keys(data);
   $: isMultiLanguage = supportedLocales.length > 1;
@@ -30,6 +34,7 @@
   $: currLocale = currLocaleData.locale;
 
   // And reactive updates
+  $: { $slug = currLocaleData.slug; }
   $: isPage = currLocaleData.isPage;
   $: metaTitle = currLocaleData.metaTitle;
   $: title = currLocaleData.title;
@@ -37,7 +42,6 @@
   $: description = currLocaleData.description;
   $: featureImage = currLocaleData.featureImage;
   $: featureImageCrops = currLocaleData.featureImageCrops;
-  $: slug = currLocaleData.slug;
   $: content = currLocaleData.content;
   $: redirect = currLocaleData.redirect;
 
@@ -46,8 +50,11 @@
     image: featureImage,
     description,
     type: 'article',
-    url: `${siteConfig.baseURL}/${slug}/`,
+    url: `${siteConfig.baseURL}/${$slug}/`,
   };
+
+  // Sets the slug as a context so that children can just read it directly.
+  setContext('slug', slug);
 </script>
 
 <style lang="scss">
@@ -225,6 +232,8 @@
       </div>
     {/if}
 
-    <Content {content} />
+    {#key $slug}
+      <Content {content} />
+    {/key}
   </div>
 </article>
