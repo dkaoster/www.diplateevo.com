@@ -35,16 +35,17 @@
     <!-- This contains the contents of the <svelte:head> component -->
     <title>Why You Should Use ArchieML for Your Blog - Diplateevo</title><link rel="icon" href="/favicon.svg" type="image/svg+xml" data-svelte="svelte-sbvs9g"><link rel="icon" href="/favicon.png" type="image/png" data-svelte="svelte-sbvs9g"><link rel="icon" href="/favicon.ico" type="image/x-icon" data-svelte="svelte-sbvs9g"><meta name="title" content="Why You Should Use ArchieML for Your Blog" data-svelte="svelte-sbvs9g"><meta name="description" content="It’s easy to go from structured data to unstructured data, but trying to go the other way is a losing, uphill battle." data-svelte="svelte-sbvs9g"><meta property="og:title" content="Why You Should Use ArchieML for Your Blog" data-svelte="svelte-sbvs9g"><meta property="og:type" content="article" data-svelte="svelte-sbvs9g"><meta property="og:url" content="https://www.diplateevo.com/archieml/" data-svelte="svelte-sbvs9g"><meta property="og:image" content="https://www.diplateevo.com/images/2022/02/archieml.png" data-svelte="svelte-sbvs9g"><meta property="og:site_name" content="Diplateevo" data-svelte="svelte-sbvs9g"><meta property="og:locale" content="en_US" data-svelte="svelte-sbvs9g"><meta property="og:description" content="It’s easy to go from structured data to unstructured data, but trying to go the other way is a losing, uphill battle." data-svelte="svelte-sbvs9g"><meta name="twitter:image" content="https://www.diplateevo.com/images/2022/02/archieml.png" data-svelte="svelte-sbvs9g"><meta name="twitter:card" content="summary_large_image" data-svelte="svelte-sbvs9g"><meta name="twitter:title" content="Why You Should Use ArchieML for Your Blog" data-svelte="svelte-sbvs9g"><meta name="twitter:description" content="It’s easy to go from structured data to unstructured data, but trying to go the other way is a losing, uphill battle." data-svelte="svelte-sbvs9g"><script defer data-domain="diplateevo.com" src="https://plausible.io/js/plausible.js" data-svelte="svelte-sbvs9g"></script>
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-ce6ad842.css">
-	<link rel="stylesheet" href="/_app/assets/pages/_slug_.svelte-e413c27b.css">
-	<link rel="modulepreload" href="/_app/start-e531c3ef.js">
-	<link rel="modulepreload" href="/_app/chunks/vendor-12f919e3.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-2ba34a87.js">
-	<link rel="modulepreload" href="/_app/chunks/i18n-f4c1ce36.js">
-	<link rel="modulepreload" href="/_app/pages/_slug_.svelte-f446c972.js">
-	<link rel="modulepreload" href="/_app/chunks/Helmet-a6783ddd.js">
+	<link rel="stylesheet" href="/_app/assets/pages/_slug_.svelte-f797f4db.css">
+	<link rel="modulepreload" href="/_app/start-e8f5e13a.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-de539c08.js">
+	<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-f9f07f5e.js">
+	<link rel="modulepreload" href="/_app/chunks/i18n-14dff7ef.js">
+	<link rel="modulepreload" href="/_app/pages/_slug_.svelte-3822add3.js">
+	<link rel="modulepreload" href="/_app/chunks/Helmet-b6841cc6.js">
 	<link rel="modulepreload" href="/_app/chunks/image-15d1cba6.js">
 			<script type="module">
-				import { start } from "/_app/start-e531c3ef.js";
+				import { start } from "/_app/start-e8f5e13a.js";
 				start({
 					target: document.body,
 					paths: {"base":"","assets":""},
@@ -56,8 +57,8 @@
 						status: 200,
 						error: null,
 						nodes: [
-							import("/_app/pages/__layout.svelte-2ba34a87.js"),
-						import("/_app/pages/_slug_.svelte-f446c972.js")
+							import("/_app/pages/__layout.svelte-f9f07f5e.js"),
+						import("/_app/pages/_slug_.svelte-3822add3.js")
 						],
 						url: new URL("http://prerender/archieml/"),
 						params: {slug:"archieml"}
@@ -96,26 +97,7 @@
 
     <!-- HTML_TAG_START --><p>If you’ve spent any time with static site generators such as <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, <a target="_blank" rel="noopener noreferrer" href="http://jekyllrb.com/">Jekyll</a>, or <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com/">Gatsby</a>, you’ve probably used <a target="_blank" rel="noopener noreferrer" href="https://daringfireball.net/projects/markdown/">markdown</a> or <a target="_blank" rel="noopener noreferrer" href="https://mdxjs.com/">mdx</a>. The benefits of using markdown are immediately apparent from the very minimal markup required to add titles, links, bullet points, and various other text formatting options in a plain-text file. Additionally, many implementations of markdown such as <a target="_blank" rel="noopener noreferrer" href="https://github.github.com/gfm/">GitHub flavored markdown</a> allows HTML to be directly embedded into markdown, giving additional flexibility when the primitives of markdown don’t allow for enough versatility.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>However, using markdown files for blog posts reveals a problem. Markdown, like HTML, is unstructured. (Technically HTML is considered “semi-structured”, but that distinction is irrelevant to the discussion in this post) In more tangible terms, there’s no way to explicitly provide SEO tags such as a title or a feature image or any other kind of structured key-values into a blog post with plain markdown. That’s why <a target="_blank" rel="noopener noreferrer" href="https://mdxjs.com/">mdx</a> was created, with a section at the top called <a target="_blank" rel="noopener noreferrer" href="https://mdxjs.com/guides/frontmatter/">frontmatter</a> which allows structured data with a YAML syntax, try it below.</p>
-<!-- HTML_TAG_END --><div class="wrapper svelte-fgh97r max" style="--num-columns: 3;"><h3 class="svelte-fgh97r">MDX (editable)</h3>
-  <textarea class="svelte-fgh97r" style="min-height: 0px;">---
-title: Hi, World!
-description: This is the description of the hello world post.
----
-
-# Hi, World!
-
-This is the content of a blog post.</textarea>
-
-  <h3 class="svelte-fgh97r">Frontmatter (output)</h3>
-    <code class="svelte-fgh97r"><!-- HTML_TAG_START -->{
-  "title": "Hi, World!",
-  "description": "This is the description of the hello world post."
-}<!-- HTML_TAG_END -->
-      </code><h3 class="svelte-fgh97r">HTML (output)</h3>
-    <div class="html-wrapper svelte-fgh97r"><!-- HTML_TAG_START --><h1 id="hi-world">Hi, World!</h1>
-<p>This is the content of a blog post.</p>
-<!-- HTML_TAG_END -->
-      </div></div><!-- HTML_TAG_START --><p>With frontmatter, there are two distinct sections of markdown files: a structured YAML section and a separate section for unstructured data written in markdown or HTML down below. For simple content structures and blogs, this is sufficient. For more complex visual components interleaved inside of content, however, using mdx will create a mess of HTML and CSS abstractions leaking out all over the markdown files, making it brittle, hard to understand, and a pain to update. Even using custom components the way that <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com/docs/how-to/routing/mdx/">Gatsby defines in their documentation</a>, stuffing data into HTML/JSX style syntax is possible, but cumbersome and not ideal.</p>
+<!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>With frontmatter, there are two distinct sections of markdown files: a structured YAML section and a separate section for unstructured data written in markdown or HTML down below. For simple content structures and blogs, this is sufficient. For more complex visual components interleaved inside of content, however, using mdx will create a mess of HTML and CSS abstractions leaking out all over the markdown files, making it brittle, hard to understand, and a pain to update. Even using custom components the way that <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com/docs/how-to/routing/mdx/">Gatsby defines in their documentation</a>, stuffing data into HTML/JSX style syntax is possible, but cumbersome and not ideal.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>In my career as a graphics journalist, I’ve seen this problem come up over and over again. Making interactive articles in collaboration with a team of journalists, editors, and designers, the complexities of our articles and interactives coupled with the workflow we use to ensure that everyone can work effectively in parallel means that using purely markdown to manage content is untenable.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>Instead, we use <a target="_blank" rel="noopener noreferrer" href="http://archieml.org/">ArchieML</a>, a structured data markup language that has been widely adopted by newsrooms that make these kinds of interactive articles, but lesser known to the broader ecosystem of bloggers and web developers. After using ArchieML for the past three years at work, I have found that the ways that it can be used and adapted are far more suitable than mere markdown, and I’ve completely rebuilt this site’s static site generator to use ArchieML files. In fact, the blog you are reading uses ArchieML and markdown together, because with a few important exceptions, ArchieML and markdown do not conflict with each other.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><h2 id="archieml">ArchieML</h2>
@@ -131,38 +113,7 @@ This is the content of a blog post.</textarea>
 </ul>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>From ArchieML’s documentation page, The New York Times uses ArchieML <a target="_blank" rel="noopener noreferrer" href="https://github.com/newsdev/archieml-js/tree/master#using-with-google-documents">in conjunction with Google Docs</a> to allow editors to easily update and collaboratively work on interactive graphics, but the ArchieML specification can be used anywhere, not just on Google Docs.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>This is what ArchieML looks like in practice, try it below:</p>
-<!-- HTML_TAG_END --><div class="wrapper svelte-fgh97r" style="--num-columns: 2;"><h3 class="svelte-fgh97r">ArchieML (editable)</h3>
-  <textarea class="svelte-fgh97r" style="min-height: 0px;">title: Hi, World!
-description: This is the description of the hello world post.
-
-[+content]
-This is the content of a blog post.
-
-{.object}
-text: This is a nested object I can add into my content.
-number: 1
-{}
-[]</textarea>
-
-  <h3 class="svelte-fgh97r">JSON (output)</h3>
-    <code class="svelte-fgh97r"><!-- HTML_TAG_START -->{
-  "title": "Hi, World!",
-  "description": "This is the description of the hello world post.",
-  "content": [
-    {
-      "type": "text",
-      "value": "This is the content of a blog post."
-    },
-    {
-      "type": "object",
-      "value": {
-        "text": "This is a nested object I can add into my content.",
-        "number": "1"
-      }
-    }
-  ]
-}<!-- HTML_TAG_END -->
-      </code></div><!-- HTML_TAG_START --><h2 id="keep-content-structured">Keep Content Structured</h2>
+<!-- HTML_TAG_END --><!-- HTML_TAG_START --><h2 id="keep-content-structured">Keep Content Structured</h2>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>One thing that isn&#39;t talked about enough in web development is that it’s easy to go from structured data to unstructured data, but trying to go the other way is a losing, uphill battle. Most content management systems for blogs, websites, or other personal pages work by having a backend with a <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> editor that generates some kind of HTML that then gets stuffed in between some kind of content wrapper inside the final HTML of the web page. This means that the final webpage’s HTML is generated in two separate places: the editor generates HTML that is wrapped by HTML generated by the theme, which blindly applies CSS to the HTML generated from the editor in hopes that everything works properly.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>In this case, adding custom elements becomes bespoke and unwieldy as custom CSS either gets mixed into the editor’s HTML or custom overrides and HTML parsing hacks get written into the frontend logic. In either case, the frontend and the content cease to operate independently of each other, causing future migrations or site redesigns to become a nightmare.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>A much better approach is to structure content into blocks, giving each block of content its own type and allowing the front-end to have more context on how that block should be rendered. This means that instead of the editor spitting out a block of spaghetti HTML that simply gets blindly embedded into some spot on the page, the editor spits out an array of content that contains blocks for the front-end to iterate over. This allows the editor to generally be more free of display logic specifics (sometimes it can&#39;t be avoided), handing over all of that responsibility to the frontend where it belongs.</p>
@@ -170,74 +121,7 @@ number: 1
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><h2 id="archieml--markdown--😍">ArchieML + Markdown = 😍</h2>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>As I alluded to above, ArchieML can be used in conjunction with markdown for some extremely powerful results. The trick here is to parse a document in ArchieML first by putting all the content inside a freeform array, and then parse individual blocks as markdown in order to get the full flexibility of structured and minimalistic text formatting. In fact, all the posts on this blog are structured in this way, you can <a target="_blank" rel="noopener noreferrer" href="https://github.com/dkaoster/www.diplateevo.com/blob/main/content/archieml.txt">see the file for this post here</a>.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>The caveat is that because ArchieML has parsing logic around newlines, multi-line markdown tags such as lists or tables will not be parsed properly if used directly. Thus, these will have to be wrapped and escaped in a way that ArchieML will ignore the line breaks.</p>
-<!-- HTML_TAG_END --><div class="wrapper svelte-fgh97r max" style="--num-columns: 3;"><h3 class="svelte-fgh97r">ArchieML (editable)</h3>
-  <textarea class="svelte-fgh97r" style="min-height: 0px;">title: Hi, World!
-description: This is the description of the hello world post.
-
-[+content]
-# A Blog Post with Titles
-
-This is the content of a blog post.
-
-{.object}
-text: This is a nested object I can add into my content, parsed with some kind of custom component.
-number: 1
-{}
-
-{.text}
-value:
-\* These are bullet points
-\* Second bullet point
-:end
-{}
-[]</textarea>
-
-  <h3 class="svelte-fgh97r">JSON (output)</h3>
-    <code class="svelte-fgh97r"><!-- HTML_TAG_START -->{
-  "title": "Hi, World!",
-  "description": "This is the description of the hello world post.",
-  "content": [
-    {
-      "type": "text",
-      "value": "# A Blog Post with Titles"
-    },
-    {
-      "type": "text",
-      "value": "This is the content of a blog post."
-    },
-    {
-      "type": "object",
-      "value": {
-        "text": "This is a nested object I can add into my content, parsed with some kind of custom component.",
-        "number": "1"
-      }
-    },
-    {
-      "type": "text",
-      "value": {
-        "value": "* These are bullet points\n* Second bullet point"
-      }
-    }
-  ]
-}<!-- HTML_TAG_END -->
-      </code><h3 class="svelte-fgh97r">HTML &amp; Data (output)</h3>
-    <div class="html-wrapper svelte-fgh97r"><!-- HTML_TAG_START --><code>{
-  "title": "Hi, World!",
-  "description": "This is the description of the hello world post."
-}</code><hr /><h1 id="a-blog-post-with-titles">A Blog Post with Titles</h1>
-<p>This is the content of a blog post.</p>
-<code>{
-  "type": "object",
-  "value": {
-    "text": "This is a nested object I can add into my content, parsed with some kind of custom component.",
-    "number": "1"
-  }
-}</code><ul>
-<li>These are bullet points</li>
-<li>Second bullet point</li>
-</ul>
-<!-- HTML_TAG_END -->
-      </div></div><!-- HTML_TAG_START --><p>The result is a plain-text markup and formatting specification that is far more flexible than mdx, and allows content and display logic to be defined and maintained in a much more manageable way. There’s a reason the New York Times created ArchieML for graphics, and the wider internet community can take advantage of it in a similar way.</p>
+<!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>The result is a plain-text markup and formatting specification that is far more flexible than mdx, and allows content and display logic to be defined and maintained in a much more manageable way. There’s a reason the New York Times created ArchieML for graphics, and the wider internet community can take advantage of it in a similar way.</p>
 <!-- HTML_TAG_END --></div></article></div>
 
 <script type="application/json" data-type="svelte-data" data-url="/content/pages.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"slug\":\"about\",\"isPage\":true,\"hideRSS\":false,\"en\":{\"title\":\"Graphics Journalist, Engineer, Noodle Connoisseur\",\"isPage\":\"true\",\"description\":\"I spend my days crunching data and visualizing news stories for the web and mobile devices.\",\"slug\":\"about\",\"locale\":\"en\"},\"zh\":{\"title\":\"資料視覺化前端工程師，湯麵愛好者\",\"isPage\":\"true\",\"description\":\"當前，我是天下雜誌的前端工程師，專門發想以及製作新聞的視覺化。\",\"slug\":\"about\",\"locale\":\"zh\"}},{\"slug\":\"works\",\"isPage\":true,\"hideRSS\":false,\"en\":{\"title\":\"My Projects\",\"isPage\":\"true\",\"description\":\"A few selected works and write-ups of projects worth sharing.\",\"slug\":\"works\",\"locale\":\"en\"},\"zh\":{\"title\":\"我的作品集\",\"isPage\":\"true\",\"description\":\"A few selected works and write-ups of projects worth sharing.\",\"slug\":\"works\",\"locale\":\"zh\"}}]"}</script>
