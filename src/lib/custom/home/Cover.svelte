@@ -1,14 +1,12 @@
 <script>
   import { onMount, getContext } from 'svelte';
 
-  import GraphicsJournalist from './GraphicsJournalist.svelte';
-  import TaipeiTaiwan from './TaipeiTaiwan.svelte';
-  import TaiwaneseCalifornian from './TaiwaneseCalifornian.svelte';
-
-  const Illustrations = {
-    gj: GraphicsJournalist,
-    tw: TaipeiTaiwan,
-    tc: TaiwaneseCalifornian,
+  // Dynamically import these so they don't take up too much of the
+  // vendor bundle
+  const IllustrationsImports = {
+    gj: async () => (await import('../home/GraphicsJournalist.svelte')).default,
+    tw: async () => (await import('../home/TaipeiTaiwan.svelte')).default,
+    tc: async () => (await import('../home/TaiwaneseCalifornian.svelte')).default,
   };
 
   let currentHover = null;
@@ -106,11 +104,9 @@
 </style>
 
 <div class="illustration" bind:clientHeight={height} bind:clientWidth={width}>
-  <svelte:component
-    this={Illustrations[currentHover]}
-    {width}
-    {height}
-  />
+  {#await (IllustrationsImports[currentHover] || (() => null))() then component}
+    <svelte:component this={component} {width} {height} />
+  {/await}
 </div>
 
 <div class="hero" on:click={() => { currentHover = null; }}>
