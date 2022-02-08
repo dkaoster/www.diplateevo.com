@@ -26,6 +26,18 @@ const imagesManifest = JSON.parse(
   fs.readFileSync(`${contentDir}/images-manifest.json`, 'utf8'),
 );
 
+// automatically open links in a new tab if the links are external.
+marked.use({
+  renderer: {
+    link(href, title, text) {
+      if (href.indexOf('http://') === 0 || href.indexOf('https://') === 0) {
+        return `<a target="_blank" rel="noopener noreferrer" href="${href}">${text}</a>`;
+      }
+      return `<a href="${href}">${text}</a>`;
+    },
+  },
+});
+
 /**
  * Parses a filename string into an object containing the slug and
  * the locale. Processes filenames such as:

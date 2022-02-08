@@ -17,5 +17,5 @@ width: 300
 
 聯絡我\: dkao@diplateevo.com
 
-<a href="https://www.diplateevo.com/rss.xml" target="_blank">RSS</a> | <a href="https://twitter.com/Diplateevo" target="_blank" rel="noopener noreferrer">Twitter</a> | <a href="" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://observablehq.com/@dkaoster" target="_blank" rel="noopener noreferrer">Observable</a>
+其他\: [RSS](https://www.diplateevo.com/rss.xml) | [Twitter](https://twitter.com/Diplateevo) | [Github](https://github.com/dkaoster) | [Observable](https://observablehq.com/@dkaoster)
 []
