@@ -87,10 +87,10 @@ const parseContent = (fileName, options = {}) => {
   }
 
   // Process content and get all image crops
-  if (processCrops && amlObj.content && amlObj.content.length > 0) {
+  if (amlObj.content && amlObj.content.length > 0) {
     for (let i = 0; i < amlObj.content.length; i += 1) {
       // Image types
-      if (amlObj.content[i].type === 'image') {
+      if (amlObj.content[i].type === 'image' && processCrops) {
         if (typeof amlObj.content[i].value === 'string') {
           amlObj.content[i].value = {
             src: amlObj.content[i].value,
@@ -105,7 +105,7 @@ const parseContent = (fileName, options = {}) => {
       }
 
       // portfolio item types
-      if (amlObj.content[i].type === 'portfolioItem') {
+      if (amlObj.content[i].type === 'portfolioItem' && processCrops) {
         amlObj.content[i].value = {
           ...amlObj.content[i].value,
           featureImageCrops: getCrops(amlObj.content[i].value.featureImage),
