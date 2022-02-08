@@ -1,5 +1,6 @@
 import fs from 'fs';
 import archieml from 'archieml';
+import { marked } from 'marked';
 import * as d3 from 'd3';
 import Content from '$lib/components/Content.svelte';
 import siteConfig from '../../site-config.js';
@@ -109,6 +110,13 @@ const parseContent = (fileName, options = {}) => {
           ...amlObj.content[i].value,
           featureImageCrops: getCrops(amlObj.content[i].value.featureImage),
         };
+      }
+
+      // text type, parse markdown
+      if (amlObj.content[i].type === 'text') {
+        amlObj.content[i].value = marked.parse(
+          amlObj.content[i].value.value || amlObj.content[i].value,
+        );
       }
     }
   }

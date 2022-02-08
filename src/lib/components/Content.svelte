@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import { marked } from 'marked';
   import Image from './partials/Image.svelte';
   import CustomContentTypes from '../custom/CustomContentTypes.svelte';
 
@@ -26,7 +25,7 @@
   {#each (content || []) as { type, value }}
 
     {#if type === 'text'}
-      {@html marked.parse(value.value || value)}
+      {@html value}
 
     {:else if type.toLowerCase() === 'image'}
       <Image src={value} {...((typeof value === 'object') ? value : {})} />
