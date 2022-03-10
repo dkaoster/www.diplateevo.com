@@ -63,4 +63,10 @@ featureImage: /images/2020/10/2015-01-31-03.32.46-1.jpg
 url: /intro-to-hci-lecture-1-needfinding
 {}
 
+{.portfolioItem}
+title: Data Journalism and the Digital News Era
+featureImage: /images/2022/03/data-journalism.jpg
+url: /data-journalism-digital-news
+{}
+
 []
