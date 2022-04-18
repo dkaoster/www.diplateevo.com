@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-60479aaa.js",
+    "file": "start-bf62ae7b.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
+      "_vendor-1230fa76.js",
       "_preload-helper-ec9aa979.js"
     ],
     "dynamicImports": [
@@ -17,62 +17,61 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-e4a4cadf.js",
+    "file": "pages/__layout.svelte-5c915eef.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_i18n-ce3cc0ca.js"
+      "_vendor-1230fa76.js",
+      "_i18n-446913d5.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-ce6ad842.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-1f2a5a3d.js",
+    "file": "pages/__error.svelte-8157df4d.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js"
+      "_vendor-1230fa76.js"
     ],
     "css": [
       "assets/pages/__error.svelte-d37afe57.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-c4eaeae6.js",
+    "file": "pages/index.svelte-a4d70b4f.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_i18n-ce3cc0ca.js",
+      "_vendor-1230fa76.js",
+      "_i18n-446913d5.js",
       "_preload-helper-ec9aa979.js",
-      "_StoryCardList-4e46fd5f.js",
-      "_Helmet-9a65d00f.js",
+      "_StoryCardList-c13c0214.js",
+      "_Helmet-7a9e5db1.js",
       "_image-15d1cba6.js"
     ],
     "dynamicImports": [
       "src/lib/custom/home/GraphicsJournalist.svelte",
-      "src/lib/custom/home/TaipeiTaiwan.svelte",
-      "src/lib/custom/home/TaiwaneseCalifornian.svelte"
+      "src/lib/custom/home/SanJose.svelte"
     ],
     "css": [
-      "assets/pages/index.svelte-de7cc764.css"
+      "assets/pages/index.svelte-25594e76.css"
     ]
   },
   "src/routes/page/[page].svelte": {
-    "file": "pages/page/_page_.svelte-b70e2269.js",
+    "file": "pages/page/_page_.svelte-7afaa17f.js",
     "src": "src/routes/page/[page].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_i18n-ce3cc0ca.js",
-      "_StoryCardList-4e46fd5f.js",
-      "_Helmet-9a65d00f.js",
+      "_vendor-1230fa76.js",
+      "_i18n-446913d5.js",
+      "_StoryCardList-c13c0214.js",
+      "_Helmet-7a9e5db1.js",
       "_image-15d1cba6.js"
     ],
     "css": [
@@ -80,25 +79,25 @@
     ]
   },
   "src/routes/404.svelte": {
-    "file": "pages/404.svelte-fa24b905.js",
+    "file": "pages/404.svelte-7e2097ce.js",
     "src": "src/routes/404.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_Helmet-9a65d00f.js",
+      "_vendor-1230fa76.js",
+      "_Helmet-7a9e5db1.js",
       "src/routes/__error.svelte"
     ]
   },
   "src/routes/[slug].svelte": {
-    "file": "pages/_slug_.svelte-d58f3e45.js",
+    "file": "pages/_slug_.svelte-0099e700.js",
     "src": "src/routes/[slug].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_i18n-ce3cc0ca.js",
-      "_Helmet-9a65d00f.js",
+      "_vendor-1230fa76.js",
+      "_i18n-446913d5.js",
+      "_Helmet-7a9e5db1.js",
       "_image-15d1cba6.js",
       "_preload-helper-ec9aa979.js"
     ],
@@ -110,90 +109,67 @@
       "assets/pages/_slug_.svelte-f797f4db.css"
     ]
   },
-  "_vendor-c4c91ac6.js": {
-    "file": "chunks/vendor-c4c91ac6.js"
+  "_vendor-1230fa76.js": {
+    "file": "chunks/vendor-1230fa76.js"
   },
   "_preload-helper-ec9aa979.js": {
     "file": "chunks/preload-helper-ec9aa979.js"
   },
-  "_i18n-ce3cc0ca.js": {
-    "file": "chunks/i18n-ce3cc0ca.js",
+  "_i18n-446913d5.js": {
+    "file": "chunks/i18n-446913d5.js",
     "imports": [
-      "_vendor-c4c91ac6.js"
+      "_vendor-1230fa76.js"
     ]
   },
-  "_StoryCardList-4e46fd5f.js": {
-    "file": "chunks/StoryCardList-4e46fd5f.js",
+  "_StoryCardList-c13c0214.js": {
+    "file": "chunks/StoryCardList-c13c0214.js",
     "imports": [
-      "_vendor-c4c91ac6.js",
+      "_vendor-1230fa76.js",
       "_image-15d1cba6.js",
-      "_i18n-ce3cc0ca.js"
+      "_i18n-446913d5.js"
     ],
     "css": [
       "assets/StoryCardList-fcda7c30.css"
     ]
   },
-  "_Helmet-9a65d00f.js": {
-    "file": "chunks/Helmet-9a65d00f.js",
+  "_Helmet-7a9e5db1.js": {
+    "file": "chunks/Helmet-7a9e5db1.js",
     "imports": [
-      "_vendor-c4c91ac6.js"
+      "_vendor-1230fa76.js"
     ]
   },
   "_image-15d1cba6.js": {
     "file": "chunks/image-15d1cba6.js"
   },
   "src/lib/custom/home/GraphicsJournalist.svelte": {
-    "file": "chunks/GraphicsJournalist-354f164c.js",
+    "file": "chunks/GraphicsJournalist-463d6ce7.js",
     "src": "src/lib/custom/home/GraphicsJournalist.svelte",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_index-6c213409.js",
+      "_vendor-1230fa76.js",
       "__commonjsHelpers-850449cf.js"
     ],
     "css": [
       "assets/GraphicsJournalist-d48c4fd1.css"
     ]
   },
-  "_index-6c213409.js": {
-    "file": "chunks/index-6c213409.js",
-    "imports": [
-      "_vendor-c4c91ac6.js"
-    ]
-  },
   "__commonjsHelpers-850449cf.js": {
     "file": "chunks/_commonjsHelpers-850449cf.js"
   },
-  "src/lib/custom/home/TaipeiTaiwan.svelte": {
-    "file": "chunks/TaipeiTaiwan-e10f7878.js",
-    "src": "src/lib/custom/home/TaipeiTaiwan.svelte",
+  "src/lib/custom/home/SanJose.svelte": {
+    "file": "chunks/SanJose-0b014f73.js",
+    "src": "src/lib/custom/home/SanJose.svelte",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
-      "_index-6c213409.js"
-    ],
-    "css": [
-      "assets/TaipeiTaiwan-7a053799.css"
-    ]
-  },
-  "src/lib/custom/home/TaiwaneseCalifornian.svelte": {
-    "file": "chunks/TaiwaneseCalifornian-58b931b5.js",
-    "src": "src/lib/custom/home/TaiwaneseCalifornian.svelte",
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-c4c91ac6.js",
-      "_index-6c213409.js"
-    ],
-    "css": [
-      "assets/TaiwaneseCalifornian-185dad40.css"
+      "_vendor-1230fa76.js"
     ]
   },
   "src/lib/custom/works/PortfolioItem.svelte": {
-    "file": "chunks/PortfolioItem-c0ff510e.js",
+    "file": "chunks/PortfolioItem-c183929a.js",
     "src": "src/lib/custom/works/PortfolioItem.svelte",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
+      "_vendor-1230fa76.js",
       "_image-15d1cba6.js"
     ],
     "css": [
@@ -201,11 +177,11 @@
     ]
   },
   "src/lib/custom/archieml/ArchieMLMarkdownHTML.svelte": {
-    "file": "chunks/ArchieMLMarkdownHTML-2dcb0b47.js",
+    "file": "chunks/ArchieMLMarkdownHTML-5a4ce1e2.js",
     "src": "src/lib/custom/archieml/ArchieMLMarkdownHTML.svelte",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-c4c91ac6.js",
+      "_vendor-1230fa76.js",
       "__commonjsHelpers-850449cf.js"
     ],
     "css": [
