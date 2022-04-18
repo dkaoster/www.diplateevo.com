@@ -5,8 +5,7 @@
   // vendor bundle
   const IllustrationsImports = {
     gj: async () => (await import('../home/GraphicsJournalist.svelte')).default,
-    tw: async () => (await import('../home/TaipeiTaiwan.svelte')).default,
-    tc: async () => (await import('../home/TaiwaneseCalifornian.svelte')).default,
+    sj: async () => (await import('../home/SanJose.svelte')).default,
   };
 
   let currentHover = null;
@@ -55,8 +54,8 @@
   .hero-text {
     grid-column: 2 / 10;
     font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 42px;
     transition: all 0.5s;
     opacity: 0;
   }
@@ -119,21 +118,14 @@
         on:mouseover={() => { currentHover = 'gj'; }}
         on:click|stopPropagation={() => { currentHover = 'gj'; }}
         on:focus|stopPropagation={() => { currentHover = 'gj'; }}
-      >graphics journalist</span> at commonwealth magazine,
+      >graphics journalist</span> currently based in
       <span
         class="link"
-        class:active={currentHover === 'tc'}
-        on:mouseover={() => { currentHover = 'tc'; }}
-        on:click|stopPropagation={() => { currentHover = 'tc'; }}
-        on:focus|stopPropagation={() => { currentHover = 'tc'; }}
-      >taiwanese-californian</span>, currently living in
-      <span
-        class="link"
-        class:active={currentHover === 'tw'}
-        on:mouseover={() => { currentHover = 'tw'; }}
-        on:click|stopPropagation={() => { currentHover = 'tw'; }}
-        on:focus|stopPropagation={() => { currentHover = 'tw'; }}
-      >taipei, taiwan</span>.
+        class:active={currentHover === 'sj'}
+        on:mouseover={() => { currentHover = 'sj'; }}
+        on:click|stopPropagation={() => { currentHover = 'sj'; }}
+        on:focus|stopPropagation={() => { currentHover = 'sj'; }}
+      >San Jose, California</span>.
     </div>
   </div>
 </div>
