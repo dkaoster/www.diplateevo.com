@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "engines": {
-    "npm": "^6",
-    "node": "^14"
+    "npm": "^8",
+    "node": "^16"
   },
   "scripts": {
     "dev": "svelte-kit dev",
