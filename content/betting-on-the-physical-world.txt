@@ -1,7 +1,7 @@
 title: Betting on the Physical World
 publishDate: 2022/06/21
 author: Daniel Kao
-description: Reflections on an Absurd Couple of Years.
+description: Reflections on an absurd couple of years.
 featureImage: /images/2022/06/ocean.jpg
 
 [+content]
