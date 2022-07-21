@@ -36,16 +36,16 @@
     <title>Intro to HCI Lecture 6 – Testing - Diplateevo</title><link rel="icon" href="/favicon.svg" type="image/svg+xml" data-svelte="svelte-sbvs9g"><link rel="icon" href="/favicon.png" type="image/png" data-svelte="svelte-sbvs9g"><link rel="icon" href="/favicon.ico" type="image/x-icon" data-svelte="svelte-sbvs9g"><meta name="title" content="Intro to HCI Lecture 6 – Testing" data-svelte="svelte-sbvs9g"><meta name="description" content="These are my notes in essay form from the Intro to Human Computer Interaction course taught by Scott Klemmer at the University of California, San Diego." data-svelte="svelte-sbvs9g"><meta property="og:title" content="Intro to HCI Lecture 6 – Testing" data-svelte="svelte-sbvs9g"><meta property="og:type" content="article" data-svelte="svelte-sbvs9g"><meta property="og:url" content="https://www.diplateevo.com/intro-to-hci-lecture-6-testing/" data-svelte="svelte-sbvs9g"><meta property="og:image" content="https://www.diplateevo.com/images/2020/10/2015-01-31-03.32.46-1.jpg" data-svelte="svelte-sbvs9g"><meta property="og:site_name" content="Diplateevo" data-svelte="svelte-sbvs9g"><meta property="og:locale" content="en_US" data-svelte="svelte-sbvs9g"><meta property="og:description" content="These are my notes in essay form from the Intro to Human Computer Interaction course taught by Scott Klemmer at the University of California, San Diego." data-svelte="svelte-sbvs9g"><meta name="twitter:image" content="https://www.diplateevo.com/images/2020/10/2015-01-31-03.32.46-1.jpg" data-svelte="svelte-sbvs9g"><meta name="twitter:card" content="summary_large_image" data-svelte="svelte-sbvs9g"><meta name="twitter:title" content="Intro to HCI Lecture 6 – Testing" data-svelte="svelte-sbvs9g"><meta name="twitter:description" content="These are my notes in essay form from the Intro to Human Computer Interaction course taught by Scott Klemmer at the University of California, San Diego." data-svelte="svelte-sbvs9g"><script defer data-domain="diplateevo.com" src="https://plausible.io/js/plausible.js" data-svelte="svelte-sbvs9g"></script>
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-ce6ad842.css">
 	<link rel="stylesheet" href="/_app/assets/pages/_slug_.svelte-f797f4db.css">
-	<link rel="modulepreload" href="/_app/start-bf62ae7b.js">
-	<link rel="modulepreload" href="/_app/chunks/vendor-1230fa76.js">
+	<link rel="modulepreload" href="/_app/start-602c5148.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-27036bdf.js">
 	<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-5c915eef.js">
-	<link rel="modulepreload" href="/_app/chunks/i18n-446913d5.js">
-	<link rel="modulepreload" href="/_app/pages/_slug_.svelte-0099e700.js">
-	<link rel="modulepreload" href="/_app/chunks/Helmet-7a9e5db1.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-f6b532a3.js">
+	<link rel="modulepreload" href="/_app/chunks/i18n-8dcc5fde.js">
+	<link rel="modulepreload" href="/_app/pages/_slug_.svelte-1f07cd4d.js">
+	<link rel="modulepreload" href="/_app/chunks/Helmet-4e428034.js">
 	<link rel="modulepreload" href="/_app/chunks/image-15d1cba6.js">
 			<script type="module">
-				import { start } from "/_app/start-bf62ae7b.js";
+				import { start } from "/_app/start-602c5148.js";
 				start({
 					target: document.body,
 					paths: {"base":"","assets":""},
@@ -57,8 +57,8 @@
 						status: 200,
 						error: null,
 						nodes: [
-							import("/_app/pages/__layout.svelte-5c915eef.js"),
-						import("/_app/pages/_slug_.svelte-0099e700.js")
+							import("/_app/pages/__layout.svelte-f6b532a3.js"),
+						import("/_app/pages/_slug_.svelte-1f07cd4d.js")
 						],
 						url: new URL("http://prerender/intro-to-hci-lecture-6-testing/"),
 						params: {slug:"intro-to-hci-lecture-6-testing"}
@@ -193,13 +193,13 @@
   </div><!-- HTML_TAG_START --><p>To determine the significance of the difference, we are going to use the <a href="https://en.wikipedia.org/wiki/Pearson's_chi-squared_test" target="_blank" rel="noopener noreferrer">Pearson’s Chi-Squared Test</a>. This test is a way to compare the expected rates to the experimental rates to determine a percentage of confidence toward a conclusion.</p>
 <!-- HTML_TAG_END --><div class="image-wrap  svelte-5nv82e"><picture class="svelte-5nv82e">
 
-        <img loading="lazy" alt="confidence equation x^{2} = \\frac{(observed - expected)^{2}}{expected}" src="/images/2021/01/latex.png" width="300" class="svelte-5nv82e"></picture>
+        <img loading="lazy" alt="confidence equation x^{2} = \frac{(observed - expected)^{2}}{expected}" src="/images/2021/01/latex.png" width="300" class="svelte-5nv82e"></picture>
 
   </div><!-- HTML_TAG_START --><p>To accurately determine whether we can reject the null hypothesis, or the default hypothesis that the coin is a fair coin, we need a threshold p-value, most often 0.05, to compare with the result of the chi-squared test.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>Therefore, if 20 flips of a coin resulted in 13 heads and we have a p-value less than 0.05, we have:</p>
 <!-- HTML_TAG_END --><div class="image-wrap  svelte-5nv82e"><picture class="svelte-5nv82e">
 
-        <img loading="lazy" alt="\\frac{(13 - 10)^{2}}{10} + \\frac{(7 - 10)^{2}}{10} = 1.8" src="/images/2021/01/latex--1-.png" width="300" class="svelte-5nv82e"></picture>
+        <img loading="lazy" alt="\frac{(13 - 10)^{2}}{10} + \frac{(7 - 10)^{2}}{10} = 1.8" src="/images/2021/01/latex--1-.png" width="300" class="svelte-5nv82e"></picture>
 
   </div><!-- HTML_TAG_START --><p>(heads + tails = chi-squared value)</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>Based on our calculation and the <a href="http://www.socscistatistics.com/pvalues/chidistribution.aspx" target="_blank" rel="noopener noreferrer">p-value distribution table</a>, we can see that our results are not quite at the p &lt; 0.05 threshold, meaning that we cannot sufficiently reject our null hypothesis and say that the coin is biased.</p>
@@ -207,7 +207,7 @@
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>Chi-Squared testing is valuable because it doesn’t just apply to coins, but also applies to click through rates on websites. Let’s say that a website has a button labeled “sign up”, and 10% of visitors click the button. To try to improve traffic, designers change the button to “learn more”, and start gathering data. Over a week, there were 1000 visitors to the site, 118 of which clicked the “learn more” button. Running this data through the formula gives us the follow chi-squared value:</p>
 <!-- HTML_TAG_END --><div class="image-wrap  svelte-5nv82e"><picture class="svelte-5nv82e">
 
-        <img loading="lazy" alt="\\frac{(118 - 100)^{2}}{100} + \\frac{(882 - 900)^{2}}{900} = 4.01" src="/images/2021/01/latex--2-.png" width="300" class="svelte-5nv82e"></picture>
+        <img loading="lazy" alt="\frac{(118 - 100)^{2}}{100} + \frac{(882 - 900)^{2}}{900} = 4.01" src="/images/2021/01/latex--2-.png" width="300" class="svelte-5nv82e"></picture>
 
   </div><!-- HTML_TAG_START --><p>In looking up this data in <a href="http://www.socscistatistics.com/pvalues/chidistribution.aspx" target="_blank" rel="noopener noreferrer">our table</a>, we find that 4.01 generates a p-value that is just smaller than 0.05, allowing us to formally say that the change was an improvement.</p>
 <!-- HTML_TAG_END --><!-- HTML_TAG_START --><p>Thus, statistical testing gives you two very powerful tools. First, it allows you to formalize “we’re pretty sure”, using statistics to validate your claim. Secondly, it helps you generalize (or not) from small sample sizes. There are also other tests that achieve a similar purpose for continuous data such as <a href="https://en.wikipedia.org/wiki/Student's_t-test" target="_blank" rel="noopener noreferrer">T-tests</a> and <a href="https://en.wikipedia.org/wiki/Analysis_of_variance" target="_blank" rel="noopener noreferrer">ANOVA</a>.</p>
