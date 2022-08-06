@@ -1,0 +1,1 @@
+import{a7 as n}from"./vendor-a39ac61f.js";function s(t,{delay:o=0,duration:a=400,easing:e=n}={}){const c=+getComputedStyle(t).opacity;return{delay:o,duration:a,easing:e,css:i=>`opacity: ${i*c}`}}export{s as f};
