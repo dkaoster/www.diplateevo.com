@@ -65,6 +65,10 @@
     justify-content: flex-end;
     align-items: center;
   }
+
+  canvas {
+    opacity: 0.6;
+  }
 </style>
 
 <div class="wrapper" bind:clientWidth={width} bind:clientHeight={height}>

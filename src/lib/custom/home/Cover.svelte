@@ -8,7 +8,7 @@
     sj: async () => (await import('../home/SanJose.svelte')).default,
   };
 
-  let currentHover = null;
+  let currentHover;
   let width;
   let height;
   let loaded = false;
@@ -18,6 +18,7 @@
 
   onMount(() => {
     loaded = true;
+    currentHover = 'gj';
   });
 </script>
 
@@ -62,11 +63,6 @@
 
   .hero-text.loaded {
     opacity: 1;
-  }
-
-  .hero-text.selected {
-    opacity: 0.1;
-    transition-delay: 1s;
   }
 
   .hero-text.selected:hover {
