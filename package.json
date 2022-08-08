@@ -9,7 +9,7 @@
     "node": "^16"
   },
   "scripts": {
-    "dev": "vite dev",
+    "dev": "NODE_ENV=development vite dev",
     "prebuild": "node genImageSizes.js",
     "build": "vite build",
     "postbuild": "mv build/404/index.html build/404.html && npx svelte-sitemap --domain https://diplateevo.com --ignore 404.html --trailing-slashes",

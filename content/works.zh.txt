@@ -10,6 +10,12 @@ isPage: true
 gridBreak: break
 
 {.portfolioItem}
+title: Interactive REGL Wind Demo
+featureImage: /images/2022/01/regl-wind.jpg
+url: https://observablehq.com/@dkaoster/interactive-regl-wind-demo
+{}
+
+{.portfolioItem}
 title: 最危險的海峽：共機為何轉向台灣西南角？
 featureImage: /images/2022/01/taiwan-strait.jpg
 url: https://web.cw.com.tw/taiwan-strait-2021/
@@ -50,6 +56,27 @@ title: 2018 九合一選舉的視覺化
 featureImage: /images/2020/10/taiwan.jpg
 url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
 {}
+
+gridBreak: break
+gridBreak: break
+
+## 地圖類
+gridBreak: break
+
+{.portfolioItem}
+title: 美國房地產價格地圖
+featureImage: /images/2022/08/us-housing-affordability.jpg
+url: /files/us-housing-affordability.pdf
+newTab: true
+{}
+
+{.portfolioItem}
+title: 自行車環遊加州
+featureImage: /images/2022/08/grand-tour-california.jpg
+url: /files/grand-tour-california.pdf
+newTab: true
+{}
+
 
 gridBreak: break
 gridBreak: break

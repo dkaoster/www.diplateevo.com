@@ -5,6 +5,7 @@
   export let featureImage;
   export let featureImageCrops;
   export let url;
+  export let newTab;
 
   $: isOwnUrl = (typeof url === 'string') && url.indexOf('https://') !== 0;
 
@@ -83,7 +84,7 @@
   <a
     class="content"
     href={url}
-    {...(isOwnUrl ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
+    {...((!newTab && isOwnUrl) ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
   >
     <h3>{title}</h3>
   </a>
