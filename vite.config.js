@@ -12,6 +12,6 @@ export default {
     dev && genImageSizePlugin,
   ],
   server: {
-    port: 3000,
+    port: 4000,
   },
 };
