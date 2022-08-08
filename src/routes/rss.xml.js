@@ -9,7 +9,7 @@ import siteConfig from '../site-config.js';
  *
  * @returns {Promise<{headers: {"Content-Type": string}, body: string}>}
  */
-export async function get() {
+export async function GET() {
   const posts = getPosts({ isRSS: true }).posts.map((d) => d[defaultLocale]);
 
   const feed = new Feed({

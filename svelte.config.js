@@ -28,14 +28,9 @@ export default {
       assets: 'build',
     }),
     trailingSlash: 'always',
-
-    vite: () => ({
-      plugins: [
-        // Generates image sizes, but only on dev. production mode
-        // simply uses a prebuild script to handle this.
-        dev && genImageSizePlugin,
-      ],
-    }),
+    prerender: {
+      default: true,
+    },
   },
 
   preprocess: sveltePreprocess({

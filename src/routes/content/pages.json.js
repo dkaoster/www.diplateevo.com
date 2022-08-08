@@ -5,6 +5,6 @@ import { getPages } from '$lib/utils/content';
  *
  * @returns {Promise<{body: (*&{locale: (*|string), slug: *})}>}
  */
-export async function get() {
+export async function GET() {
   return { body: getPages() };
 }

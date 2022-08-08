@@ -8,7 +8,7 @@ const postsPerPage = 5;
  *
  * @returns {Promise<{body: (*&{locale: (*|string), slug: *})}>}
  */
-export async function get({ params }) {
+export async function GET({ params }) {
   const { page } = params;
   const pageNum = parseInt(page, 10);
 

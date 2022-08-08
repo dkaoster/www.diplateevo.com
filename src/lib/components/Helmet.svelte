@@ -1,6 +1,6 @@
 <script>
   import { getContext } from 'svelte';
-  import { mode } from '$app/env';
+  import { dev } from '$app/env';
 
   const siteConfig = getContext('siteConfig');
 
@@ -39,7 +39,7 @@
   <meta name="twitter:title" content={metaTitle || title} />
   <meta name="twitter:description" content={description}>
 
-  {#if mode === 'production'}
+  {#if !dev}
     <script defer data-domain="diplateevo.com" src="https://plausible.io/js/plausible.js"></script>
   {/if}
 

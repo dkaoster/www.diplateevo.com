@@ -9,18 +9,18 @@
     "node": "^16"
   },
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "vite dev",
     "prebuild": "node genImageSizes.js",
-    "build": "svelte-kit build",
+    "build": "vite build",
     "postbuild": "mv build/404/index.html build/404.html && npx svelte-sitemap --domain https://diplateevo.com --ignore 404.html --trailing-slashes",
-    "preview": "svelte-kit preview",
+    "preview": "vite preview",
     "lint": "eslint --ignore-path .gitignore --ext .js,.cjs,.svelte .",
     "clean": "rm -rf build && rm -rf .svelte-kit && find . -name \"*@*.*\" | xargs rm && rm -f content/images-manifest.json"
   },
   "author": "Daniel Kao",
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.21",
-    "@sveltejs/kit": "^1.0.0-next.201",
+    "@sveltejs/adapter-static": "^1.0.0-next.39",
+    "@sveltejs/kit": "^1.0.0-next.405",
     "archieml": "^0.4.2",
     "autoprefixer": "^10.4.2",
     "d3": "^7.3.0",
@@ -39,7 +39,8 @@
     "rollup": "^2.18.1",
     "rollup-plugin-generate-image-sizes": "0.0.18",
     "svelte": "^3.49.0",
-    "svelte-preprocess": "^4.10.1",
-    "svelte-sitemap": "^2.2.0"
+    "svelte-preprocess": "^4.10.7",
+    "svelte-sitemap": "^2.5.1",
+    "vite": "^3.0.4"
   }
 }
