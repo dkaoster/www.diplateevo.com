@@ -16,6 +16,12 @@ url: https://observablehq.com/@dkaoster/interactive-regl-wind-demo
 {}
 
 {.portfolioItem}
+title: Interactive 3D Relief Blocks with REGL
+featureImage: /images/2022/09/relief-blocks.jpg
+url: https://observablehq.com/@dkaoster/interactive-3d-relief-blocks-with-regl
+{}
+
+{.portfolioItem}
 title: Why the Chinese Military Has Increased Activity Near Taiwan
 featureImage: /images/2022/01/taiwan-strait.jpg
 url: https://web.cw.com.tw/taiwan-strait-2021-en/
@@ -56,27 +62,6 @@ title: Taiwan Elections 2018, Visualized
 featureImage: /images/2020/10/taiwan.jpg
 url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
 {}
-
-gridBreak: break
-gridBreak: break
-
-## Cartography Projects
-gridBreak: break
-
-{.portfolioItem}
-title: US Housing Affordability Map
-featureImage: /images/2022/08/us-housing-affordability.jpg
-url: /files/us-housing-affordability.pdf
-newTab: true
-{}
-
-{.portfolioItem}
-title: A Grand Tour of California
-featureImage: /images/2022/08/grand-tour-california.jpg
-url: /files/grand-tour-california.pdf
-newTab: true
-{}
-
 
 gridBreak: break
 gridBreak: break
