@@ -1,3 +1,4 @@
+import { json } from '@sveltejs/kit';
 import { getPages } from '$lib/utils/content';
 
 /**
@@ -6,5 +7,5 @@ import { getPages } from '$lib/utils/content';
  * @returns {Promise<{body: (*&{locale: (*|string), slug: *})}>}
  */
 export async function GET() {
-  return { body: getPages() };
+  return json(getPages());
 }

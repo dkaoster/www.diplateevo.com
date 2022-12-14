@@ -1,21 +1,16 @@
-<script context="module">
-  export async function load({ fetch }) {
-    // Get the pages of this website
-    const pages = await fetch('/content/pages.json').then((res) => res.json());
-    return { props: { pages } };
-  }
-</script>
-
 <script>
   import { setContext } from 'svelte';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import { locale } from '$lib/stores/locale';
   import { theme } from '$lib/stores/theme';
   import Header from '$lib/components/Header.svelte';
   import siteConfig from '../site-config.js';
 
+  export let data;
+
   // The pages and the current path of the website to pass to the Header component
-  export let pages;
+  let { pages } = data;
+  $: ({ pages } = data); // so it stays in sync when `data` changes
 
   // Keep track of whether the user is using dark mode
   $: dark = $theme === 'dark';

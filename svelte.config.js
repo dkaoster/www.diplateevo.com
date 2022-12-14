@@ -27,10 +27,6 @@ export default {
       pages: 'build',
       assets: 'build',
     }),
-    trailingSlash: 'always',
-    prerender: {
-      default: true,
-    },
   },
 
   preprocess: sveltePreprocess({

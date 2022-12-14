@@ -1,3 +1,4 @@
+import { json } from '@sveltejs/kit';
 import { getPosts } from '$lib/utils/content';
 
 const postsPerPage = 5;
@@ -13,14 +14,14 @@ export async function GET({ params }) {
   const pageNum = parseInt(page, 10);
 
   // If the current page is out of bounds, return a 404
-  if (Number.isNaN(pageNum) || pageNum <= 0) return { status: 404 };
+  if (Number.isNaN(pageNum) || pageNum <= 0) return new Response(undefined, { status: 404 });
 
   // First get all posts
   const posts = getPosts({ page: pageNum, postsPerPage });
 
   // If this page has no posts, we return a 404
-  if (posts.posts.length === 0) return { status: 404 };
+  if (posts.posts.length === 0) return new Response(undefined, { status: 404 });
 
   // Return the posts response
-  return { body: posts };
+  return json(posts);
 }

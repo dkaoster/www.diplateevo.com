@@ -3,7 +3,7 @@
   import { marked } from 'marked';
   import DOMPurify from 'dompurify';
   import YAML from 'js-yaml';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
 
   export let types = ['ArchieML', 'JSON'];
   export let value;

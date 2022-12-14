@@ -1,11 +1,5 @@
-<script context="module">
-  export function load({ error, status }) {
-    return { props: { error, status } };
-  }
-</script>
-
 <script>
-  import { dev } from '$app/env';
+  import { page } from '$app/stores';
 
   export let status;
   export let error;
@@ -26,19 +20,10 @@
     font-size: 72px;
     margin: 0;
   }
-
-  pre {
-    font-size: 12px;
-    line-height: 1.4em;
-  }
 </style>
 
 <div class="wrapper">
-  <h1>{status}</h1>
-  <h3>{error.message}</h3>
-
-  {#if dev && error.stack}
-    <pre>{error.stack}</pre>
-  {/if}
+  <h1>{status || $page.status}</h1>
+  <h3>{(error && error.message) || $page.error.message}</h3>
 </div>
 

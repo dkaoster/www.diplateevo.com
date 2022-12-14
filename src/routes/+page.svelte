@@ -1,11 +1,3 @@
-<script context="module">
-  export async function load({ fetch }) {
-    await fetch('rss.xml');
-    const { posts = [], pagination = {} } = await fetch('/content/posts-1.json').then((res) => res.json());
-    return { props: { posts, pagination } };
-  }
-</script>
-
 <script>
   import { getContext } from 'svelte';
   import { defaultLocale } from '$lib/stores/locale';
@@ -14,8 +6,10 @@
   import StoryCardList from '$lib/components/StoryCardList.svelte';
   import Helmet from '$lib/components/Helmet.svelte';
 
-  export let posts;
-  export let pagination;
+  export let data;
+
+  let { posts, pagination } = data;
+  $: ({ posts, pagination } = data);
 
   const locale = getContext('locale');
   const siteConfig = getContext('siteConfig');

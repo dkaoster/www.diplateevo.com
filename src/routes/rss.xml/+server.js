@@ -2,7 +2,7 @@ import { Feed } from 'feed';
 import * as d3 from 'd3';
 import { getPosts } from '$lib/utils/content';
 import { defaultLocale } from '$lib/stores/locale';
-import siteConfig from '../site-config.js';
+import siteConfig from '../../site-config.js';
 
 /**
  * RSS route for diplateevo.
@@ -37,5 +37,5 @@ export async function GET() {
   });
 
   // Set headers and return
-  return { body: feed.rss2(), headers: { 'Content-Type': 'application/rss+xml; charset=UTF-8' } };
+  return new Response(feed.rss2(), { headers: { 'Content-Type': 'application/rss+xml; charset=UTF-8' } });
 }
