@@ -1,0 +1,1 @@
+async function a({fetch:t}){await t("rss.xml");const{posts:o=[],pagination:n={}}=await t("/content/posts-1.json").then(e=>e.json());return{posts:o,pagination:n}}const s=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{s as _,a as l};
