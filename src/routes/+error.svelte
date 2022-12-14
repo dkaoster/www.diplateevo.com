@@ -1,5 +1,8 @@
 <script>
   import { page } from '$app/stores';
+
+  export let status;
+  export let error;
 </script>
 
 <style>
@@ -20,7 +23,7 @@
 </style>
 
 <div class="wrapper">
-  <h1>{$page.status}</h1>
-  <h3>{$page.error.message}</h3>
+  <h1>{status || $page.status}</h1>
+  <h3>{(error && error.message) || $page.error.message}</h3>
 </div>
 
