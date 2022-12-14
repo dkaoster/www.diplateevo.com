@@ -1,3 +1,4 @@
+import { error } from '@sveltejs/kit';
 import { getPost } from '$lib/utils/content';
 
 /**
@@ -13,6 +14,6 @@ export async function GET({ params }) {
   const body = getPost(slug);
 
   // Make sure we have data, otherwise return a 404.
-  throw new Error("@migration task: Migrate this return statement (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292701)");
-  return Object.keys(body).length ? { body } : { status: 404 };
+  if (Object.keys(body).length) return body;
+  throw error(404, 'not found');
 }

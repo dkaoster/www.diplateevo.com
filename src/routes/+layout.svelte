@@ -1,6 +1,4 @@
 <script>
-  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-
   import { setContext } from 'svelte';
   import { browser } from '$app/env';
   import { locale } from '$lib/stores/locale';
@@ -8,8 +6,11 @@
   import Header from '$lib/components/Header.svelte';
   import siteConfig from '../site-config.js';
 
+  export let data;
+
   // The pages and the current path of the website to pass to the Header component
-  export let pages;
+  let { pages } = data;
+  $: ({ pages } = data); // so it stays in sync when `data` changes
 
   // Keep track of whether the user is using dark mode
   $: dark = $theme === 'dark';

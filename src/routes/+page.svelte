@@ -1,6 +1,4 @@
 <script>
-  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-
   import { getContext } from 'svelte';
   import { defaultLocale } from '$lib/stores/locale';
   import i18n from '$lib/utils/i18n';
@@ -8,8 +6,10 @@
   import StoryCardList from '$lib/components/StoryCardList.svelte';
   import Helmet from '$lib/components/Helmet.svelte';
 
-  export let posts;
-  export let pagination;
+  export let data;
+
+  let { posts, pagination } = data;
+  $: ({ posts, pagination } = data);
 
   const locale = getContext('locale');
   const siteConfig = getContext('siteConfig');

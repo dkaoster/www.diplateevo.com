@@ -1,6 +1,5 @@
 import { redirect, error } from '@sveltejs/kit';
 
-throw new Error("@migration task: Check if you need to migrate the load function input (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292693)");
 export async function load({ fetch, params: { page } }) {
   // If somehow we landed on page 1, we redirect to the root
   if (page === '1') throw redirect(301, '/');

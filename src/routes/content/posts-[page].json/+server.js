@@ -23,8 +23,5 @@ export async function GET({ params }) {
   if (posts.posts.length === 0) return new Response(undefined, { status: 404 });
 
   // Return the posts response
-  throw new Error("@migration task: Migrate this return statement (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292701)");
-  // Suggestion (check for correctness before using):
-  // return json(posts);
-  return { body: posts };
+  return json(posts);
 }
