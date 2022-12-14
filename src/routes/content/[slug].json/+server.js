@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import { error, json } from '@sveltejs/kit';
 import { getPost } from '$lib/utils/content';
 
 /**
@@ -14,6 +14,6 @@ export async function GET({ params }) {
   const body = getPost(slug);
 
   // Make sure we have data, otherwise return a 404.
-  if (Object.keys(body).length) return body;
+  if (Object.keys(body).length) return json(body);
   throw error(404, 'not found');
 }

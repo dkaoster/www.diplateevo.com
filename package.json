@@ -19,8 +19,8 @@
   },
   "author": "Daniel Kao",
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.39",
-    "@sveltejs/kit": "^1.0.0-next.588",
+    "@sveltejs/adapter-static": "^1.0.0",
+    "@sveltejs/kit": "^1.0.0",
     "archieml": "^0.4.2",
     "autoprefixer": "^10.4.2",
     "d3": "^7.3.0",

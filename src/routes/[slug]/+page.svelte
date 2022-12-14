@@ -1,12 +1,12 @@
 <script>
   import { getContext } from 'svelte';
   import * as d3 from 'd3';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import { defaultLocale } from '$lib/stores/locale';
   import Helmet from '$lib/components/Helmet.svelte';
   import Content from '$lib/components/Content.svelte';
   import Image from '$lib/components/partials/Image.svelte';
-  import i18n from '../../lib/utils/i18n.js';
+  import i18n from '$lib/utils/i18n.js';
 
   export let data;
 
@@ -14,7 +14,7 @@
   const siteConfig = getContext('siteConfig');
 
   // Process the locale
-  $: supportedLocales = Object.keys(data);
+  $: supportedLocales = Object.keys(data).filter((lang) => i18n[lang]);
   $: isMultiLanguage = supportedLocales.length > 1;
   $: currLocaleData = data[$locale.locale] || data[defaultLocale] || data[supportedLocales[0]];
   $: currLocale = currLocaleData.locale;

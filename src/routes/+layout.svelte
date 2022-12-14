@@ -1,6 +1,6 @@
 <script>
   import { setContext } from 'svelte';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import { locale } from '$lib/stores/locale';
   import { theme } from '$lib/stores/theme';
   import Header from '$lib/components/Header.svelte';
