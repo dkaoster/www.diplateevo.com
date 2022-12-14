@@ -2,7 +2,7 @@ import { Feed } from 'feed';
 import * as d3 from 'd3';
 import { getPosts } from '$lib/utils/content';
 import { defaultLocale } from '$lib/stores/locale';
-import siteConfig from '../site-config.js';
+import siteConfig from '../../site-config.js';
 
 /**
  * RSS route for diplateevo.
@@ -37,5 +37,8 @@ export async function GET() {
   });
 
   // Set headers and return
+  throw new Error("@migration task: Migrate this return statement (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292701)");
+  // Suggestion (check for correctness before using):
+  // return new Response(feed.rss2(), { headers: { 'Content-Type': 'application/rss+xml; charset=UTF-8' } });
   return { body: feed.rss2(), headers: { 'Content-Type': 'application/rss+xml; charset=UTF-8' } };
 }

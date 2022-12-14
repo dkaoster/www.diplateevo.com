@@ -1,12 +1,6 @@
-<script context="module">
-  export async function load({ fetch }) {
-    await fetch('rss.xml');
-    const { posts = [], pagination = {} } = await fetch('/content/posts-1.json').then((res) => res.json());
-    return { props: { posts, pagination } };
-  }
-</script>
-
 <script>
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import { getContext } from 'svelte';
   import { defaultLocale } from '$lib/stores/locale';
   import i18n from '$lib/utils/i18n';

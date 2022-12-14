@@ -1,14 +1,6 @@
-<script context="module">
-  export async function load({ fetch, params: { slug } }) {
-    // Get the posts and pagination
-    const data = await fetch(`/content/${slug}.json`).then((res) => res.json());
-
-    // Return the data for this slug
-    return (Object.keys(data).length) ? { props: { data } } : { status: 404 };
-  }
-</script>
-
 <script>
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import { getContext } from 'svelte';
   import * as d3 from 'd3';
   import { browser } from '$app/env';
@@ -16,7 +8,7 @@
   import Helmet from '$lib/components/Helmet.svelte';
   import Content from '$lib/components/Content.svelte';
   import Image from '$lib/components/partials/Image.svelte';
-  import i18n from '../lib/utils/i18n.js';
+  import i18n from '../../lib/utils/i18n.js';
 
   export let data;
 

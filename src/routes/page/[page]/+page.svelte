@@ -1,20 +1,6 @@
-<script context="module">
-  export async function load({ fetch, params: { page } }) {
-    // If somehow we landed on page 1, we redirect to the root
-    if (page === '1') return { status: 301, redirect: '/' };
-
-    // Get the posts and pagination
-    const { posts, pagination } = await fetch(`/content/posts-${page}.json`).then((res) => res.json());
-
-    // If there are no posts, return a 404
-    if (!posts) return { status: 404 };
-
-    // Return the posts and the pagination
-    return { props: { posts, pagination, page } };
-  }
-</script>
-
 <script>
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import { getContext } from 'svelte';
   import i18n from '$lib/utils/i18n';
   import { defaultLocale } from '$lib/stores/locale';

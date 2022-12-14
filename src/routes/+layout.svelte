@@ -1,12 +1,6 @@
-<script context="module">
-  export async function load({ fetch }) {
-    // Get the pages of this website
-    const pages = await fetch('/content/pages.json').then((res) => res.json());
-    return { props: { pages } };
-  }
-</script>
-
 <script>
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import { setContext } from 'svelte';
   import { browser } from '$app/env';
   import { locale } from '$lib/stores/locale';
