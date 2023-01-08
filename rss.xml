@@ -4,7 +4,7 @@
         <title>Diplateevo</title>
         <link>https://www.diplateevo.com</link>
         <description>A blog, by Daniel Kao</description>
-        <lastBuildDate>Wed, 14 Dec 2022 18:51:58 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Jan 2023 04:13:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>SvelteKit</generator>
         <image>
@@ -12,7 +12,7 @@
             <url>https://www.diplateevo.com/cover-default.jpg</url>
             <link>https://www.diplateevo.com</link>
         </image>
-        <copyright>Copyright 2022, Diplateevo</copyright>
+        <copyright>Copyright 2023, Diplateevo</copyright>
         <atom:link href="https://www.diplateevo.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Thoughts on Twitter and Future Social Media]]></title>
