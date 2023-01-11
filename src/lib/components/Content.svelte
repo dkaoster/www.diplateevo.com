@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import Image from './partials/Image.svelte';
+  import Video from './partials/Video.svelte';
   import CustomContentTypes from '../custom/CustomContentTypes.svelte';
 
   export let content;
@@ -29,6 +30,9 @@
 
     {:else if type.toLowerCase() === 'image'}
       <Image src={value} {...((typeof value === 'object') ? value : {})} />
+
+    {:else if type.toLowerCase() === 'video'}
+      <Video src={value} {...((typeof value === 'object') ? value : {})} />
 
     {:else if type.toLowerCase() === 'embed'}
       {@html value}
