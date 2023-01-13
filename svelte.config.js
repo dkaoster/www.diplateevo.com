@@ -13,7 +13,7 @@ export const genImageSizePlugin = generateImageSizes({
   dir: './static/images',
   inputFormat: ['jpg', 'jpeg', 'png', 'gif'],
   size: [1920, 1280, 768, 640],
-  outputFormat: 'jpg',
+  outputFormat: 'match',
   forceUpscale: false,
   quality: 75,
   maxParallel: 8,
