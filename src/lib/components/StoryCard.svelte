@@ -7,16 +7,20 @@
   export let title;
   export let featureImage;
   export let featureImageCrops = [];
+  export let storyCardThumb;
+  export let storyCardThumbCrops = [];
   export let description;
   export let publishDate;
   export let slug;
   export let locale = defaultLocale;
 
-  $: smallCrop = featureImageCrops && featureImageCrops.sort((a, b) => a.width - b.width)[0];
-  $: featureImageSrc = smallCrop
+  $: smallCrop = storyCardThumb
+    ? (storyCardThumbCrops && storyCardThumbCrops.sort((a, b) => a.width - b.width)[0])
+    : (featureImageCrops && featureImageCrops.sort((a, b) => a.width - b.width)[0]);
+  $: imageSrc = smallCrop
     ? sizeGen(smallCrop.image, smallCrop.width, smallCrop.format)
-    : featureImage;
-  $: src = featureImageSrc || '/cover-default.jpg';
+    : (storyCardThumb || featureImage);
+  $: src = imageSrc || '/cover-default.jpg';
 </script>
 
 <style lang="scss">

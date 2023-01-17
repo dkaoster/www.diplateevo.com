@@ -18,7 +18,7 @@ const contentDir = 'content';
 // the root listing of pages
 const listIncludeFields = [
   'title', 'publishDate', 'isPage', 'description', 'featureImage',
-  'featureImageCrops', 'hideRSS',
+  'featureImageCrops', 'storyCardThumb', 'storyCardThumbCrops', 'hideRSS',
 ];
 
 // Gets the image-manifest file
@@ -96,6 +96,11 @@ const parseContent = (fileName, options = {}) => {
   // Get all the crops for featureImage
   if (processCrops && amlObj.featureImage) {
     amlObj.featureImageCrops = getCrops(amlObj.featureImage);
+  }
+
+  // Get all the crops for storyCardThumb
+  if (processCrops && amlObj.storyCardThumb) {
+    amlObj.storyCardThumbCrops = getCrops(amlObj.storyCardThumb);
   }
 
   // Process content and get all image crops

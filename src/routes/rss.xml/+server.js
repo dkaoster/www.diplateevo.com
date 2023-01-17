@@ -32,7 +32,7 @@ export async function GET() {
       description: post.description,
       content: post.content,
       date: d3.timeParse('%Y/%m/%d')(post.publishDate),
-      image: `${siteConfig.baseURL}${post.featureImage}`,
+      image: `${siteConfig.baseURL}${post.featureImage || '/cover-default.jpg'}`,
     });
   });
 

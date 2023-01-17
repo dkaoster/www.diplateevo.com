@@ -10,6 +10,12 @@ isPage: true
 gridBreak: break
 
 {.portfolioItem}
+title: ScrollyVideo.js
+featureImage: /images/2023/01/scrollyvideo-thumb.jpg
+url: /scrollyvideo
+{}
+
+{.portfolioItem}
 title: Interactive REGL Wind Demo
 featureImage: /images/2022/01/regl-wind.jpg
 url: https://observablehq.com/@dkaoster/interactive-regl-wind-demo
