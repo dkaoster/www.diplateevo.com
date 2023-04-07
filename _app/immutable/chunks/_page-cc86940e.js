@@ -1,1 +1,0 @@
-import{e as r}from"./index-b40a4f3c.js";async function a({fetch:e,params:{slug:o}}){const t=await e(`/content/${o}.json`).then(n=>n.json());if(Object.keys(t).length)return t;throw r(404,"not found")}const c=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{c as _,a as l};
