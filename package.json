@@ -32,7 +32,7 @@
     "feed": "^4.2.1",
     "js-yaml": "^4.1.0",
     "marked": "^4.0.9",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "postcss": "^8.2.10",
     "regl": "^2.1.0",
     "regl-camera": "^2.1.1",
