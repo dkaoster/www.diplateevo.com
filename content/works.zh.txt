@@ -4,7 +4,7 @@ description: A few selected works and write-ups of projects worth sharing.
 isPage: true
 
 [+content]
-在此頁，我收集了一些我比較有趣的作品。作品主要是 javascript 為主的專案，其他的就是我打鍵盤產出的東西。
+這是一些我比較有趣的作品。作品主要是 javascript 為主的專案，其他的就是我打鍵盤產出的東西。
 
 ## 資料、圖表和軟體
 gridBreak: break
@@ -67,6 +67,33 @@ url: /building-a-realtime-election-tracker-for-taiwans-2020-election
 title: 2018 九合一選舉的視覺化
 featureImage: /images/2020/10/taiwan.jpg
 url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
+{}
+
+gridBreak: break
+gridBreak: break
+
+## 地圖類
+gridBreak: break
+
+{.portfolioItem}
+title: 植物探索
+featureImage: /images/2023/11/plant-explorer.png
+url: https://geog-778-practicum.vercel.app/
+newTab: true
+{}
+
+{.portfolioItem}
+title: 美國房地產價格地圖
+featureImage: /images/2022/08/us-housing-affordability.jpg
+url: /files/us-housing-affordability.pdf
+newTab: true
+{}
+
+{.portfolioItem}
+title: 自行車環遊加州
+featureImage: /images/2022/08/grand-tour-california.jpg
+url: /files/grand-tour-california.pdf
+newTab: true
 {}
 
 gridBreak: break

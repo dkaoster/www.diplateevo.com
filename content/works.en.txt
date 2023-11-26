@@ -4,7 +4,7 @@ description: A few selected works and write-ups of projects worth sharing.
 isPage: true
 
 [+content]
-A few selected works and write-ups of projects worth sharing. My portfolio largely consists of javascript-based web projects, but occasionally will showcase other things that happen when I type on a keyboard.
+A few of my selected works and projects. My portfolio largely consists of javascript-based web projects, but occasionally will showcase other things that happen when I push buttons on a keyboard.
 
 ## Data, Graphics, and Engineering
 gridBreak: break
@@ -67,6 +67,33 @@ url: /building-a-realtime-election-tracker-for-taiwans-2020-election
 title: Taiwan Elections 2018, Visualized
 featureImage: /images/2020/10/taiwan.jpg
 url: https://observablehq.com/@dkaoster/taiwan-elections-2018-visualized
+{}
+
+gridBreak: break
+gridBreak: break
+
+## Cartography Projects
+gridBreak: break
+
+{.portfolioItem}
+title: Plant Explorer
+featureImage: /images/2023/11/plant-explorer.png
+url: https://geog-778-practicum.vercel.app/
+newTab: true
+{}
+
+{.portfolioItem}
+title: US Housing Affordability Map
+featureImage: /images/2022/08/us-housing-affordability.jpg
+url: /files/us-housing-affordability.pdf
+newTab: true
+{}
+
+{.portfolioItem}
+title: A Grand Tour of California
+featureImage: /images/2022/08/grand-tour-california.jpg
+url: /files/grand-tour-california.pdf
+newTab: true
 {}
 
 gridBreak: break
