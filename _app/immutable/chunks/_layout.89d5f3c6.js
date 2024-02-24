@@ -1,0 +1,1 @@
+const n="always",r=!0;async function a({fetch:e}){return{pages:await e("/content/pages.json").then(t=>t.json())}}const s=Object.freeze(Object.defineProperty({__proto__:null,load:a,prerender:!0,trailingSlash:n},Symbol.toStringTag,{value:"Module"}));export{s as _,a as l,r as p,n as t};
