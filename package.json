@@ -20,7 +20,7 @@
   "author": "Daniel Kao",
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0",
-    "@sveltejs/kit": "^1.15.2",
+    "@sveltejs/kit": "^1.30.4",
     "archieml": "^0.4.2",
     "autoprefixer": "^10.4.2",
     "d3": "^7.3.0",
