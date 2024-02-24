@@ -9,7 +9,7 @@ src: /images/2020/08/prof.jpg
 width: 300
 {}
 
-I spend my days crunching data and visualizing news stories for the web and mobile devices, currently as a freelancer while pursuing my master's in [Cartography and Geographic Information Systems](https://geography.wisc.edu/gis/onlinemasters/) at the University of Wisconsin. Previously, I was a senior graphics engineer for [Commonwealth Magazine](https://www.cw.com.tw/graphics/) and frontend engineer for the New York Times.
+I spend my days crunching data and visualizing news stories for the web and mobile devices, currently as an engineer for [The Washington Post](https://www.washingtonpost.com). Previously, I was a senior graphics engineer for [Commonwealth Magazine](https://www.cw.com.tw/graphics/) and frontend engineer for the [New York Times](https://www.nytimes.com). I completed my graduate studies in Cartography and Geographic Information Systems at the University of Wisconsin and undergraduate studies in Computer Science at the University of California, San Diego.
 
 I'm motivated by the idea that digital mediums can help readers better understand complex challenges facing societies today. In addition, I believe that newsrooms are among the most conducive environments to experimentation, development, and creativity.
 
