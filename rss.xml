@@ -4,7 +4,7 @@
         <title>Diplateevo</title>
         <link>https://www.diplateevo.com</link>
         <description>A blog, by Daniel Kao</description>
-        <lastBuildDate>Sun, 26 Nov 2023 20:24:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Feb 2024 16:20:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>SvelteKit</generator>
         <image>
@@ -12,7 +12,7 @@
             <url>https://www.diplateevo.com/cover-default.jpg</url>
             <link>https://www.diplateevo.com</link>
         </image>
-        <copyright>Copyright 2023, Diplateevo</copyright>
+        <copyright>Copyright 2024, Diplateevo</copyright>
         <atom:link href="https://www.diplateevo.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Innovating Toward Unsustainability]]></title>
