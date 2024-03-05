@@ -5,7 +5,7 @@
   // vendor bundle
   const IllustrationsImports = {
     gj: async () => (await import('../home/GraphicsJournalist.svelte')).default,
-    sj: async () => (await import('../home/SanJose.svelte')).default,
+    az: async () => (await import('../home/Arizona.svelte')).default,
   };
 
   let currentHover;
@@ -114,14 +114,14 @@
         on:mouseover={() => { currentHover = 'gj'; }}
         on:click|stopPropagation={() => { currentHover = 'gj'; }}
         on:focus|stopPropagation={() => { currentHover = 'gj'; }}
-      >graphics journalist</span> currently based in
+      >news engineer</span> currently based in
       <span
         class="link"
-        class:active={currentHover === 'sj'}
-        on:mouseover={() => { currentHover = 'sj'; }}
-        on:click|stopPropagation={() => { currentHover = 'sj'; }}
-        on:focus|stopPropagation={() => { currentHover = 'sj'; }}
-      >San Jose, California</span>.
+        class:active={currentHover === 'az'}
+        on:mouseover={() => { currentHover = 'az'; }}
+        on:click|stopPropagation={() => { currentHover = 'az'; }}
+        on:focus|stopPropagation={() => { currentHover = 'az'; }}
+      >Tucson, Arizona</span>.
     </div>
   </div>
 </div>
