@@ -15,10 +15,6 @@ I'm motivated by the idea that digital mediums can help readers better understan
 
 More broadly, I’m interested in the interplay of technology, maps, politics, journalism, international relations, democracy, and education. My spare time is spent eating noodles, surfing, reading, and traveling.
 
-## Hire Me
-
-Currently open to contract projects related to data visualization, mapping, or journalism. A selection of previous works [can be seen here](/works). My resume is <a target="_blank" rel="noopener noreferrer" href="/files/daniel-kao-resume.pdf">available here</a>.
-
 Contact me\: dkao@diplateevo.com
 
 Other\: [RSS](https://www.diplateevo.com/rss.xml) | [Twitter](https://twitter.com/Diplateevo) | [Github](https://github.com/dkaoster) | [Observable](https://observablehq.com/@dkaoster)

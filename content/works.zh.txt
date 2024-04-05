@@ -76,13 +76,6 @@ gridBreak: break
 gridBreak: break
 
 {.portfolioItem}
-title: 植物探索
-featureImage: /images/2023/11/plant-explorer.png
-url: https://geog-778-practicum.vercel.app/
-newTab: true
-{}
-
-{.portfolioItem}
 title: 美國房地產價格地圖
 featureImage: /images/2022/08/us-housing-affordability.jpg
 url: /files/us-housing-affordability.pdf

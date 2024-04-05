@@ -76,13 +76,6 @@ gridBreak: break
 gridBreak: break
 
 {.portfolioItem}
-title: Plant Explorer
-featureImage: /images/2023/11/plant-explorer.png
-url: https://geog-778-practicum.vercel.app/
-newTab: true
-{}
-
-{.portfolioItem}
 title: US Housing Affordability Map
 featureImage: /images/2022/08/us-housing-affordability.jpg
 url: /files/us-housing-affordability.pdf
