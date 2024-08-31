@@ -29,16 +29,16 @@
 
 <style lang="scss">
   div {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--color);
+    transition: all 0.5s;
+
     // Uses 2 separate classes for theme because when this is server-rendered,
     // it falls back to using the css property prefers-color-scheme.
     // see base.scss
     &.dark { @include dark-mode(true); }
     &.light { @include dark-mode(false); }
-
-    min-height: 100vh;
-    background-color: var(--background-color);
-    color: var(--color);
-    transition: all 0.5s;
   }
 </style>
 

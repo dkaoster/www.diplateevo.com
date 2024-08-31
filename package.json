@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "engines": {
-    "npm": "^8",
-    "node": "^16"
+    "npm": "^9",
+    "node": "^18"
   },
   "scripts": {
     "dev": "NODE_ENV=development vite dev",
@@ -25,21 +25,21 @@
     "autoprefixer": "^10.4.2",
     "d3": "^7.3.0",
     "dompurify": "^2.3.5",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-svelte3": "^3.0.0",
+    "eslint-plugin-svelte": "^2.43.0",
     "feed": "^4.2.1",
     "js-yaml": "^4.1.0",
     "marked": "^4.0.9",
-    "node-sass": "^9.0.0",
     "postcss": "^8.4.31",
     "regl": "^2.1.0",
     "regl-camera": "^2.1.1",
     "rollup": "^2.18.1",
     "rollup-plugin-generate-image-sizes": "0.0.20",
+    "sass": "^1.77.8",
     "svelte": "^4.2.19",
-    "svelte-preprocess": "^4.10.7",
+    "svelte-preprocess": "^6.0.2",
     "svelte-sitemap": "^2.5.1",
     "vite": "^4.5.3"
   }

@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { generateImageSizes } from 'rollup-plugin-generate-image-sizes';
-import sveltePreprocess from 'svelte-preprocess';
+import { sveltePreprocess } from 'svelte-preprocess';
 import autoprefixer from 'autoprefixer';
 
 const mode = process.env.NODE_ENV;
