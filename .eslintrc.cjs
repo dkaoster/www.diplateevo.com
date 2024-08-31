@@ -8,12 +8,12 @@ module.exports = {
     browser: true,
   },
   plugins: [
-    'svelte3',
+    'svelte',
   ],
   overrides: [
     {
       files: ['**/*.svelte'],
-      processor: 'svelte3/svelte3',
+      parser: 'svelte-eslint-parser',
     },
   ],
   extends: ['eslint-config-airbnb-base'],

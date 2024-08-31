@@ -12,14 +12,14 @@
 
 <style lang="scss">
   .video-wrap {
-    @include content-offset-cols;
     opacity: var(--img-opacity);
     margin: 20px 0;
+    @include content-offset-cols;
   }
 
   .video-wrap.full {
-    @include full-offset-cols;
     text-align: center;
+    @include full-offset-cols;
   }
 
   .video-wrap.cover {

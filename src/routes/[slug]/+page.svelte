@@ -130,9 +130,9 @@
   }
 
   .cover-image {
-    @include cover-offset-cols;
     opacity: var(--img-opacity);
     margin-top: 20px;
+    @include cover-offset-cols;
   }
 
   .meta {
