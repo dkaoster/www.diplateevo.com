@@ -41,6 +41,6 @@
     "svelte": "^4.2.19",
     "svelte-preprocess": "^6.0.2",
     "svelte-sitemap": "^2.5.1",
-    "vite": "^4.5.3"
+    "vite": "^4.5.5"
   }
 }
