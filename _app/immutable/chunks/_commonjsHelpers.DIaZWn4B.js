@@ -1,0 +1,1 @@
+function o(e,t,l,n){var s=e.__styles??(e.__styles={});s[t]!==l&&(s[t]=l,l==null?e.style.removeProperty(t):e.style.setProperty(t,l,""))}var r=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function f(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}export{r as c,f as g,o as s};
