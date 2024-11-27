@@ -8,36 +8,38 @@
   import Image from '$lib/components/partials/Image.svelte';
   import i18n from '$lib/utils/i18n.js';
 
-  export let data;
+  const { data } = $props();
 
   const locale = getContext('locale');
   const siteConfig = getContext('siteConfig');
 
   // Process the locale
-  $: supportedLocales = Object.keys(data).filter((lang) => i18n[lang]);
-  $: isMultiLanguage = supportedLocales.length > 1;
-  $: currLocaleData = data[$locale.locale] || data[defaultLocale] || data[supportedLocales[0]];
-  $: currLocale = currLocaleData.locale;
+  const supportedLocales = $derived(Object.keys(data).filter((lang) => i18n[lang]));
+  const isMultiLanguage = $derived(supportedLocales.length > 1);
+  const currLocaleData = $derived(
+    data[$locale.locale] || data[defaultLocale] || data[supportedLocales[0]],
+  );
+  const currLocale = $derived(currLocaleData.locale);
 
   // And reactive updates
-  $: isPage = currLocaleData.isPage;
-  $: metaTitle = currLocaleData.metaTitle;
-  $: title = currLocaleData.title;
-  $: publishDate = currLocaleData.publishDate;
-  $: description = currLocaleData.description;
-  $: featureImage = currLocaleData.featureImage;
-  $: featureImageCrops = currLocaleData.featureImageCrops;
-  $: slug = currLocaleData.slug;
-  $: content = currLocaleData.content;
-  $: redirect = currLocaleData.redirect;
+  const isPage = $derived(currLocaleData.isPage);
+  const metaTitle = $derived(currLocaleData.metaTitle);
+  const title = $derived(currLocaleData.title);
+  const publishDate = $derived(currLocaleData.publishDate);
+  const description = $derived(currLocaleData.description);
+  const featureImage = $derived(currLocaleData.featureImage);
+  const featureImageCrops = $derived(currLocaleData.featureImageCrops);
+  const slug = $derived(currLocaleData.slug);
+  const content = $derived(currLocaleData.content);
+  const redirect = $derived(currLocaleData.redirect);
 
-  $: helmet = {
+  const helmet = $derived({
     title: metaTitle || title,
     image: featureImage,
     description,
     type: 'article',
     url: `${siteConfig.baseURL}/${slug}/`,
-  };
+  });
 </script>
 
 <style lang="scss">
