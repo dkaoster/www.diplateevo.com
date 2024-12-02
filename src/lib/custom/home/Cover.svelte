@@ -8,13 +8,17 @@
     az: async () => (await import('../home/Arizona.svelte')).default,
   };
 
-  let currentHover;
-  let width;
-  let height;
-  let loaded = false;
+  let currentHover = $state(null);
+  let width = $state();
+  let height = $state();
+  let loaded = $state(false);
 
   const theme = getContext('theme');
-  $: { if ($theme) currentHover = null; }
+  $effect(() => {
+    if (theme) {
+      currentHover = null;
+    }
+  });
 
   onMount(() => {
     loaded = true;
@@ -99,32 +103,54 @@
 </style>
 
 <div class="illustration" bind:clientHeight={height} bind:clientWidth={width}>
-  {#await (IllustrationsImports[currentHover] || (() => null))() then component}
-    <svelte:component this={component} {width} {height} />
-  {/await}
+  {#key currentHover}
+    {#await (IllustrationsImports[currentHover] || (() => null))() then Component}
+      {#if Component}
+        <Component {width} {height} />
+      {/if}
+    {/await}
+  {/key}
 </div>
 
-<div class="hero" on:click={() => { currentHover = null; }} on:keydown={() => { currentHover = null; }} role="button" tabindex="-1">
+<div class="hero" onclick={() => { currentHover = null; }} onkeydown={() => { currentHover = null; }} role="button" tabindex="-1">
   <div class="grid">
     <div class="hero-text" class:selected={!!currentHover} class:loaded>
       <span class="name">Daniel Kao</span> is a
       <span
         class="link"
         class:active={currentHover === 'gj'}
-        on:mouseover={() => { currentHover = 'gj'; }}
-        on:click|stopPropagation={() => { currentHover = 'gj'; }}
-        on:focus|stopPropagation={() => { currentHover = 'gj'; }}
-        on:keydown|stopPropagation={() => { currentHover = 'gj'; }}
+        onmouseover={() => { currentHover = 'gj'; }}
+        onclick={(e) => {
+          e.stopPropagation();
+          currentHover = 'gj';
+        }}
+        onfocus={(e) => {
+          e.stopPropagation();
+          currentHover = 'gj';
+        }}
+        onkeydown={() => {
+          e.stopPropagation();
+          currentHover = 'gj';
+        }}
         role="button"
         tabindex="0"
       >news engineer</span> currently based in
       <span
         class="link"
         class:active={currentHover === 'az'}
-        on:mouseover={() => { currentHover = 'az'; }}
-        on:click|stopPropagation={() => { currentHover = 'az'; }}
-        on:focus|stopPropagation={() => { currentHover = 'az'; }}
-        on:keydown|stopPropagation={() => { currentHover = 'az'; }}
+        onmouseover={() => { currentHover = 'az'; }}
+        onclick={(e) => {
+          e.stopPropagation();
+          currentHover = 'az';
+        }}
+        onfocus={(e) => {
+          e.stopPropagation();
+          currentHover = 'az';
+        }}
+        onkeydown={(e) => {
+          e.stopPropagation();
+          currentHover = 'az';
+        }}
         role="button"
         tabindex="0"
       >Tucson, Arizona</span>.
