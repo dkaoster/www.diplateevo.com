@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { render } from 'svelte/server';
 import archieml from 'archieml';
 import { marked } from 'marked';
 import * as d3 from 'd3';
@@ -148,13 +149,16 @@ const parseContent = (fileName, options = {}) => {
  * @param isRSS
  * @returns {*}
  */
-const contentHTML = (content, isRSS = false) => Content
-  .render({ content }, {
+const contentHTML = (content, isRSS = false) => render(
+  Content,
+  { content },
+  {
     context: new Map([
       ['baseAbsoluteURL', siteConfig.baseURL],
       ['isRSS', isRSS],
     ]),
-  })
+  },
+)
   // Remove all the comments that somehow show up
   .html.replace(/<!--[\s\S]*?-->/g, '').replace(/[\n\r]/g, '');
 
@@ -187,9 +191,9 @@ const allContent = (options = {}) => {
         // if the includeAllContent argument is provided, return the amlObj.
         // Otherwise, only include the fields specified in listIncludeFields
         // so that our payload doesn't explode
-        ...(includeAllContent ? amlObj : listIncludeFields.reduce(
-          (acc, field) => ({ ...acc, [field]: amlObj[field] }), {},
-        )),
+        ...(includeAllContent
+          ? amlObj
+          : listIncludeFields.reduce((acc, field) => ({ ...acc, [field]: amlObj[field] }), {})),
         // If we want to render content to HTML instead of using a JSON object
         ...(renderContentToHTML ? { content: contentHTML(amlObj.content, isRSS) } : {}),
         // slug and locale
