@@ -6,20 +6,19 @@
   import StoryCardList from '$lib/components/StoryCardList.svelte';
   import Helmet from '$lib/components/Helmet.svelte';
 
-  export let data;
+  const { data } = $props();
 
-  let { posts, pagination } = data;
-  $: ({ posts, pagination } = data);
+  const { posts, pagination } = $derived(data);
 
   const locale = getContext('locale');
   const siteConfig = getContext('siteConfig');
 
-  $: currentLocalePosts = posts.map((d) => d[$locale.locale] || d[defaultLocale]);
-  $: helmet = {
+  const currentLocalePosts = $derived(posts.map((d) => d[$locale.locale] || d[defaultLocale]));
+  const helmet = $derived({
     title: i18n[$locale.locale].home || i18n[defaultLocale].home,
     description: siteConfig.description,
     url: `${siteConfig.baseURL}/`,
-  };
+  });
 </script>
 
 <Helmet {...helmet} />

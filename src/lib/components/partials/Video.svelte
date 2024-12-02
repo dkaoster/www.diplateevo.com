@@ -43,6 +43,7 @@
 
 <div class="video-wrap {className}">
   {#if typeof src === 'string'}
+    <!-- svelte-ignore a11y_media_has_caption -->
     <video {alt} src="{isOwnVideo ? baseAbsoluteURL : ''}{src}" {...$$props}></video>
   {/if}
 
