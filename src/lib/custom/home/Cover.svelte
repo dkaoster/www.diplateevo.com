@@ -104,7 +104,7 @@
   {/await}
 </div>
 
-<div class="hero" on:click={() => { currentHover = null; }}>
+<div class="hero" on:click={() => { currentHover = null; }} on:keydown={() => { currentHover = null; }} role="button" tabindex="-1">
   <div class="grid">
     <div class="hero-text" class:selected={!!currentHover} class:loaded>
       <span class="name">Daniel Kao</span> is a
@@ -114,6 +114,9 @@
         on:mouseover={() => { currentHover = 'gj'; }}
         on:click|stopPropagation={() => { currentHover = 'gj'; }}
         on:focus|stopPropagation={() => { currentHover = 'gj'; }}
+        on:keydown|stopPropagation={() => { currentHover = 'gj'; }}
+        role="button"
+        tabindex="0"
       >news engineer</span> currently based in
       <span
         class="link"
@@ -121,6 +124,9 @@
         on:mouseover={() => { currentHover = 'az'; }}
         on:click|stopPropagation={() => { currentHover = 'az'; }}
         on:focus|stopPropagation={() => { currentHover = 'az'; }}
+        on:keydown|stopPropagation={() => { currentHover = 'az'; }}
+        role="button"
+        tabindex="0"
       >Tucson, Arizona</span>.
     </div>
   </div>

@@ -62,13 +62,14 @@
 
 <style lang="scss">
   div.wrapper {
-    @include full-offset-cols;
     margin: 16px 0 48px;
     display: grid;
     grid-template-columns: repeat(var(--num-columns), 1fr);
     grid-template-rows: auto auto;
     grid-column-gap: 20px;
     grid-auto-flow: column;
+
+    @include full-offset-cols;
 
     &.max {
       grid-column: 1 / 13;
@@ -123,7 +124,7 @@
     bind:value
     bind:this={textarea}
     style:min-height="{textareaHeight}px"
-  />
+  ></textarea>
 
   {#each types.slice(1) as type}
     <h3>{type} (output)</h3>

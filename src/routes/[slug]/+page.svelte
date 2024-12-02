@@ -210,7 +210,7 @@
     {#if isMultiLanguage}
       <div class="language-toggle">
         {#each supportedLocales.filter((l) => l !== currLocale) as toggleLocale}
-          <button class="button" on:click={() => $locale.setLocale(toggleLocale)}>
+          <button class="button" onclick={() => $locale.setLocale(toggleLocale)}>
             {i18n[toggleLocale].languageToggle}
           </button>
         {/each}

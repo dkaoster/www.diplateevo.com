@@ -122,7 +122,7 @@
 </style>
 
 <nav class="wrapper">
-  <div class="fill" />
+  <div class="fill"></div>
   <div class="header">
     <a class="logo-link" href="/" rel=prefetch>
       <div class="logo">高</div>

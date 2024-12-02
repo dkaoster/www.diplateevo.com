@@ -79,6 +79,6 @@
       height={height * dpr}
       bind:this={canvas}
       style:width="{height}px"
-    />
+    ></canvas>
   {/if}
 </div>
