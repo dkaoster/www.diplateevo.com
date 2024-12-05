@@ -151,8 +151,8 @@ const parseContent = (fileName, options = {}) => {
  */
 const contentHTML = (content, isRSS = false) => render(
   Content,
-  { content },
   {
+    props: { content },
     context: new Map([
       ['baseAbsoluteURL', siteConfig.baseURL],
       ['isRSS', isRSS],
