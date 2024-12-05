@@ -4,6 +4,7 @@
   import { locale } from '$lib/stores/locale';
   import { theme } from '$lib/stores/theme';
   import Header from '$lib/components/Header.svelte';
+  import Footer from '$lib/components/Footer.svelte';
   import siteConfig from '../site-config.js';
 
   export let data;
@@ -46,4 +47,6 @@
   <Header {pages} />
 
   <slot />
+
+  <Footer />
 </div>
