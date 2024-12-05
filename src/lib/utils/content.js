@@ -195,7 +195,14 @@ const allContent = (options = {}) => {
           ? amlObj
           : listIncludeFields.reduce((acc, field) => ({ ...acc, [field]: amlObj[field] }), {})),
         // If we want to render content to HTML instead of using a JSON object
-        ...(renderContentToHTML ? { content: contentHTML(amlObj.content, isRSS) } : {}),
+        ...(renderContentToHTML ? {
+          content:
+          // if isRSS, we want to add the featured image in the beginning
+            (isRSS && amlObj.featureImage
+              ? `<img alt="${amlObj.title}" src="https://www.diplateevo.com${amlObj.featureImage}" width="100%">`
+              : '')
+            + contentHTML(amlObj.content, isRSS),
+        } : {}),
         // slug and locale
         ...parseFileName(fileName),
       };
