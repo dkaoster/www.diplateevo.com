@@ -76,6 +76,13 @@ gridBreak: break
 gridBreak: break
 
 {.portfolioItem}
+title: ¡Plantásticas!
+featureImage: /images/2023/04/plantasticas.png
+url: https://stamen.com/weaving-together-plants-and-people-developing-a-touchscreen-installation-for-the-exploratorium/
+newTab: true
+{}
+
+{.portfolioItem}
 title: US Housing Affordability Map
 featureImage: /images/2022/08/us-housing-affordability.jpg
 url: /files/us-housing-affordability.pdf
