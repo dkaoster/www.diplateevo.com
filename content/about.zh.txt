@@ -1,6 +1,6 @@
 title: 資料視覺化前端工程師、數位地理資訊學者、湯麵愛好者
 author: Daniel Kao
-description: 我專門發想以及製作新聞和資料視覺化。
+description: 我專門發想以及製作資料視覺化。
 isPage: true
 
 [+content]
@@ -9,11 +9,13 @@ src: /images/2024/10/prof.jpg
 width: 350
 {}
 
-當前，我是 [華盛頓郵報](https://www.washingtonpost.com) 的工程師。曾任在 [天下雜誌](https://www.cw.com.tw/graphics/) 當前端工程師，專門發想以及製作新聞的視覺化。更之前在 [紐約時報](https://www.nytimes.com) 當前端工程師。我的碩士唸威斯康星大學的地理資訊以及大學唸加州大學聖地牙哥的資訊工程。
+當前，我是 [Rivian Automotive](https://rivian.com/) 的工程師。
 
-帶著資工背景進入媒體業，我的初衷是希望運用數位時代的新興技術呈現各種社會複雜的訴求，讓讀者對於切身相關的議題能夠有更好的了解。對他來說，新聞是一個最適合碰撞實驗和創新火花的環境。可以在[這裡看](/works)我的作品集，也可以下載我的<a target="_blank" rel="noopener noreferrer" href="/files/daniel-kao-resume.pdf">履歷</a>。
+之前在 [華盛頓郵報](https://www.washingtonpost.com) 負責選舉資料和視覺化的前端工程師。在台灣的時候在 [天下雜誌](https://www.cw.com.tw/graphics/) 當前端工程師，專門發想以及製作新聞的視覺化。更之前在 [紐約時報](https://www.nytimes.com) 當前端工程師。我的碩士唸威斯康星大學的地理資訊以及大學唸加州大學聖地牙哥的資訊工程。
 
-此外，我也對科技、地圖、政治、國際、民主和教育有興趣。我其他的時間喜歡吃麵、衝浪、看書和旅遊。
+帶著資工背景，我的初衷是希望運用數位時代的新興技術呈現各種社會複雜的訴求，讓讀者對於切身相關的議題能夠有更好的了解。可以在[這裡看](/works)我的作品集，也可以下載我的<a target="_blank" rel="noopener noreferrer" href="/files/daniel-kao-resume.pdf">履歷</a>。
+
+此外，我也對科技、地圖、政治、國際、民主和教育有興趣。我其他的時間喜歡玩相機、修車、吃麵、衝浪、看書和旅遊。
 
 聯絡我\: dkao@diplateevo.com
 
