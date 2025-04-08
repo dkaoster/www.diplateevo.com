@@ -1,6 +1,6 @@
-title: Graphics Journalist, Digital Cartographer, Engineer, Noodle Connoisseur
+title: Graphics Engineer, Digital Cartographer, Car Enthusiast, Journalist, Noodle Connoisseur
 author: Daniel Kao
-description: I spend my days crunching data and visualizing news stories for the web and mobile devices.
+description: I spend my days crunching data and visualizing data for autonomous vehicle models.
 isPage: true
 
 [+content]
@@ -9,11 +9,13 @@ src: /images/2024/10/prof.jpg
 width: 350
 {}
 
-I spend my days crunching data and visualizing news stories for the web and mobile devices, currently as an engineer for [The Washington Post](https://www.washingtonpost.com). Previously, I was a senior graphics engineer for [Commonwealth Magazine](https://www.cw.com.tw/graphics/) and frontend engineer for the [New York Times](https://www.nytimes.com). I completed my graduate studies in Cartography and Geographic Information Systems at the University of Wisconsin and undergraduate studies in Computer Science at the University of California, San Diego.
+I spend my days crunching data and visualizing data for autonomous vehicle models, currently as an engineer for [Rivian Automotive](https://rivian.com/).
 
-I'm motivated by the idea that digital mediums can help readers better understand complex challenges facing societies today. In addition, I believe that newsrooms are among the most conducive environments to experimentation, development, and creativity. A selection of previous works [can be seen here](/works). My resume is <a target="_blank" rel="noopener noreferrer" href="/files/daniel-kao-resume.pdf">available here</a>.
+Previously, I was an engineer for [The Washington Post](https://www.washingtonpost.com), graphics engineer for [Commonwealth Magazine](https://www.cw.com.tw/graphics/) and frontend engineer for the [New York Times](https://www.nytimes.com). I completed my graduate studies in Cartography and Geographic Information Systems at the University of Wisconsin and undergraduate studies in Computer Science at the University of California, San Diego.
 
-More broadly, I’m interested in the interplay of technology, maps, politics, journalism, international relations, democracy, and education. My spare time is spent eating noodles, surfing, reading, and traveling.
+I'm motivated by the idea that digital mediums can help people better understand and solve the complex challenges facing societies today. A selection of previous works [can be seen here](/works). My resume is <a target="_blank" rel="noopener noreferrer" href="/files/daniel-kao-resume.pdf">available here</a>.
+
+More broadly, I’m interested in the interplay of technology, maps, politics, journalism, international relations, democracy, and education. My spare time is spent playing with cameras, wrenching on cars, eating noodles, surfing, reading, and traveling.
 
 Contact me\: dkao@diplateevo.com
 

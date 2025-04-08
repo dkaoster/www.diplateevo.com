@@ -5,7 +5,7 @@
   // vendor bundle
   const IllustrationsImports = {
     gj: async () => (await import('../home/GraphicsJournalist.svelte')).default,
-    az: async () => (await import('../home/Arizona.svelte')).default,
+    sj: async () => (await import('../home/SanJose.svelte')).default,
   };
 
   let currentHover = $state(null);
@@ -134,26 +134,26 @@
         }}
         role="button"
         tabindex="0"
-      >news engineer</span> currently based in
+      >frontend engineer</span> currently based in the
       <span
         class="link"
-        class:active={currentHover === 'az'}
-        onmouseover={() => { currentHover = 'az'; }}
+        class:active={currentHover === 'sj'}
+        onmouseover={() => { currentHover = 'sj'; }}
         onclick={(e) => {
           e.stopPropagation();
-          currentHover = 'az';
+          currentHover = 'sj';
         }}
         onfocus={(e) => {
           e.stopPropagation();
-          currentHover = 'az';
+          currentHover = 'sj';
         }}
         onkeydown={(e) => {
           e.stopPropagation();
-          currentHover = 'az';
+          currentHover = 'sj';
         }}
         role="button"
         tabindex="0"
-      >Tucson, Arizona</span>.
+      >Bay Area, California</span>.
     </div>
   </div>
 </div>
