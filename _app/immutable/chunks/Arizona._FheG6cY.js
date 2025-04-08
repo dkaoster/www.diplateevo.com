@@ -1,1 +1,0 @@
-import{a as o,t as r}from"./disclose-version.DwU8uWg_.js";import"./legacy.CI9xy2B2.js";import{t as i,f as s}from"./index.C8pxVa0B.js";var e=r('<div class="svelte-ub0a9h"></div>');function m(t){var a=e();i(3,a,()=>s),o(t,a)}export{m as default};
