@@ -17,4 +17,4 @@
   }
 </style>
 
-<div transition:fade />
+<div transition:fade></div>
