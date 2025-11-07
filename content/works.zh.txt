@@ -10,6 +10,12 @@ isPage: true
 gridBreak: break
 
 {.portfolioItem}
+title: 華盛頓郵報如何做出美國 2024 大選開票
+featureImage: /images/2025/11/wapo-election-thumb.jpg
+url: /elections-2024
+{}
+
+{.portfolioItem}
 title: ScrollyVideo.js
 featureImage: /images/2023/01/scrollyvideo-thumb.jpg
 url: /scrollyvideo
