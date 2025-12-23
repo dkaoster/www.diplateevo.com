@@ -24,6 +24,16 @@ $device-medium: 1024px;
   @media screen and (max-width: $device-medium) { grid-column: 1 / 13; }
 }
 
+@mixin cover-double-offset-cols {
+  grid-column: span 6;
+  @media screen and (max-width: $device-small) { grid-column: 1 / 13; }
+}
+
+@mixin cover-triple-offset-cols {
+  grid-column: span 4;
+  @media screen and (max-width: $device-small) { grid-column: 1 / 13; }
+}
+
 // ////////////////////////////////////////////////////////
 // Dark mode related variables
 @mixin dark-mode-variables {
