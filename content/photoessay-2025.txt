@@ -1,0 +1,193 @@
+title: 2025 in Photos
+publishDate: 2025/12/23
+author: Daniel Kao
+description: 2025 was a year made up of new challenges in old, familiar contexts.
+storyCardThumb: /images/2025/12/photoessay-thumb.jpg
+featureImage: /images/2025/12/photoessay-cover.jpg
+
+[+content]
+
+2025 was a year made up of new challenges in old, familiar contexts. This year, I lost my grandfather, left behind an industry that I spent ten years building a career in to join a brand new one, moved back home to the Bay Area, and rediscovered my love for photography after learning to develop film at home.
+
+{.image}
+src: /images/2025/12/DSC05145_DxO-1.jpg
+alt: Caltrain tracks
+className: full
+{}
+
+If I’m honest, I miss working in journalism almost every day. The energy, focus, and collaboration found in the newsrooms that I have been so fortunate to experience often felt like being a part of the Avengers, teams working together in near perfect harmony and conviction. I will be forever bitter about the political climate and decisions made by people in power that have absolutely gutted the news industry, forcing me to consider other options. But on the flip side, I’m also grateful for having the opportunity to work at [Rivian](https://rivian.com/), a company pushing the boundaries of what a car can an should be, even though the competition is fierce and challenges feel insurmountable.
+
+{.image}
+src: /images/2025/12/DSC05128_DxO-1.jpg
+alt: Rivian
+className: cover
+{}
+
+Just as I never expected to find myself working in journalism, I also never expected to find myself working in automotive. I dove deep into automotive in 2025, not only in understanding the landscape of AI and autonomous vehicles, but also in automotive as an enthusiast hobby. I dropped by automotive events, open houses, and more car shows than I can count. A huge thank you to everyone who opened up their shop, hosted an event, or came along with me.
+
+{.image}
+src: /images/2025/12/DSC05470_DxO.jpg
+alt: StanceWorks shop
+className: full
+{}
+
+In 2025, I also took on the biggest car project I have ever done to date. Over the summer, I unbolted the front and rear subframes off of my 1990 Audi Coupe Quattro to repaint the subframes, install new bushings, seal a leaking differential, and replace all the brake rotors, pads, and calipers. I almost called it quits on so many points along the process, but after almost two months the satisfaction of knowing I did it made it worth it. I’m still no expert, but I know I’ll be able to figure future out future projects.
+
+{.image}
+src: /images/2025/12/DSC05978_DxO.jpg
+alt: Working on the Coupe Quattro
+className: full
+{}
+
+In terms of automotive events, the highlight of the year for me was Monterey Car Week. I attended and displayed my Coupe Quattro at [Legends of the Autobahn](https://legendsoftheautobahn.org/): a gathering for BMW, Mercedes, and Audi vehicles from all eras representing the heritage and evolution of these three German marquees. I also attended [Sportscar Vacationland](https://petrolicious.com/blogs/articles/sportscar-vacationland-a-much-needed-addition-to-car-week) by Overcrest Productions, where I captured some of my favorite photos of the whole year.
+
+gridBreak: break
+
+{.image}
+src: /images/2025/12/DSC06259_DxO.jpg
+alt: Sportscar Vacationland
+className: cover-double new-row
+{}
+
+{.image}
+src: /images/2025/12/DSC06254_DxO.jpg
+alt: Audi Quattro
+className: cover-double
+{}
+
+[Sportscar Vacationland](https://petrolicious.com/blogs/articles/sportscar-vacationland-a-much-needed-addition-to-car-week) highlighted much of the art being created by automotive enthusiasts without feeling snobby, exclusive, or unapproachable. Everything was so carefully curated to ensure participants such as myself walked away inspired and delighted, whether it be watching a Porsche hung vertically being painted, walking through the museum of insanely rare wheels, or learning about how a car body can be built by hand using an english wheel.
+
+gridBreak: break
+
+{.image}
+src: /images/2025/12/DSC06265_DxO.jpg
+alt: BMW M1
+className: cover-triple new-row
+{}
+
+{.image}
+src: /images/2025/12/DSC06267_DxO.jpg
+alt: Mercedes 300SL
+className: cover-triple
+{}
+
+{.image}
+src: /images/2025/12/DSC06052_DxO.jpg
+alt: Land Rover
+className: cover-triple
+{}
+
+{.image}
+src: /images/2025/12/DSC06285_DxO.jpg
+alt: Porsche 911 Art
+className: cover-double
+{}
+
+{.image}
+src: /images/2025/12/DSC06262_DxO.jpg
+alt: Porsche 911
+className: cover-double
+{}
+
+Automotive enthusiasts all have different sides of what they enjoy about the hobby. Some people enjoy the thrill of driving and pushing their vehicles to the limits around racetracks or autocross courses. Others enjoy the history and heritage of brands as if they were luxury handbags. Personally, I enjoy the mechanics, how a car is built and engineered to achieve all sorts of different goals, and the art of everyone making their cars their own. I enjoy meeting the community of people who come together to celebrate the vast variety of cars and automobiles that has become so deeply ingrained in our everyday lives. And after all that, I enjoy getting out in the backroads on my own, enjoying nature and taking pictures that represent the life and personalities my own cars have taken on.
+
+{.image}
+src: /images/2025/12/DSC06794_DxO.jpg
+alt: Audi Coupe Quattro in the forest
+className: cover-double
+{}
+
+{.image}
+src: /images/2025/12/DSC06792_DxO.jpg
+alt: Audi Coupe Quattro in the forest
+className: cover-double
+{}
+
+{.image}
+src: /images/2025/12/DSC06785_DxO.jpg
+alt: Audi Coupe Quattro in the forest
+className: cover-double
+{}
+
+{.image}
+src: /images/2025/12/DSC06781_DxO.jpg
+alt: Audi Coupe Quattro in the forest
+className: cover-double
+{}
+
+Beyond cars, 2025 reignited my love for photography, specifically film photography. I’ve been interested in photography since high school. Back then I used to beg my parents to buy me a DSLR, something like a Canon 7D but they never did. At one point I found my mom’s old Pentax K1000 from journalism school, and I decided that I would try film since that’s all I could get my hands on. Back then Walgreens still developed film quickly and cheaply, and I would bike over there to get film developed. As film got more expensive to buy and develop and Walgreens stopped developing, eventually I bought a digital camera and only rarely shot film.
+
+{.image}
+src: /images/2025/12/DSC06158_DxO.jpg
+alt: Hasselblad 500ELM
+{}
+
+This year, however, I learned how to develop film at home, which completely changed the game. I started shooting film again like mad to make up for all the years I missed. At the insistence of an old high school friend to get into medium format, I also made the most expensive camera purchase I’ve ever made, a Hasselblad 500 ELM.
+
+{.image}
+src: /images/2025/12/DSC06810_DxO.jpg
+alt: Black and white art
+{}
+
+Learning to develop at home also ironically piqued my interest in black and white film photography, something that I never really had interest in before. I had always felt that the film colors were a large part of what drew me to film photography in the first place, and that black and white would be less interesting. After trying a few rolls of black and white, I’ve changed my mind. Black and white provides a completely different canvas for playing with contrast, perception, and color.
+
+gridBreak: break
+
+{.image}
+src: /images/2025/12/A7R07359_DxO.jpg
+alt: UC Berkeley
+className: cover-triple new-row
+{}
+
+{.image}
+src: /images/2025/12/A7R07372_DxO.jpg
+alt: Castro
+className: cover-triple
+{}
+
+{.image}
+src: /images/2025/12/A7R07374_DxO.jpg
+alt: Noe Valley
+className: cover-triple
+{}
+
+Being back in California also meant reconnecting with California’s nature, possibly the aspect I missed the most being away for nearly a decade. The biodiversity, landscapes, and magic of California’s landscape is the closest thing I’ll ever get to experiencing the Garden of Eden. Every possible moment I could get away from the office was a trip into nature with a camera. I pulled out my backpacking tent which has not seen sunlight since I was a Boy Scout, dusted off the old sleeping bag, and spent a weekend enjoying nature and fishing.
+
+{.image}
+src: /images/2025/12/DSC05987_DxO.jpg
+alt: Gone fishing
+className: full
+{}
+
+And throughout the whole year, I felt the echos of my grandfather who, despite being two generations apart, shares a lot of the same interests and hobbies that I do. My grandfather was a diesel mechanic for cargo ships that also loved the sea, taking pictures, fishing, and playing guitar. Fishing was one of my grandfather’s favorite past times. So much so, my grandmother says that he would often neglect studying for exams in order to go fishing. My grandfather worked aboard cargo ships as the engineer, harboring a deep love for the sea while also being intimately familiar with the mechanics of the diesel engine. When I was a kid, grandpa showed me an old video of him catching two enormous swordfish off the side of his ship, promising to one day take me fishing.
+
+{.image}
+src: /images/2025/12/DSC05998_DxO.jpg
+alt: Camping
+className: full
+{}
+
+And just like that, the leaves turned yellow and have fallen to the ground. The days have become short and temperatures have dropped. Nature is pressing the reset button, and I’m left dreaming about the adventures, changes, and events of 2026.
+
+{.image}
+src: /images/2025/12/A7R07138_DxO.jpg
+alt: Fall colors
+className: cover-double
+{}
+
+{.image}
+src: /images/2025/12/A7R07136_DxO.jpg
+alt: Fall colors
+className: cover-double
+{}
+
+And above all, I want to thank everyone who was a part of my life in 2025. Friends that passed through to visit and hang out, family that has continued to support and grow together, and colleagues that have challenged and taught me new things. I won’t name names on this public blog post but you know who you are.
+
+{.image}
+src: /images/2025/12/IMG_4063_DxO.jpg
+alt: Cat
+{}
+
+And finally, thanks to this guy for all his mischief, cuddles, and entertainment for yet another year.
+
+[]

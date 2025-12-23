@@ -22,6 +22,10 @@
     @include content-offset-cols;
   }
 
+  .image-wrap.new-row {
+    grid-column-start: 1;
+  }
+
   .image-wrap.full {
     text-align: center;
     @include full-offset-cols;
@@ -30,6 +34,16 @@
   .image-wrap.cover {
     text-align: center;
     @include cover-offset-cols;
+  }
+
+  .image-wrap.cover-double {
+    text-align: center;
+    @include cover-double-offset-cols;
+  }
+
+  .image-wrap.cover-triple {
+    text-align: center;
+    @include cover-triple-offset-cols;
   }
 
   picture, img {
